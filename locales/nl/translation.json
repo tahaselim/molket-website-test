@@ -1,0 +1,186 @@
+{
+  "navbar": {
+    "logo": "MolKet",
+    "home": "Home",
+    "about": "Over ons",
+    "services": "Diensten",
+    "how_it_works": "Hoe het werkt",
+    "team": "Team",
+    "contact": "Contact",
+    "resources": "Bronnen",
+    "resources_menu": {
+      "use_cases": "Gebruiksscenario's",
+      "lab": "Lab",
+      "molket_jl": "MolKet.jl"
+    }
+  },
+  "home": {
+    "title": "Kwantumoplossingen van de Volgende Generatie",
+    "description": "MolKet biedt managementadvies en AI-diensten voor:",
+    "services_list": {
+      "quantum_molecular_dynamics": "Kwantum moleculaire dynamica",
+      "cryptography": "Cryptografie",
+      "neuromorphic_computing": "Neuromorfisch gebaseerd computergebruik"
+    },
+    "support_text": "Ondersteund door cloudgebaseerde hybride HPC & kwantum computing platforms, wat de ontwikkeling van geavanceerde machine learning algoritmen met aanzienlijke voorspellende kracht mogelijk maakt.",
+    "request_demo": "Vraag een Demo aan",
+    "explore_services": "Ontdek Diensten",
+    "scroll_down": "Scroll naar Beneden"
+  },
+  "about": {
+    "title": "Over MolKet",
+    "subtitle": "Snelle en nauwkeurige moleculaire ontwerpsimulaties ondersteund door AI",
+    "description_1": "Chemische simulaties zijn tijdrovend en ingewikkeld om voor te bereiden. Ons doel is om het ontwerpproces eenvoudiger en sneller te maken. We gebruiken AI om algemene Hamiltonians te trainen voor chemische simulaties die efficiënt kunnen worden uitgevoerd op HPC, kwantumcomputers en op simulaties van kwantumcomputers.",
+    "description_2": "Het bedrijf biedt ook adviesdiensten voor het trainen van AI op datasets uit vakgebieden zoals chemie, biologie, materiaalwetenschap en kosmologie. Deze diensten worden ondersteund door op fysica gebaseerde kernels (bijv. kwantummechanische kernels), wat de ontwikkeling van geavanceerde machine learning algoritmen met aanzienlijke voorspellende kracht mogelijk maakt.",
+    "process_title": "Sterk geconstrueerd, standaardproces voor kwantumchemie simulaties"
+  },
+  "services": {
+    "title": "Onze Aanvullende Diensten",
+    "description": "Naast de clouddiensten kunnen we u op de volgende gebieden helpen",
+    "service_1": {
+      "title": "Ontwikkelen van algoritmes voor kwantum moleculaire dynamica",
+      "description": "Ontwikkeling van aangepaste algoritmen geoptimaliseerd voor uw specifieke moleculaire simulatiebehoeften."
+    },
+    "service_2": {
+      "title": "Uw applicatie aanpassen met behulp van HPC/QC",
+      "description": "Integratiediensten om uw bestaande applicaties te verbeteren met high-performance en kwantum computing mogelijkheden."
+    },
+    "service_3": {
+      "title": "Training, consultancy en kennisoverdracht",
+      "description": "Deskundige begeleiding en onderwijs om uw team te helpen kwantum computing technologieën en applicaties te beheersen."
+    },
+    "explore_button": "Ontdek Onze Diensten"
+  },
+  "how_it_works": {
+    "title": "Hoe Werkt Het?",
+    "step_1": {
+      "title": "Kies uw AI-ondersteunde Omgeving",
+      "description": "U kunt kiezen voor een JupyterHub-achtige omgeving of MolKet Studio. Gebruik MolKet's engine op uw computer in Visual Studio of programmeer het online op het web.",
+      "button": "MolKet SDK"
+    },
+    "step_2": {
+      "title": "Typ uw code of sleep en ontwerp uw simulatie",
+      "description": "Typ uw code in natuurlijke taal, of kies uit onze bibliotheek. Onze AI-assistent helpt u bij het schrijven van de code en stelt modules voor die u kunt gebruiken. U kunt de simulatie ook ontwerpen in een stroomdiagramformaat.",
+      "button_1": "Start Simulatie",
+      "button_2": "MolKet Studio"
+    },
+    "step_3": {
+      "title": "MolKet's AI-engine assisteert bij het selecteren van de algoritmen en computerplatforms",
+      "description": "Afhankelijk van de computationele complexiteit en het type van elke stap in de simulatie, kiest MolKet's AI-engine de juiste kwantum/HPC-architectuur voor u. Het optimaliseert ook de uitvoering op elk type hardware door de algemene Hamiltonians te trainen en deze op kwantum te mappen.",
+      "button": "MolKet SDK"
+    },
+    "step_4": {
+      "title": "Ontvang de resultaten en verwerk ze met ingebouwde ML- en AI-bibliotheken",
+      "description": "Afhankelijk van de computationele complexiteit en het type van elke stap in de simulatie, kiest MolKet's AI-engine de juiste kwantum/HPC-architectuur voor u.",
+      "button": "Start Simulatie"
+    }
+  },
+  "featured_videos": {
+    "title": "Uitgelichte Video's",
+    "description": "Ontdek hoe MolKet kwantum computing revolutioneert",
+    "video_1": {
+      "title": "Kwantum Intelligentie voor Chemie Simulaties",
+      "description": "MolKet benut de kracht van kwantum intelligentie om simulaties in chemie en fysica te revolutioneren. Onze AI-agenten, getraind op ingewikkelde Hamiltonian-afleidingen, voorspellen het gedrag van complexe systemen, waardoor onderzoek en ontdekking aanzienlijk worden versneld."
+    },
+    "video_2": {
+      "title": "Versnellen van Chemisch Ontwerp met AI-Agenten",
+      "description": "Alain Chancé en Dr. Taha Selim stellen voor om AI-agenten in te zetten om chemisch ontwerp en kwantumdynamische simulaties te versnellen. Deze AI-agenten kunnen worden getraind op de inputs en outputs van kwantumchemie- en dynamica-algoritmen, waardoor computationeel dure componenten effectief worden vervangen."
+    }
+  },
+  "Our_Development_Model": {
+    "title": "Ons Ontwikkelmodel",
+    "subtitle": "Wij kunnen u helpen door u te voorzien van wat u nodig heeft uit ingebouwde bibliotheken die u ondersteunen bij uw uitvoering."
+  },
+  "team": {
+    "title": "MolKet Oprichters",
+    "founder_1": {
+      "name": "Dr. Taha Selim",
+      "role": "Algemeen Directeur - General Manager",
+      "credentials": {
+        "title": "Referenties",
+        "item_1": "Docent/Onderzoeker (QC Education Officer), Hogeschool van Amsterdam",
+        "item_2": "MVP Oprichter Lid QSECDEF",
+        "item_3": "PhD Kwantum Theoretische & Computationele Chemie",
+        "item_4": "M.Sc. Kwantumfysica, Lasers & Materialen"
+      },
+      "talks": {
+        "title": "Recente Lezingen",
+        "item_1": "Co-spreker lightning talk Simulating quantum molecular dynamics with Julia op JuliaCon 2024",
+        "item_2": "Spreker, Koolstofdioxide (CO2) als kwantum moleculaire sensor in protoplanetaire schijven, op APS March Meeting 2024",
+        "item_3": "Panelist op het QED-C Kwantum & AI Gebruiksscenario's Panel (2025)"
+      },
+      "publications": {
+        "title": "Recente Publicaties",
+        "item_1": "Koolstofdioxide (CO2) als kwantum moleculaire sensor in protoplanetaire schijven, op APS March Meeting 2024",
+        "item_2": "State-to-state rovibrationele overgangssnelheden voor CO2 in de buigmodus bij botsingen met He-atomen, J. Chem. Phys., 159, 164310 (2023)"
+      },
+      "linkedin": "LinkedIn Profiel",
+      "view_profile": "Bekijk Volledig Profiel"
+    },
+    "founder_2": {
+      "name": "Alain Chancé",
+      "role": "Voorzitter - President",
+      "credentials": {
+        "title": "Referenties",
+        "item_1": "Hoofdconsultant met meer dan 30 jaar ervaring bij grote managementadviesbureaus",
+        "item_2": "MVP Oprichter Lid QSECDEF",
+        "item_3": "IEEE Senior Lid",
+        "item_4": "Sociëteitsaffiliatie American Chemical Society (ACS)",
+        "item_5": "Lid American Physical Society (APS)",
+        "item_6": "Qiskit Advocate & IBM Gecertificeerd Associate Developer",
+        "item_7": "Mastergraad in Wetenschap en Uitvoerende Techniek MINES Saint-Etienne, Frankrijk (1981)"
+      },
+      "talks": {
+        "title": "Recente Lezingen",
+        "item_1": "Co-spreker lightning talk Simulating quantum molecular dynamics with Julia op JuliaCon 2024",
+        "item_2": "Keynote co-spreker \"Combining the power of AI with Quantum\" op het World Artificial Intelligence Cannes Festival (WAICF), Cannes, Frankrijk, 9 feb. 2024",
+        "item_3": "Panelist op het QED-C Kwantum & AI Gebruiksscenario's Panel (2025)"
+      },
+      "publications": {
+        "title": "Recente Publicaties",
+        "item_1": "QPP-Alain, repository van de conferentiepaper Quantum Permutation Pad with Qiskit Runtime",
+        "item_2": "Quantum Permutation Pad Corinthians, In: Femmam, S., Lorenz, P. (eds) Recente ontwikkelingen in communicatienetwerken en embedded systemen",
+        "item_3": "Quantum Chemistry and Computing for the Curious: Illustrated with Python and Qiskit® code, Keeper L. Sharkey, Alain Chancé, Packt (2022)"
+      },
+      "linkedin": "LinkedIn Profiel",
+      "view_profile": "Bekijk Volledig Profiel"
+    }
+  },
+  "contact": {
+    "title": "Contacteer Ons",
+    "description": "Neem contact op met ons team",
+    "location": {
+      "title": "Onze Locatie",
+      "address": "MOLKET SAS, 38, rue des Mathurins, 75008, Parijs, Frankrijk"
+    },
+    "email": {
+      "title": "Mail Ons",
+      "contact_email": "contact@molket.io",
+      "business_email": "business@molket.io"
+    },
+    "phone": {
+      "title": "Bel Ons",
+      "number": "+33 1 42 65 28 27"
+    },
+    "request_demo": "Vraag een Demo aan"
+  },
+  "footer": {
+    "description": "MolKet biedt consulting- en AI-diensten voor het modelleren van kwantum moleculaire oplossingen met cloudgebaseerde software op hybride HPC en kwantum computing platforms.",
+    "quick_links": {
+      "title": "Snelle Links",
+      "about": "Over Ons",
+      "services": "Diensten",
+      "how_it_works": "Hoe Het Werkt",
+      "team": "Ons Team",
+      "contact": "Contact"
+    },
+    "resources": {
+      "title": "Bronnen",
+      "use_cases": "Gebruiksscenario's",
+      "lab": "Lab",
+      "molket_jl": "MolKet.jl",
+      "legal_mentions": "Wettelijke vermeldingen"
+    },
+    "copyright": "© 2025 MolKet SAS. Alle rechten voorbehouden."
+  }
+}
