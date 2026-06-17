@@ -177,11 +177,11 @@ Error generating stack: `+s.message+`
         .mw-canvas{
           position:relative;
           width:100%;
-          height:1020px;
+          height:560px;
           overflow:visible;
         }
         @media (max-width:1300px){
-          .mw-canvas{height:1500px;}
+          .mw-canvas{height:700px;}
         }
         .box{
           position:absolute;
