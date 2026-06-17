@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MolKet News</title>
+    <meta
+      name="description"
+      content="Latest updates and announcements from MolKet."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f8fafc;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --accent: #2563eb;
+        --border: #e2e8f0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+
+      .brand {
+        font-weight: 800;
+        letter-spacing: 0.04em;
+      }
+
+      .back-link {
+        text-decoration: none;
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+
+      .lead {
+        color: var(--muted);
+        margin: 0.75rem 0 2rem;
+        font-size: 1.05rem;
+      }
+
+      .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1rem;
+      }
+
+      .date {
+        color: var(--accent);
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+      }
+
+      .title {
+        margin: 0 0 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      .desc {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="topbar">
+        <div class="brand">MolKet</div>
+        <a class="back-link" href="./">Back to Home</a>
+      </div>
+
+      <h1>News</h1>
+      <p class="lead">Latest updates from MolKet's quantum and AI initiatives.</p>
+
+      <section class="news-grid" aria-label="Latest news">
+        <article class="card">
+          <div class="date">June 2026</div>
+          <h2 class="title">New Quantum Simulation Workflows</h2>
+          <p class="desc">
+            We expanded AI-assisted workflow templates for faster molecular simulation setup and improved reproducibility.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="date">May 2026</div>
+          <h2 class="title">Expanded Collaboration Network</h2>
+          <p class="desc">
+            MolKet is growing partnerships across research and industry to accelerate practical quantum use cases.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="date">April 2026</div>
+          <h2 class="title">Platform Performance Improvements</h2>
+          <p class="desc">
+            Recent platform upgrades improved orchestration reliability and reduced turnaround time for complex jobs.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
