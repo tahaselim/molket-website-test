@@ -29,27 +29,10 @@
     color:var(--ink);
     font-family:'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     min-height:100vh;
-    padding:26px 18px 50px;
+    padding:0;
   }
   .wrap{max-width:1640px; margin:0 auto;}
 
-  header{
-    display:flex; align-items:baseline; justify-content:space-between;
-    flex-wrap:wrap; gap:10px; margin-bottom:18px; padding-bottom:14px;
-    border-bottom:1px solid var(--panel-line);
-  }
-  .title-block{display:flex; flex-direction:column; gap:4px;}
-  .eyebrow{font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--teal); font-weight:600;}
-  h1{font-family:'Segoe UI', system-ui, -apple-system, sans-serif; font-size:24px; font-weight:700; margin:0; color:var(--ink);}
-  .runbtn{
-    background:var(--navy-light); color:#fff; border:1px solid #5a78e0; border-radius:6px;
-    padding:9px 18px; font-family:inherit; font-size:12px; letter-spacing:.08em;
-    text-transform:uppercase; font-weight:700; cursor:pointer; transition:transform .15s, box-shadow .15s;
-  }
-  .runbtn:hover{transform:translateY(-1px); box-shadow:0 6px 18px -6px rgba(91,120,224,.6);}
-  .runbtn:disabled{opacity:.5; cursor:default;}
-
-  /* === stage canvas — absolute positioned to mirror original diagram exactly === */
   .canvas{
     position:relative;
     width:100%;
@@ -118,15 +101,6 @@
   .arrowhead{ fill:var(--line); opacity:0; transition:opacity .3s ease .5s; }
   .arrowhead.in{ opacity:1; }
 
-  footer{
-    margin-top:10px; padding-top:14px; border-top:1px solid var(--panel-line);
-    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
-    color:var(--ink-dim); font-size:11px;
-  }
-  .legend{display:flex; gap:16px; flex-wrap:wrap;}
-  .legend-item{display:flex; align-items:center; gap:6px;}
-  .swatch{width:10px;height:10px;border-radius:2px;display:inline-block;}
-
   @media (prefers-reduced-motion: reduce){
     .box, .conn-path, .arrowhead, .group-outline, .callout, .callout-line{transition:none !important;}
   }
@@ -135,30 +109,10 @@
 <body>
 <div class="wrap">
 
-  <header>
-    <div class="title-block">
-      <span class="eyebrow">Pipeline · Compute-aided design</span>
-      <h1>Molecular Design Workflow</h1>
-    </div>
-    <button class="runbtn" id="runBtn">▶ Play animation</button>
-  </header>
-
   <div class="canvas" id="canvas">
     <svg class="connectors" id="connSvg"></svg>
     <!-- boxes injected via JS for precise sequencing & positioning -->
   </div>
-
-  <footer>
-    <div class="legend">
-      <div class="legend-item"><span class="swatch" style="background:#3a64bd;"></span> Input / setup</div>
-      <div class="legend-item"><span class="swatch" style="background:#149b93;"></span> Spec sheet</div>
-      <div class="legend-item"><span class="swatch" style="background:#dd4e5e;"></span> Process step</div>
-      <div class="legend-item"><span class="swatch" style="background:#8d84e2;"></span> Aggregation</div>
-      <div class="legend-item"><span class="swatch" style="background:#e07b89;"></span> Compute backend</div>
-      <div class="legend-item"><span class="swatch" style="background:#1c265a;"></span> Display / output</div>
-    </div>
-    <div>5-stage hybrid CPU · QPU · GPU pipeline</div>
-  </footer>
 
 </div>
 
@@ -427,9 +381,6 @@ function resetAll(){
 }
 
 async function play(){
-  const btn = document.getElementById('runBtn');
-  btn.disabled = true;
-  btn.textContent = '◼ Playing…';
   resetAll();
   await sleep(150);
   for(const group of sequence){
@@ -439,11 +390,8 @@ async function play(){
     });
     await sleep(160);
   }
-  btn.disabled = false;
-  btn.textContent = '↺ Replay';
 }
 
-document.getElementById('runBtn').addEventListener('click', play);
 // auto-play once on load
 window.addEventListener('load', ()=> setTimeout(play, 400));
 </script>
