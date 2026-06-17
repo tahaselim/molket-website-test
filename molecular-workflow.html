@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Molecular Design Workflow — Reveal</title>
+<style>
+  :root{
+    --bg:#0a0d18;
+    --panel-line:#23284a;
+    --ink:#e8eaf5;
+    --ink-dim:#8a8fb0;
+    --navy:#1d2a63;
+    --navy-light:#3b56b8;
+    --teal:#1fb6ad;
+    --coral:#e85c6b;
+    --coral-dim:#e08a93;
+    --lav:#9c95e8;
+    --line:#3a4170;
+    --line-dim:#262b4d;
+    --gold:#e8c34a;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(circle at 12% 8%, #141a33 0%, transparent 45%),
+      radial-gradient(circle at 88% 92%, #14182c 0%, transparent 50%),
+      var(--bg);
+    color:var(--ink);
+    font-family:'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    min-height:100vh;
+    padding:26px 18px 50px;
+  }
+  .wrap{max-width:1640px; margin:0 auto;}
+
+  header{
+    display:flex; align-items:baseline; justify-content:space-between;
+    flex-wrap:wrap; gap:10px; margin-bottom:18px; padding-bottom:14px;
+    border-bottom:1px solid var(--panel-line);
+  }
+  .title-block{display:flex; flex-direction:column; gap:4px;}
+  .eyebrow{font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--teal); font-weight:600;}
+  h1{font-family:'Segoe UI', system-ui, -apple-system, sans-serif; font-size:24px; font-weight:700; margin:0; color:var(--ink);}
+  .runbtn{
+    background:var(--navy-light); color:#fff; border:1px solid #5a78e0; border-radius:6px;
+    padding:9px 18px; font-family:inherit; font-size:12px; letter-spacing:.08em;
+    text-transform:uppercase; font-weight:700; cursor:pointer; transition:transform .15s, box-shadow .15s;
+  }
+  .runbtn:hover{transform:translateY(-1px); box-shadow:0 6px 18px -6px rgba(91,120,224,.6);}
+  .runbtn:disabled{opacity:.5; cursor:default;}
+
+  /* === stage canvas — absolute positioned to mirror original diagram exactly === */
+  .canvas{
+    position:relative;
+    width:100%;
+    height:1020px;
+    overflow:visible;
+  }
+  @media (max-width:1300px){
+    .canvas{height:1500px;}
+  }
+
+  .box{
+    position:absolute;
+    opacity:0;
+    transform:translateX(-26px);
+    transition:opacity .55s ease, transform .55s ease;
+  }
+  .box.in{ opacity:1; transform:translateX(0); }
+
+  .lbl{
+    font-size:12px; font-weight:700; color:#fff; text-align:center;
+    padding:10px 12px; border-radius:6px; line-height:1.3;
+  }
+  .small{font-size:10.5px; font-weight:600; padding:8px 9px;}
+
+  .stagehead{
+    background:var(--navy); border:1px solid #2a3578; box-shadow:0 4px 14px -6px rgba(0,0,0,.6);
+  }
+  .blue{background:linear-gradient(180deg,#4d7ad6,#3a64bd); border:1px solid #5e8be8;}
+  .teal{background:linear-gradient(180deg,#1fc2b8,#149b93); border:1px solid #3fd9cf; color:#08221f;}
+  .coral{background:linear-gradient(180deg,#ef6e7b,#dd4e5e); border:1px solid #f08c97;}
+  .lav{background:linear-gradient(180deg,#a9a2ee,#8d84e2); border:1px solid #beb8f3; border-radius:20px;}
+  .pink{background:linear-gradient(180deg,#ef9aa6,#e07b89); border:1px solid #f4b6bf;}
+  .navydeep{background:linear-gradient(180deg,#2a3676,#1c265a); border:1px solid #3b4791;}
+  .dark{background:linear-gradient(180deg,#232a52,#181d3e); border:1px solid #323a6e;}
+  .dashedbox{background:transparent; border:1.5px dashed var(--line); color:var(--ink-dim);}
+  .red{color:var(--coral); font-weight:800; letter-spacing:.04em;}
+
+  .hexshape{clip-path: polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0 50%);}
+  .docshape{clip-path: polygon(0 0, 100% 0, 100% 84%, 90% 100%, 0 100%);}
+  .dispshape{clip-path: polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%);}
+  .group-outline{
+    position:absolute; border:1.5px dashed var(--line-dim); border-radius:10px;
+    opacity:0; transition:opacity .6s ease;
+  }
+  .group-outline.in{opacity:1;}
+
+  .callout{
+    position:absolute; border:1px solid var(--coral-dim); border-radius:6px;
+    padding:7px 11px; font-size:10px; color:var(--coral-dim); font-weight:700;
+    line-height:1.35; opacity:0; transition:opacity .5s ease;
+  }
+  .callout.in{opacity:1;}
+  .callout-line{
+    position:absolute; background:var(--coral-dim); opacity:0; transition:opacity .5s ease;
+  }
+  .callout-line.in{opacity:1;}
+
+  svg.connectors{position:absolute; top:0; left:0; width:100%; height:100%; overflow:visible; pointer-events:none;}
+  .conn-path{
+    fill:none; stroke:var(--line); stroke-width:2.5;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition: stroke-dashoffset 0.7s ease;
+  }
+  .conn-path.in{ stroke-dashoffset:0; }
+  .arrowhead{ fill:var(--line); opacity:0; transition:opacity .3s ease .5s; }
+  .arrowhead.in{ opacity:1; }
+
+  footer{
+    margin-top:10px; padding-top:14px; border-top:1px solid var(--panel-line);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+    color:var(--ink-dim); font-size:11px;
+  }
+  .legend{display:flex; gap:16px; flex-wrap:wrap;}
+  .legend-item{display:flex; align-items:center; gap:6px;}
+  .swatch{width:10px;height:10px;border-radius:2px;display:inline-block;}
+
+  @media (prefers-reduced-motion: reduce){
+    .box, .conn-path, .arrowhead, .group-outline, .callout, .callout-line{transition:none !important;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="title-block">
+      <span class="eyebrow">Pipeline · Compute-aided design</span>
+      <h1>Molecular Design Workflow</h1>
+    </div>
+    <button class="runbtn" id="runBtn">▶ Play animation</button>
+  </header>
+
+  <div class="canvas" id="canvas">
+    <svg class="connectors" id="connSvg"></svg>
+    <!-- boxes injected via JS for precise sequencing & positioning -->
+  </div>
+
+  <footer>
+    <div class="legend">
+      <div class="legend-item"><span class="swatch" style="background:#3a64bd;"></span> Input / setup</div>
+      <div class="legend-item"><span class="swatch" style="background:#149b93;"></span> Spec sheet</div>
+      <div class="legend-item"><span class="swatch" style="background:#dd4e5e;"></span> Process step</div>
+      <div class="legend-item"><span class="swatch" style="background:#8d84e2;"></span> Aggregation</div>
+      <div class="legend-item"><span class="swatch" style="background:#e07b89;"></span> Compute backend</div>
+      <div class="legend-item"><span class="swatch" style="background:#1c265a;"></span> Display / output</div>
+    </div>
+    <div>5-stage hybrid CPU · QPU · GPU pipeline</div>
+  </footer>
+
+</div>
+
+<script>
+/* ===========================================================
+   Layout model — absolute coordinates mirroring the source diagram.
+   Columns (x ranges, px):
+   A  left flow (manual/db)        0   - 200
+   B  Hamiltonian                  260 - 520
+   C  Hybrid optimizer              580 - 860
+   D  Sync output                  920 - 1180
+   E  Molecular design output      1240 - 1480
+   =========================================================== */
+
+const canvas = document.getElementById('canvas');
+const connSvg = document.getElementById('connSvg');
+
+// Helper to create a box
+function box(id, x, y, w, h, cls, html, extraStyle=''){
+  const el = document.createElement('div');
+  el.id = id;
+  el.className = 'box ' + cls;
+  el.style.left = x+'px';
+  el.style.top = y+'px';
+  el.style.width = w+'px';
+  el.style.minHeight = h+'px';
+  el.style.display = 'flex';
+  el.style.alignItems = 'center';
+  el.style.justifyContent = 'center';
+  if(extraStyle) el.style.cssText += extraStyle;
+  el.innerHTML = `<span class="lbl ${cls.includes('small')?'small':''}" style="background:transparent;padding:6px;width:100%;">${html}</span>`;
+  canvas.appendChild(el);
+  return el;
+}
+
+function groupOutline(id,x,y,w,h){
+  const el = document.createElement('div');
+  el.id = id;
+  el.className = 'group-outline';
+  el.style.left=x+'px'; el.style.top=y+'px'; el.style.width=w+'px'; el.style.height=h+'px';
+  canvas.appendChild(el);
+  return el;
+}
+
+/* ---------- COLUMN A: left flow ---------- */
+box('a-initiate', 0, 40, 110, 30, '', '<span class="red">● INITIATE</span>', 'background:transparent;border:none;box-shadow:none;');
+box('a-moldesign', 130, 30, 150, 50, 'blue dispshape', 'Molecular<br>design');
+
+box('a-manual', 0, 130, 130, 44, 'dark small', 'Manual');
+box('a-geom', 0, 200, 130, 50, 'navydeep small', 'Geometry<br>optimization');
+box('a-confirm', 0, 280, 130, 50, 'navydeep small', 'Confirm the<br>structure');
+
+box('a-database', 150, 130, 130, 44, 'dark small', 'Database');
+groupOutline('a-retrieve-outline', 145, 195, 140, 130);
+box('a-retrieve', 155, 205, 120, 36, 'navydeep small', '⛁ Retrieve');
+box('a-db-icon', 165, 255, 100, 60, '', '🗄', 'background:transparent;border:none;box-shadow:none;font-size:30px;display:flex;align-items:center;justify-content:center;');
+
+box('a-prepare', 30, 365, 170, 50, 'coral hexshape small', 'Prepare the<br>structure');
+
+/* ---------- COLUMN B: Hamiltonian ---------- */
+box('b-header', 300, 20, 230, 46, 'stagehead', 'Hamiltonian');
+groupOutline('b-outline', 300, 100, 230, 290);
+box('b-spec', 320, 115, 190, 60, 'teal docshape small', 'type, basis, and<br>specify output');
+box('b-type', 330, 200, 170, 40, 'blue small', 'Type of computations');
+box('b-basis', 330, 250, 170, 60, 'blue small', 'Basis set: electronic,<br>vibrational, and rotational');
+box('b-required', 330, 325, 170, 40, 'blue small', 'Required output');
+box('b-display', 300, 420, 230, 48, 'navydeep dispshape', 'Display the<br>Hamiltonian');
+
+/* ---------- COLUMN C: Hybrid optimizer ---------- */
+box('c-header', 580, 20, 250, 46, 'stagehead', 'Hybrid optimizer');
+
+// callout
+const callout = document.createElement('div');
+callout.className = 'callout';
+callout.id = 'c-callout';
+callout.style.left = '720px';
+callout.style.top = '-90px';
+callout.style.width = '210px';
+callout.textContent = 'Trial calculation to estimate the computational cost';
+canvas.style.position='relative';
+canvas.appendChild(callout);
+const calloutLine = document.createElement('div');
+calloutLine.className='callout-line';
+calloutLine.id='c-callout-line';
+calloutLine.style.left='735px';
+calloutLine.style.top='-44px';
+calloutLine.style.width='1px';
+calloutLine.style.height='64px';
+canvas.appendChild(calloutLine);
+
+box('c-estimate', 600, 90, 210, 50, 'lav small', 'Estimate the<br>computational cost');
+groupOutline('c-outline', 580, 165, 250, 320);
+box('c-prepdata', 600, 180, 210, 44, 'coral hexshape small', 'Prepare data for the<br>computing backends');
+box('c-sendapi', 600, 235, 210, 40, 'coral hexshape small', 'send data via APIs');
+
+box('c-cpu', 600, 340, 65, 44, 'pink small', 'CPU');
+box('c-qpu', 672, 340, 65, 44, 'pink small', 'QPU');
+box('c-gpu', 744, 340, 65, 44, 'pink small', 'GPU');
+
+box('c-collect', 600, 420, 210, 50, 'lav small', 'Collect data/results');
+
+/* ---------- COLUMN D: Sync output data ---------- */
+box('d-header', 920, 20, 250, 46, 'stagehead', 'Sync output data');
+groupOutline('d-outline', 920, 100, 250, 360);
+box('d-group', 940, 115, 210, 46, 'lav small', 'Group results/ data');
+box('d-format', 940, 175, 210, 44, 'coral hexshape small', 'Prepare presentation<br>format');
+box('d-analysis', 940, 235, 210, 44, 'dark small', 'Perform quick analysis');
+box('d-final', 940, 295, 210, 60, 'dark small', 'Prepare final<br>presentation layers');
+
+/* ---------- COLUMN E: Output ---------- */
+box('e-header', 1240, 20, 240, 46, 'stagehead', 'Molecular design output');
+box('e-display', 1240, 100, 240, 48, 'navydeep dispshape', 'Display the full results');
+
+/* ===========================================================
+   CONNECTOR PATHS — drawn with SVG, matching the source arrows
+   =========================================================== */
+function path(id, d){
+  const p = document.createElementNS('http://www.w3.org/2000/svg','path');
+  p.setAttribute('id', id);
+  p.setAttribute('d', d);
+  p.setAttribute('class', 'conn-path');
+  connSvg.appendChild(p);
+  return p;
+}
+function arrowAt(id, x, y, rot=0){
+  const a = document.createElementNS('http://www.w3.org/2000/svg','polygon');
+  a.setAttribute('id', id);
+  a.setAttribute('points', '0,-6 0,6 10,0');
+  a.setAttribute('transform', `translate(${x},${y}) rotate(${rot})`);
+  a.setAttribute('class', 'arrowhead');
+  connSvg.appendChild(a);
+  return a;
+}
+
+// Initiate -> Molecular design
+path('p-init-md', 'M110,55 L130,55');
+// Molecular design -> Manual (down-left) and -> Database (down-right)
+path('p-md-manual', 'M180,80 L180,110 L65,110 L65,130');
+path('p-md-database', 'M205,80 L205,110 L215,110 L215,130');
+// manual chain
+path('p-manual-geom', 'M65,174 L65,200');
+path('p-geom-confirm', 'M65,250 L65,280');
+// confirm -> prepare
+path('p-confirm-prepare', 'M65,330 L65,350 L115,350 L115,365');
+// database -> retrieve -> prepare
+path('p-database-retrieve', 'M215,174 L215,205');
+path('p-retrieve-prepare', 'M215,320 L215,350 L145,350 L145,365');
+// prepare -> hamiltonian header (long horizontal)
+path('p-prepare-hamiltonian', 'M200,390 L470,390 L470,300 L470,43 L300,43');
+arrowAt('ah-prepare-hamiltonian', 300,43,180);
+
+// hamiltonian header -> spec block
+path('p-bhdr-spec', 'M415,66 L415,115');
+// spec -> three sub items
+path('p-spec-type', 'M415,175 L415,220');
+path('p-spec-basis', 'M415,175 L415,250 L415,250');
+path('p-spec-required', 'M415,175 L415,300 L415,325');
+// required -> display
+path('p-required-display', 'M415,365 L415,420');
+arrowAt('ah-required-display', 415,420,90);
+
+// hamiltonian header -> hybrid optimizer header
+path('p-ham-hybrid', 'M530,43 L705,43');
+arrowAt('ah-ham-hybrid', 705,43,0);
+
+// callout -> estimate
+path('p-callout-estimate', 'M735,-26 L735,90');
+
+// hybrid header -> estimate
+path('p-chdr-estimate', 'M705,66 L705,90');
+// estimate -> prepdata
+path('p-estimate-prepdata', 'M705,140 L705,180');
+path('p-prepdata-send', 'M705,224 L705,235');
+// send -> cpu/qpu/gpu fan
+path('p-send-cpu', 'M705,275 L632,340');
+path('p-send-qpu', 'M705,275 L705,340');
+path('p-send-gpu', 'M705,275 L777,340');
+// cpu/qpu/gpu -> collect fan
+path('p-cpu-collect', 'M632,384 L705,420');
+path('p-qpu-collect', 'M705,384 L705,420');
+path('p-gpu-collect', 'M777,384 L705,420');
+
+// hybrid header -> sync header
+path('p-hybrid-sync', 'M830,43 L1045,43');
+arrowAt('ah-hybrid-sync', 1045,43,0);
+// sync header -> group
+path('p-shdr-group', 'M1045,66 L1045,115');
+path('p-group-format', 'M1045,161 L1045,175');
+path('p-format-analysis', 'M1045,219 L1045,235');
+path('p-analysis-final', 'M1045,279 L1045,295');
+
+// sync header -> output header
+path('p-sync-output', 'M1170,43 L1360,43 L1240,43');
+arrowAt('ah-sync-output', 1360,43,0);
+// output header -> display
+path('p-outhdr-display', 'M1360,66 L1360,100');
+arrowAt('ah-outhdr-display', 1360,100,90);
+
+/* ===========================================================
+   SEQUENCING — left to right reveal
+   =========================================================== */
+const sequence = [
+  // Stage 0
+  ['a-initiate'],
+  ['a-moldesign','p-init-md'],
+  ['p-md-manual','p-md-database'],
+  ['a-manual','a-database'],
+  ['p-manual-geom'],
+  ['a-geom'],
+  ['p-geom-confirm'],
+  ['a-confirm'],
+  ['p-database-retrieve'],
+  ['a-retrieve-outline','a-retrieve','a-db-icon'],
+  ['p-confirm-prepare','p-retrieve-prepare'],
+  ['a-prepare'],
+  ['p-prepare-hamiltonian','ah-prepare-hamiltonian'],
+
+  // Stage 1 — Hamiltonian
+  ['b-header'],
+  ['p-bhdr-spec'],
+  ['b-outline','b-spec'],
+  ['p-spec-type','p-spec-basis','p-spec-required'],
+  ['b-type','b-basis','b-required'],
+  ['p-required-display','ah-required-display'],
+  ['b-display'],
+  ['p-ham-hybrid','ah-ham-hybrid'],
+
+  // Stage 2 — Hybrid optimizer
+  ['c-header'],
+  ['c-callout','c-callout-line','p-callout-estimate'],
+  ['p-chdr-estimate'],
+  ['c-estimate'],
+  ['p-estimate-prepdata'],
+  ['c-outline','c-prepdata'],
+  ['p-prepdata-send'],
+  ['c-sendapi'],
+  ['p-send-cpu','p-send-qpu','p-send-gpu'],
+  ['c-cpu','c-qpu','c-gpu'],
+  ['p-cpu-collect','p-qpu-collect','p-gpu-collect'],
+  ['c-collect'],
+  ['p-hybrid-sync','ah-hybrid-sync'],
+
+  // Stage 3 — Sync output
+  ['d-header'],
+  ['p-shdr-group'],
+  ['d-outline','d-group'],
+  ['p-group-format'],
+  ['d-format'],
+  ['p-format-analysis'],
+  ['d-analysis'],
+  ['p-analysis-final'],
+  ['d-final'],
+  ['p-sync-output','ah-sync-output'],
+
+  // Stage 4 — Output
+  ['e-header'],
+  ['p-outhdr-display','ah-outhdr-display'],
+  ['e-display'],
+];
+
+function sleep(ms){ return new Promise(r=>setTimeout(r,ms)); }
+
+function resetAll(){
+  document.querySelectorAll('.box, .group-outline, .callout, .callout-line').forEach(el=>el.classList.remove('in'));
+  document.querySelectorAll('.conn-path, .arrowhead').forEach(el=>el.classList.remove('in'));
+}
+
+async function play(){
+  const btn = document.getElementById('runBtn');
+  btn.disabled = true;
+  btn.textContent = '◼ Playing…';
+  resetAll();
+  await sleep(150);
+  for(const group of sequence){
+    group.forEach(id=>{
+      const el = document.getElementById(id);
+      if(el) el.classList.add('in');
+    });
+    await sleep(160);
+  }
+  btn.disabled = false;
+  btn.textContent = '↺ Replay';
+}
+
+document.getElementById('runBtn').addEventListener('click', play);
+// auto-play once on load
+window.addEventListener('load', ()=> setTimeout(play, 400));
+</script>
+
+</body>
+</html>
