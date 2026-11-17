@@ -4,6 +4,7 @@
     "home": "Home",
     "about": "Over ons",
     "services": "Diensten",
+    "projects": "Projecten",
     "news": "Nieuws",
     "how_it_works": "Hoe het werkt",
     "team": "Team",
@@ -53,19 +54,49 @@
     "explore_button": "Ontdek Onze Diensten"
   },
   "news": {
-    "title": "Laatste nieuws",
-    "description": "Recente updates van MolKet",
-    "item_1": {
-      "title": "Nieuwe workflows voor kwantumsimulatie",
-      "description": "We breiden onze AI-ondersteunde workflowsjablonen uit voor snellere en nauwkeurigere opzet van moleculaire simulaties."
+    "title": "Nieuws & Evenementen",
+    "description": "Lezingen, panels en publicaties van het MolKet-team",
+    "types": {
+      "talk": "Lezing",
+      "publication": "Publicatie",
+      "panel": "Panel",
+      "recognition": "Erkenning",
+      "course": "Cursus",
+      "event": "Evenement"
     },
-    "item_2": {
-      "title": "Uitgebreid samenwerkingsnetwerk",
-      "description": "MolKet breidt partnerschappen uit binnen onderzoek en industrie om praktische kwantumtoepassingen te versnellen."
-    },
-    "item_3": {
-      "title": "Prestatieverbeteringen van het platform",
-      "description": "Recente updates hebben de job-orkestratie verbeterd en de doorlooptijd voor complexe rekenworkloads verkort."
+    "items": {
+      "ieee_p1947": {
+        "title": "Vicevoorzitter van IEEE P1947",
+        "summary": "Gefeliciteerd aan Alain Chancé met zijn benoeming tot vicevoorzitter van de IEEE P1947-werkgroep, en dank voor zijn voortdurende bijdragen aan het project. Dit is een belangrijke erkenning van Alains expertise en zijn inzet voor de ontwikkeling van standaarden voor quantum computing."
+      },
+      "qc_course": {
+        "title": "Nieuwe cursus quantum computing",
+        "summary": "Dr. Taha Selim publiceerde een nieuwe cursus over quantum computing vanaf nul."
+      },
+      "cairo_spring_school": {
+        "title": "Spring School in Quantum Technologies aan de Universiteit van Caïro",
+        "summary": "De Universiteit van Caïro organiseerde een spring school in kwantumtechnologieën, met Dr. Taha Selim als mede-organisator en spreker. Het evenement trok studenten en onderzoekers uit de hele regio en omvatte een paneldiscussie over geavanceerde kwantumalgoritmen door Dr. Keeper L. Sharkey en Alain Chancé."
+      },
+      "qedc_panel": {
+        "title": "QED-C panel over Quantum & AI use cases",
+        "summary": "Dr. Taha Selim en Alain Chancé namen deel aan het QED-C panel over toepassingen op het snijvlak van quantum computing en AI."
+      },
+      "juliacon_2024": {
+        "title": "Kwantum moleculaire dynamica simuleren met Julia op JuliaCon 2024",
+        "summary": "Onze oprichters gaven samen een lightning talk over het simuleren van kwantum moleculaire dynamica met Julia en MolKet.jl."
+      },
+      "aps_march_2024": {
+        "title": "CO₂ als kwantum moleculaire sensor op de APS March Meeting 2024",
+        "summary": "Dr. Taha Selim presenteerde onderzoek naar koolstofdioxide als kwantum moleculaire sensor in protoplanetaire schijven."
+      },
+      "waicf_2024": {
+        "title": "Keynote op het World AI Cannes Festival (WAICF)",
+        "summary": "Alain Chancé gaf samen de keynote \"Combining the power of AI with Quantum\" in Cannes, Frankrijk."
+      },
+      "jcp_2023": {
+        "title": "Nieuw artikel in The Journal of Chemical Physics",
+        "summary": "State-to-state rovibrational transition rates for CO₂ in the bend mode in collisions with He atoms, J. Chem. Phys. 159, 164310 (2023)."
+      }
     }
   },
   "how_it_works": {
@@ -234,7 +265,9 @@
       "services": "Diensten",
       "how_it_works": "Hoe Het Werkt",
       "team": "Ons Team",
-      "contact": "Contact"
+      "contact": "Contact",
+      "projects": "Projecten",
+      "news": "Nieuws"
     },
     "resources": {
       "title": "Bronnen",
@@ -244,5 +277,73 @@
       "legal_mentions": "Wettelijke vermeldingen"
     },
     "copyright": "© 2025 MolKet SAS. Alle rechten voorbehouden."
+  },
+  "projects": {
+    "page_title": "Projecten",
+    "page_description": "Opdrachten die we voor klanten hebben uitgevoerd, en het onderzoek en de open-source tools achter het werk van MolKet in quantum computing en AI",
+    "reference": {
+      "title": "Referentieprojecten",
+      "description": "Publiek aangekondigde opdrachten, uitgevoerd met onze klanten en partners",
+      "photo_credit": "Fotocredits",
+      "labels": {
+        "services": "Onze bijdrage",
+        "client": "Klant",
+        "organiser": "Georganiseerd door",
+        "partners": "Uitvoeringspartners"
+      },
+      "items": {
+        "tdra_camp_2026": {
+          "title": "AI-curriculum voor TDRA Summer Camp 2026",
+          "practice": "Onderwijs & Training",
+          "location": "Abu Dhabi & Dubai, VAE",
+          "client": "OTIMI Systems Company LLC",
+          "organiser": "Telecommunications and Digital Government Regulatory Authority van de VAE (TDRA)",
+          "partners": "Global Innovation & Entrepreneurship (GIE) en MENA Robotics",
+          "summary": "MolKet heeft OTIMI Systems ondersteund bij het verzorgen van het curriculum kunstmatige intelligentie voor TDRA Summer Camp 2026. Via managementadvies leverden we specialistische expertise voor het AI Innovators-traject, een praktijkgericht programma dat leerlingen van 9 tot 15 jaar kennis laat maken met toegepaste AI, datakwaliteit en verantwoord technologiegebruik. De opdracht maakt deel uit van de groeiende onderwijs- en trainingspraktijk van MolKet, naast ons werk in quantum computing.",
+          "services": [
+            "Ontwerp van het AI-curriculum",
+            "Ontwikkeling van lesmateriaal",
+            "Voorbereiding van trainers"
+          ]
+        }
+      }
+    },
+    "research": {
+      "title": "Onderzoek & Open Source",
+      "description": "Open-source tools, platforms en onderzoek achter de kwantum moleculaire oplossingen van MolKet"
+    },
+    "learn_more": "Meer informatie",
+    "categories": {
+      "open_source": "Open source",
+      "platform": "Platform",
+      "research": "Onderzoek"
+    },
+    "items": {
+      "molket_jl": {
+        "title": "MolKet.jl",
+        "description": "Ons open-source Julia-pakket voor het simuleren van kwantum moleculaire dynamica, met kant-en-klare voorbeelden voor onderzoekers en ontwikkelaars."
+      },
+      "molket_lab": {
+        "title": "MolKet Lab",
+        "description": "Een JupyterHub-omgeving in de cloud waarin je de engine van MolKet draait en direct in de browser met simulaties experimenteert."
+      },
+      "molket_studio": {
+        "title": "MolKet Studio",
+        "description": "Een AI-ondersteunde omgeving om simulaties te ontwerpen in natuurlijke taal of als stroomdiagram, waarbij de engine per stap geschikte HPC- of kwantumhardware kiest."
+      },
+      "ai_agents": {
+        "title": "AI-agents voor chemisch ontwerp",
+        "description": "AI-agents getraind op de in- en uitvoer van kwantumchemie- en dynamica-algoritmen, die rekenintensieve stappen vervangen om chemisch ontwerp te versnellen."
+      },
+      "sqd_pls": {
+        "title": "SQD-PLS: kwantum lineaire oplosser",
+        "description": "Breidt sample-based quantum diagonalization uit van chemie naar lineaire stelsels A x = b. De toestand |b⟩ evolueert onder A op een kwantumcomputer, en de bemonsterde bitstrings selecteren een kleine deelruimte waarin het stelsel klassiek wordt opgelost, zonder fase-estimatie, hulpqubits of post-selectie (anders dan HHL). Een 4×4-stelsel werd exact opgelost op IBM's ibm_fez, en een probleem met 1024 onbekenden bereikte in simulatie een relatieve fout van 10⁻⁵ met 33 configuraties."
+      },
+      "qpp": {
+        "title": "Quantum Permutation Pad",
+        "description": "Onderzoek naar kwantumveilige cryptografie, met een implementatie van de Quantum Permutation Pad op Qiskit Runtime."
+      }
+    },
+    "read_paper": "Lees het artikel"
   }
 }

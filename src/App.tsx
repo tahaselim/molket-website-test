@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
-import News from './components/News';
 import HowItWorks from './components/HowItWorks';
 import Videos from './components/Videos';
 import Team from './components/Team';
@@ -17,6 +16,26 @@ function App() {
     useEffect(() => {
         // Update page title
         document.title = "MolKet | Quantum Molecular Solutions";
+
+        // Arriving from another page with a hash (e.g. /#team): scroll once sections have rendered
+        if (window.location.hash.length > 1) {
+            const id = window.location.hash.substring(1);
+            const scrollToHash = () => setTimeout(() => {
+                const element = document.getElementById(id);
+                if (!element) return;
+                const targetTop = () => element.getBoundingClientRect().top + window.scrollY - 80;
+                window.scrollTo({ top: targetTop(), behavior: 'smooth' });
+                // Lazy content above the target can still grow during the scroll; correct once it settles
+                setTimeout(() => {
+                    if (Math.abs(element.getBoundingClientRect().top - 80) > 10) {
+                        window.scrollTo({ top: targetTop(), behavior: 'smooth' });
+                    }
+                }, 1500);
+            }, 300);
+            // Wait for images to finish loading so the target doesn't move after scrolling
+            if (document.readyState === 'complete') scrollToHash();
+            else window.addEventListener('load', scrollToHash, { once: true });
+        }
 
         // Smooth scroll functionality
         const handleAnchorClick = (e: MouseEvent) => {
@@ -61,7 +80,6 @@ function App() {
             <Hero />
             <About />
             <Services />
-            <News />
             <Videos />
             <HowItWorks />
             <Model />

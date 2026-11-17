@@ -15,7 +15,13 @@ L.Marker.prototype.options.icon = new L.Icon({
   iconAnchor: [12, 41],
 });
 
-const Footer: React.FC = () => {
+type FooterProps = {
+  /** false on secondary pages: section links then point back to the home page */
+  onHome?: boolean;
+};
+
+const Footer: React.FC<FooterProps> = ({ onHome = true }) => {
+  const section = (hash: string) => (onHome ? hash : `/${hash}`);
   const { t } = useTranslation();
 
   return (
@@ -52,11 +58,13 @@ const Footer: React.FC = () => {
             >
               <h3 className="text-lg font-bold mb-4">{t('footer.quick_links.title')}</h3>
               <ul className="space-y-2">
-                <li><a href="#about" className="text-gray-400 hover:text-white">{t('footer.quick_links.about')}</a></li>
-                <li><a href="#services" className="text-gray-400 hover:text-white">{t('footer.quick_links.services')}</a></li>
-                <li><a href="#how-it-works" className="text-gray-400 hover:text-white">{t('footer.quick_links.how_it_works')}</a></li>
-                <li><a href="#team" className="text-gray-400 hover:text-white">{t('footer.quick_links.team')}</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-white">{t('footer.quick_links.contact')}</a></li>
+                <li><a href={section('#about')} className="text-gray-400 hover:text-white">{t('footer.quick_links.about')}</a></li>
+                <li><a href={section('#services')} className="text-gray-400 hover:text-white">{t('footer.quick_links.services')}</a></li>
+                <li><a href="/projects.html" className="text-gray-400 hover:text-white">{t('footer.quick_links.projects')}</a></li>
+                <li><a href={section('#how-it-works')} className="text-gray-400 hover:text-white">{t('footer.quick_links.how_it_works')}</a></li>
+                <li><a href={section('#team')} className="text-gray-400 hover:text-white">{t('footer.quick_links.team')}</a></li>
+                <li><a href="/news.html" className="text-gray-400 hover:text-white">{t('footer.quick_links.news')}</a></li>
+                <li><a href={section('#contact')} className="text-gray-400 hover:text-white">{t('footer.quick_links.contact')}</a></li>
               </ul>
             </motion.div>
 

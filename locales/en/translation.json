@@ -4,6 +4,7 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "projects": "Projects",
     "news": "News",
     "how_it_works": "How It Works",
     "team": "Team",
@@ -53,19 +54,49 @@
     "explore_button": "Explore Our Services"
   },
   "news": {
-    "title": "Latest News",
-    "description": "Recent updates from MolKet",
-    "item_1": {
-      "title": "New Quantum Simulation Workflows",
-      "description": "We are expanding our AI-assisted workflow templates for faster and more accurate molecular simulation setups."
+    "title": "News & Events",
+    "description": "Talks, panels and publications from the MolKet team",
+    "types": {
+      "talk": "Talk",
+      "publication": "Publication",
+      "panel": "Panel",
+      "recognition": "Recognition",
+      "course": "Course",
+      "event": "Event"
     },
-    "item_2": {
-      "title": "Expanded Collaboration Network",
-      "description": "MolKet is growing partnerships across research and industry to accelerate real-world quantum use cases."
-    },
-    "item_3": {
-      "title": "Platform Performance Improvements",
-      "description": "Recent updates improved job orchestration and reduced turnaround times for complex computational workloads."
+    "items": {
+      "ieee_p1947": {
+        "title": "Vice-Chair of IEEE P1947",
+        "summary": "Congratulations to Alain Chancé on his appointment as Vice-Chair of the IEEE P1947 working group, and thank you for his ongoing contributions to the project. This is a significant recognition of Alain's expertise and dedication to advancing quantum computing standards."
+      },
+      "qc_course": {
+        "title": "New Quantum Computing Course",
+        "summary": "Dr. Taha Selim published a new course on quantum computing from scratch."
+      },
+      "cairo_spring_school": {
+        "title": "Cairo University Spring School in Quantum Technologies",
+        "summary": "Cairo University hosted a spring school in quantum technologies, with Dr. Taha Selim as a co-organizer and speaker. The event attracted students and researchers from across the region and featured a panel discussion on advanced quantum algorithms by Dr. Keeper L. Sharkey and Alain Chancé."
+      },
+      "qedc_panel": {
+        "title": "QED-C Quantum & AI Use Cases Panel",
+        "summary": "Dr. Taha Selim and Alain Chancé joined the QED-C panel on use cases at the intersection of quantum computing and AI."
+      },
+      "juliacon_2024": {
+        "title": "Simulating quantum molecular dynamics with Julia at JuliaCon 2024",
+        "summary": "Our founders co-presented a lightning talk on simulating quantum molecular dynamics with Julia and MolKet.jl."
+      },
+      "aps_march_2024": {
+        "title": "CO₂ as a quantum molecular sensor at the APS March Meeting 2024",
+        "summary": "Dr. Taha Selim presented research on carbon dioxide as a quantum molecular sensor in protoplanetary disks."
+      },
+      "waicf_2024": {
+        "title": "Keynote at the World AI Cannes Festival (WAICF)",
+        "summary": "Alain Chancé co-delivered the keynote \"Combining the power of AI with Quantum\" in Cannes, France."
+      },
+      "jcp_2023": {
+        "title": "New paper in The Journal of Chemical Physics",
+        "summary": "State-to-state rovibrational transition rates for CO₂ in the bend mode in collisions with He atoms, J. Chem. Phys. 159, 164310 (2023)."
+      }
     }
   },
   "how_it_works": {
@@ -234,7 +265,9 @@
       "services": "Services",
       "how_it_works": "How It Works",
       "team": "Our Team",
-      "contact": "Contact"
+      "contact": "Contact",
+      "projects": "Projects",
+      "news": "News"
     },
     "resources": {
       "title": "Resources",
@@ -244,5 +277,73 @@
       "legal_mentions": "Mentions légales"
     },
     "copyright": "© 2025 MolKet SAS. All rights reserved."
+  },
+  "projects": {
+    "page_title": "Projects",
+    "page_description": "Client engagements we have delivered, and the research and open-source tools behind MolKet's work in quantum computing and AI",
+    "reference": {
+      "title": "Reference Projects",
+      "description": "Publicly announced engagements delivered with our clients and partners",
+      "photo_credit": "Photo credits",
+      "labels": {
+        "services": "Our contribution",
+        "client": "Client",
+        "organiser": "Organised by",
+        "partners": "Implementation partners"
+      },
+      "items": {
+        "tdra_camp_2026": {
+          "title": "AI Curriculum for TDRA Summer Camp 2026",
+          "practice": "Education & Training",
+          "location": "Abu Dhabi & Dubai, UAE",
+          "client": "OTIMI Systems Company LLC",
+          "organiser": "UAE Telecommunications and Digital Government Regulatory Authority (TDRA)",
+          "partners": "Global Innovation & Entrepreneurship (GIE) and MENA Robotics",
+          "summary": "MolKet assisted OTIMI Systems in delivering the Artificial Intelligence curriculum for TDRA Summer Camp 2026. Through management consulting services, we provided specialist expertise for the AI Innovators track, a hands-on programme introducing students aged 9 to 15 to applied artificial intelligence, data quality and responsible technology use. The engagement is part of MolKet's growing education and training practice, alongside our work in quantum computing.",
+          "services": [
+            "AI curriculum design",
+            "Content development",
+            "Trainer preparation"
+          ]
+        }
+      }
+    },
+    "research": {
+      "title": "Research & Open Source",
+      "description": "Open-source tools, platforms and research driving MolKet's quantum molecular solutions"
+    },
+    "learn_more": "Learn more",
+    "categories": {
+      "open_source": "Open source",
+      "platform": "Platform",
+      "research": "Research"
+    },
+    "items": {
+      "molket_jl": {
+        "title": "MolKet.jl",
+        "description": "Our open-source Julia package for simulating quantum molecular dynamics, with ready-to-run examples for researchers and developers."
+      },
+      "molket_lab": {
+        "title": "MolKet Lab",
+        "description": "A cloud-hosted JupyterHub environment where you can run MolKet's engine and experiment with simulations directly in the browser."
+      },
+      "molket_studio": {
+        "title": "MolKet Studio",
+        "description": "An AI-assisted environment to design simulations in natural language or as a flow chart, with the engine choosing suitable HPC or quantum hardware for each step."
+      },
+      "ai_agents": {
+        "title": "AI Agents for Chemical Design",
+        "description": "AI agents trained on the inputs and outputs of quantum chemistry and dynamics algorithms, replacing computationally expensive steps to speed up chemical design."
+      },
+      "sqd_pls": {
+        "title": "SQD-PLS: Quantum Linear Solver",
+        "description": "Extends sample-based quantum diagonalization from chemistry to linear systems A x = b. The state |b⟩ is evolved under A on a quantum computer, and the sampled bit strings select a small subspace where the system is solved classically, with no phase estimation, ancilla qubits or post-selection (unlike HHL). A 4×4 system was solved exactly on IBM's ibm_fez, and a 1024-unknown problem reached 10⁻⁵ relative error with 33 configurations in simulation."
+      },
+      "qpp": {
+        "title": "Quantum Permutation Pad",
+        "description": "Research into quantum-safe cryptography, implementing the Quantum Permutation Pad with Qiskit Runtime."
+      }
+    },
+    "read_paper": "Read the paper"
   }
 }

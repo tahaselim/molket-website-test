@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-const Navbar: React.FC = () => {
+type NavbarProps = {
+  /** false on secondary pages (e.g. news.html): section links then point back to the home page */
+  onHome?: boolean;
+};
+
+const Navbar: React.FC<NavbarProps> = ({ onHome = true }) => {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -15,14 +20,24 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
+  // Hash links scroll within the home page; from another page they go back to it.
+  const section = (hash: string) => (onHome ? hash : `/${hash}`);
+
+  const sectionLinks = [
     { key: 'navbar.home', href: '#home' },
     { key: 'navbar.about', href: '#about' },
     { key: 'navbar.services', href: '#services' },
-    { key: 'navbar.news', href: '#news' },
+    { key: 'navbar.projects', href: '/projects.html' },
     { key: 'navbar.how_it_works', href: '#how-it-works' },
     { key: 'navbar.team', href: '#team' },
     { key: 'navbar.contact', href: '#contact' },
+  ];
+
+  // Projects and News live on their own pages; News is placed just before Contact.
+  const navLinks = [
+    ...sectionLinks.slice(0, -1).map((l) => ({ ...l, href: l.href.startsWith('#') ? section(l.href) : l.href })),
+    { key: 'navbar.news', href: '/news.html' },
+    { ...sectionLinks[sectionLinks.length - 1], href: section('#contact') },
   ];
 
   const resourceLinks = [
@@ -45,18 +60,18 @@ const Navbar: React.FC = () => {
           <div className="flex items-center justify-between h-16 xlm:h-20 pl-4 sm:pl-6 lg:pl-8">
             {/* Logo Section */}
             <div className="flex items-center xlm:mt-0">
-              <a href="#home" className="flex items-center">
+              <a href={section('#home')} className="flex items-center">
                 <img src="/logo.png" alt="MolKet Logo" className="h-7 w-auto" loading="lazy" />
               </a>
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden xlm:flex items-center space-x-6 pr-4 sm:pr-6 lg:pr-8">
+            <div className="hidden xlm:flex items-center space-x-1 pr-4 sm:pr-6 lg:pr-8">
               {navLinks.map((link) => (
                   <a
                       key={link.key}
                       href={link.href}
-                      className={`px-3 py-2 rounded-md text-sm font-semibold transition-colors duration-200 hover:text-blue-400 ${
+                      className={`px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 ${
                           scrolled ? 'text-white' : 'text-white'
                       }`}
                   >

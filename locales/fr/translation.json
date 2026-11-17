@@ -4,6 +4,7 @@
     "home": "Accueil",
     "about": "À Propos",
     "services": "Services",
+    "projects": "Projets",
     "news": "Actualités",
     "how_it_works": "Comment Ça Marche",
     "team": "Équipe",
@@ -53,19 +54,49 @@
     "explore_button": "Découvrir nos Services"
   },
   "news": {
-    "title": "Dernières actualités",
-    "description": "Mises à jour récentes de MolKet",
-    "item_1": {
-      "title": "Nouveaux workflows de simulation quantique",
-      "description": "Nous étendons nos modèles de workflow assistés par IA pour accélérer et fiabiliser la préparation des simulations moléculaires."
+    "title": "Actualités & Événements",
+    "description": "Conférences, tables rondes et publications de l'équipe MolKet",
+    "types": {
+      "talk": "Conférence",
+      "publication": "Publication",
+      "panel": "Table ronde",
+      "recognition": "Distinction",
+      "course": "Cours",
+      "event": "Événement"
     },
-    "item_2": {
-      "title": "Réseau de collaboration élargi",
-      "description": "MolKet développe ses partenariats dans la recherche et l'industrie pour accélérer les cas d'usage quantiques concrets."
-    },
-    "item_3": {
-      "title": "Améliorations de performance de la plateforme",
-      "description": "Des mises à jour récentes ont amélioré l'orchestration des tâches et réduit les délais d'exécution des charges de calcul complexes."
+    "items": {
+      "ieee_p1947": {
+        "title": "Vice-président du groupe IEEE P1947",
+        "summary": "Félicitations à Alain Chancé pour sa nomination au poste de vice-président du groupe de travail IEEE P1947, et merci pour ses contributions continues au projet. C'est une reconnaissance importante de l'expertise d'Alain et de son engagement pour faire progresser les normes de l'informatique quantique."
+      },
+      "qc_course": {
+        "title": "Nouveau cours d'informatique quantique",
+        "summary": "Dr Taha Selim a publié un nouveau cours d'informatique quantique à partir de zéro."
+      },
+      "cairo_spring_school": {
+        "title": "École de printemps en technologies quantiques de l'Université du Caire",
+        "summary": "L'Université du Caire a accueilli une école de printemps en technologies quantiques, avec Dr Taha Selim comme co-organisateur et intervenant. L'événement a réuni des étudiants et chercheurs de toute la région et comprenait une table ronde sur les algorithmes quantiques avancés animée par Dr Keeper L. Sharkey et Alain Chancé."
+      },
+      "qedc_panel": {
+        "title": "Table ronde QED-C sur les cas d'usage Quantique & IA",
+        "summary": "Dr Taha Selim et Alain Chancé ont participé à la table ronde du QED-C consacrée aux cas d'usage à l'intersection de l'informatique quantique et de l'IA."
+      },
+      "juliacon_2024": {
+        "title": "Simuler la dynamique moléculaire quantique avec Julia à JuliaCon 2024",
+        "summary": "Nos fondateurs ont co-présenté une lightning talk sur la simulation de la dynamique moléculaire quantique avec Julia et MolKet.jl."
+      },
+      "aps_march_2024": {
+        "title": "Le CO₂ comme capteur moléculaire quantique à l'APS March Meeting 2024",
+        "summary": "Dr Taha Selim a présenté ses travaux sur le dioxyde de carbone comme capteur moléculaire quantique dans les disques protoplanétaires."
+      },
+      "waicf_2024": {
+        "title": "Keynote au World AI Cannes Festival (WAICF)",
+        "summary": "Alain Chancé a co-présenté la keynote « Combining the power of AI with Quantum » à Cannes, France."
+      },
+      "jcp_2023": {
+        "title": "Nouvel article dans The Journal of Chemical Physics",
+        "summary": "State-to-state rovibrational transition rates for CO₂ in the bend mode in collisions with He atoms, J. Chem. Phys. 159, 164310 (2023)."
+      }
     }
   },
   "how_it_works": {
@@ -234,7 +265,9 @@
       "services": "Services",
       "how_it_works": "Fonctionnement",
       "team": "Notre Équipe",
-      "contact": "Contact"
+      "contact": "Contact",
+      "projects": "Projets",
+      "news": "Actualités"
     },
     "resources": {
       "title": "Ressources",
@@ -244,5 +277,73 @@
       "legal_mentions": "Mentions légales"
     },
     "copyright": "© 2025 MolKet SAS. Tous droits réservés."
+  },
+  "projects": {
+    "page_title": "Projets",
+    "page_description": "Les missions réalisées pour nos clients, ainsi que la recherche et les outils open source qui sous-tendent le travail de MolKet en informatique quantique et en IA",
+    "reference": {
+      "title": "Projets de référence",
+      "description": "Missions annoncées publiquement, réalisées avec nos clients et partenaires",
+      "photo_credit": "Crédits photo",
+      "labels": {
+        "services": "Notre contribution",
+        "client": "Client",
+        "organiser": "Organisé par",
+        "partners": "Partenaires de mise en œuvre"
+      },
+      "items": {
+        "tdra_camp_2026": {
+          "title": "Programme d'IA pour le TDRA Summer Camp 2026",
+          "practice": "Éducation & Formation",
+          "location": "Abou Dhabi & Dubaï, Émirats arabes unis",
+          "client": "OTIMI Systems Company LLC",
+          "organiser": "Autorité de régulation des télécommunications et de l'administration numérique des Émirats arabes unis (TDRA)",
+          "partners": "Global Innovation & Entrepreneurship (GIE) et MENA Robotics",
+          "summary": "MolKet a accompagné OTIMI Systems dans la mise en œuvre du programme d'intelligence artificielle du TDRA Summer Camp 2026. Par des services de conseil en management, nous avons apporté une expertise spécialisée au parcours AI Innovators, un programme pratique qui initie les jeunes de 9 à 15 ans à l'intelligence artificielle appliquée, à la qualité des données et à un usage responsable des technologies. Cette mission s'inscrit dans l'activité croissante de MolKet en éducation et formation, aux côtés de nos travaux en informatique quantique.",
+          "services": [
+            "Conception du programme d'IA",
+            "Développement des contenus",
+            "Préparation des formateurs"
+          ]
+        }
+      }
+    },
+    "research": {
+      "title": "Recherche & Open Source",
+      "description": "Outils open source, plateformes et recherches au cœur des solutions moléculaires quantiques de MolKet"
+    },
+    "learn_more": "En savoir plus",
+    "categories": {
+      "open_source": "Open source",
+      "platform": "Plateforme",
+      "research": "Recherche"
+    },
+    "items": {
+      "molket_jl": {
+        "title": "MolKet.jl",
+        "description": "Notre package Julia open source pour simuler la dynamique moléculaire quantique, avec des exemples prêts à l'emploi pour chercheurs et développeurs."
+      },
+      "molket_lab": {
+        "title": "MolKet Lab",
+        "description": "Un environnement JupyterHub hébergé dans le cloud pour exécuter le moteur de MolKet et expérimenter des simulations directement dans le navigateur."
+      },
+      "molket_studio": {
+        "title": "MolKet Studio",
+        "description": "Un environnement assisté par l'IA pour concevoir des simulations en langage naturel ou sous forme d'organigramme, le moteur choisissant le matériel HPC ou quantique adapté à chaque étape."
+      },
+      "ai_agents": {
+        "title": "Agents IA pour la conception chimique",
+        "description": "Des agents IA entraînés sur les entrées et sorties des algorithmes de chimie et de dynamique quantiques, remplaçant les étapes coûteuses en calcul pour accélérer la conception chimique."
+      },
+      "sqd_pls": {
+        "title": "SQD-PLS : solveur linéaire quantique",
+        "description": "Étend la diagonalisation quantique par échantillonnage de la chimie aux systèmes linéaires A x = b. L'état |b⟩ évolue sous A sur un ordinateur quantique, et les chaînes de bits échantillonnées sélectionnent un petit sous-espace où le système est résolu classiquement, sans estimation de phase, qubits auxiliaires ni post-sélection (contrairement à HHL). Un système 4×4 a été résolu exactement sur le processeur ibm_fez d'IBM, et un problème à 1024 inconnues a atteint une erreur relative de 10⁻⁵ avec 33 configurations en simulation."
+      },
+      "qpp": {
+        "title": "Quantum Permutation Pad",
+        "description": "Recherche en cryptographie résistante au quantique, avec une implémentation du Quantum Permutation Pad sur Qiskit Runtime."
+      }
+    },
+    "read_paper": "Lire l'article"
   }
 }
