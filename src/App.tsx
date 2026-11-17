@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+import News from './components/News';
 import HowItWorks from './components/HowItWorks';
 import Videos from './components/Videos';
 import Team from './components/Team';
@@ -60,6 +61,7 @@ function App() {
             <Hero />
             <About />
             <Services />
+            <News />
             <Videos />
             <HowItWorks />
             <Model />

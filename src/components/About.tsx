@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import MolecularWorkflow from './MolecularWorkflow';
 
 const About: React.FC = () => {
   const { t } = useTranslation();
@@ -69,10 +70,7 @@ const About: React.FC = () => {
               </h3>
               <div className="h-1 w-16 bg-blue-600 mx-auto mb-8"></div>
               <div className="rounded-lg overflow-hidden shadow-xl">
-                <video className="w-full h-auto" controls>
-                  <source src="./ezgif.com-gif-to-mp4.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <MolecularWorkflow />
               </div>
             </motion.div>
           </div>

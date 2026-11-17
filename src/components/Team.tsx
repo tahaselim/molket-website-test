@@ -1,14 +1,16 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Linkedin, Youtube, Award } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-const Team: React.FC = () => {
-  const { t } = useTranslation(); // Initialize translation functionality
+import { motion } from 'framer-motion';
+import { Linkedin, Youtube, Github, Globe } from 'lucide-react';
 
+const Team: React.FC = () => {
+  const { t } = useTranslation();
+
+  // --- DATA: FOUNDERS ---
   const teamMembers = [
     {
-      name: t('team.founder_1.name'), // Fetch localized name
-      title: t('team.founder_1.role'), // Fetch localized role
+      name: t('team.founder_1.name'),
+      title: t('team.founder_1.role'),
       image: "./taha_profile_bw_enhance_circle_wbackn.png",
       credentials: [
         t('team.founder_1.credentials.item_1'),
@@ -27,7 +29,7 @@ const Team: React.FC = () => {
         },
         {
           title: t('team.founder_1.talks.item_3'),
-          url:"https://www.youtube.com/watch?v=5yBo3Jb71so"
+          url: "https://www.youtube.com/watch?v=5yBo3Jb71so"
         }
       ],
       publications: [
@@ -67,7 +69,7 @@ const Team: React.FC = () => {
         },
         {
           title: t('team.founder_1.talks.item_3'),
-          url:"https://www.youtube.com/watch?v=5yBo3Jb71so"
+          url: "https://www.youtube.com/watch?v=5yBo3Jb71so"
         }
       ],
       publications: [
@@ -86,146 +88,325 @@ const Team: React.FC = () => {
       ],
       linkedin: "https://www.linkedin.com/in/alainchance/",
       github: "https://github.com/AlainChance",
+    }
+  ];
+
+  // --- DATA: BUSINESS DEVELOPERS ---
+  const businessDevelopers = [
+    {
+      name: t('team.businessdeveloper_1.name'),
+      title: t('team.businessdeveloper_1.role'),
+      image: "./Abdo.jpeg",
+      linkedin: "https://www.linkedin.com/in/abdelrahman-elsayed-4230b5261/",
+      github: "https://github.com/7Abdoman7",
     },
+    {
+      name: t('team.businessdeveloper_2.name'),
+      title: t('team.businessdeveloper_2.role'),
+      image: "./MoatazFayek.jpg",
+      linkedin: "https://www.linkedin.com/in/moataz-mohamed-fayek/",
+      github: "https://github.com/Moataz5197",
+    },
+    {
+      name: t('team.businessdeveloper_3.name'),
+      title: t('team.businessdeveloper_3.role'),
+      image: "./asaad_elfiky.jpg",
+      linkedin: "https://www.linkedin.com/in/saadfiky/",
+      github: "https://github.com/SaadFiky",
+    },
+    {
+      name: t('team.businessdeveloper_4.name'),
+      title: t('team.businessdeveloper_4.role'),
+      image: "./ztarek.jpg",
+      linkedin: "www.linkedin.com/in/ziad-tarek-4089a7116",
+      github: "https://github.com/Ziadt160e",
+    },
+    {
+      name: t('team.businessdeveloper_5.name'),
+      title: t('team.businessdeveloper_5.role'),
+      image: "./asafaan.PNG",
+      linkedin: "https://www.linkedin.com/in/asmaa-saafan-592231171",
+      //github: "https://github.com/Ziadt160e",
+    },
+    {
+      name: t('team.businessdeveloper_6.name'),
+      title: t('team.businessdeveloper_6.role'),
+      image: "./mfergany.jpg",
+      linkedin: "https://www.linkedin.com/in/ferganykhalil/",
+      github: "https://github.com/FerganyKhalil",
+    }
+  ];
+
+  // --- DATA: PARTNERS ---
+  const partners = [
+    {
+      name: t('team.partner_1.name'),
+      title: t('team.partner_1.role'),
+      image: "./quandela-logotype-black-RGB.png", // Placeholder image
+      linkedin: "#",
+      github: "#",
+      website: "https://www.quandela.com/",
+    },
+    {
+      name: t('team.partner_2.name'),
+      title: t('team.partner_2.role'),
+      image: "./argentumAI.jpeg",
+      linkedin: "#",
+      github: "#",
+      website: "https://argentum-ai.com/",
+    }
   ];
 
   const container = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
+      transition: { staggerChildren: 0.2 }
+    }
   };
 
   const item = {
-    hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
   };
 
   return (
-      <section id="team" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-              className="text-center mb-16"
+    <section id="team" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* --- HEADER --- */}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            {t('team.title')}
+          </h2>
+          <div className="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
+        </motion.div>
+
+        {/* --- FOUNDERS SECTION --- */}
+        <motion.div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          {teamMembers.map((member, index) => (
+            <motion.div
+              key={index}
+              className="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row"
+              variants={item}
+            >
+              {/* Image container */}
+              <div className="md:w-1/3 bg-gradient-to-br from-blue-600 to-indigo-800 flex items-center justify-center p-6">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="rounded-full h-40 w-40 object-cover border-4 border-white shadow-lg"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Content container */}
+              <div className="md:w-2/3 p-6 flex flex-col">
+                <h3 className="text-2xl font-bold text-gray-900">{member.name}</h3>
+                <p className="text-blue-600 font-medium mb-4">{member.title}</p>
+
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">
+                    {t('team.founder_1.credentials.title')}
+                  </h4>
+                  <ul className="space-y-1">
+                    {member.credentials.map((credential, idx) => (
+                      <li key={idx} className="text-sm text-gray-600 flex items-start">
+                        <span className="text-blue-500 mr-2">•</span>
+                        {credential}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">
+                    {t('team.founder_1.publications.title')}
+                  </h4>
+                  <ul className="space-y-1">
+                    {member.publications.map((pub, idx) => (
+                      <li key={idx} className="text-sm text-gray-600">
+                        <a href={pub.url} className="text-blue-600 hover:underline flex items-start">
+                          <span className="text-blue-500 mr-2">•</span>
+                          {pub.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">
+                    {t('team.founder_1.talks.title')}
+                  </h4>
+                  <ul className="space-y-1">
+                    {member.talks.map((talk, idx) => (
+                      <li key={idx} className="text-sm text-gray-600">
+                        <a href={talk.url} className="text-blue-600 hover:underline flex items-start">
+                          <span className="text-blue-500 mr-2">•</span>
+                          {talk.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-auto flex space-x-3">
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-gray-100 hover:bg-blue-100 rounded-full text-blue-600 transition-colors duration-300"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-gray-100 hover:bg-red-100 rounded-full text-red-600 transition-colors duration-300"
+                  >
+                    <Youtube className="w-5 h-5" />
+                  </a>
+                  <a
+                    href={member.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-300 cursor-pointer mt-2"
+                  >
+                    {t('team.founder_1.view_profile')}
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* --- BUSINESS DEVELOPERS SECTION --- */}
+        {businessDevelopers.length > 0 && (
+          <>
+            <motion.div
+              className="text-center mb-12 mt-20"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('team.title')} {/* Localized title */}
-            </h2>
-            <div className="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
-          </motion.div>
+            >
+              <h3 className="text-2xl font-bold text-gray-800">
+                Business Developers
+              </h3>
+            </motion.div>
 
-          <motion.div
-              className="grid grid-cols-1 lg:grid-cols-2 gap-12"
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
               variants={container}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-          >
-            {teamMembers.map((member, index) => (
+            >
+              {businessDevelopers.map((member, index) => (
                 <motion.div
-                    key={index}
-                    className="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row"
-                    variants={item}
+                  key={index}
+                  className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 text-center"
+                  variants={item}
                 >
-                  {/* Image container */}
-                  <div className="md:w-1/3 bg-gradient-to-br from-blue-600 to-indigo-800 flex items-center justify-center p-6">
-                    <img
-                        src={member.image}
-                        alt={member.name}
-                        className="rounded-full h-40 w-40 object-cover border-4 border-white shadow-lg"
-                        loading="lazy"
-                    />
-                  </div>
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="rounded-full h-32 w-32 object-cover border-4 border-blue-50 mb-4"
+                    loading="lazy"
+                  />
+                  <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
+                  <p className="text-blue-600 font-medium mb-4">{member.title}</p>
 
-                  {/* Content container */}
-                  <div className="md:w-2/3 p-6 flex flex-col">
-                    <h3 className="text-2xl font-bold text-gray-900">{member.name}</h3>
-                    <p className="text-blue-600 font-medium mb-4">{member.title}</p>
-
-                    <div className="mb-4">
-                      <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">
-                        {t('team.founder_1.credentials.title')} {/* Localized credentials title */}
-                      </h4>
-                      <ul className="space-y-1">
-                        {member.credentials.map((credential, idx) => (
-                            <li key={idx} className="text-sm text-gray-600 flex items-start">
-                              <span className="text-blue-500 mr-2">•</span>
-                              {credential}
-                            </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="mb-4">
-                      <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">
-                        {t('team.founder_1.publications.title')} {/* Localized publications title */}
-                      </h4>
-                      <ul className="space-y-1">
-                        {member.publications.map((pub, idx) => (
-                            <li key={idx} className="text-sm text-gray-600">
-                              <a href={pub.url} className="text-blue-600 hover:underline flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                {pub.title}
-                              </a>
-                            </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="mb-4">
-                      <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">
-                        {t('team.founder_1.talks.title')} {/* Localized talks title */}
-                      </h4>
-                      <ul className="space-y-1">
-                        {member.talks.map((talk, idx) => (
-                            <li key={idx} className="text-sm text-gray-600">
-                              <a href={talk.url} className="text-blue-600 hover:underline flex items-start">
-                                <span className="text-blue-500 mr-2">•</span>
-                                {talk.title}
-                              </a>
-                            </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="mt-auto flex space-x-3">
-                      <a
-                          href={member.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-2 bg-gray-100 hover:bg-blue-100 rounded-full text-blue-600 transition-colors duration-300"
-                      >
-                        <Linkedin className="w-5 h-5"/>
-                      </a>
-                      <a
-                          href="https://www.youtube.com/channel"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-2 bg-gray-100 hover:bg-red-100 rounded-full text-red-600 transition-colors duration-300"
-                      >
-                        <Youtube className="w-5 h-5"/>
-                      </a>
-                      <a
-                          href={member.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-300 cursor-pointer mt-2"
-                      >
-                        {t('team.founder_1.view_profile')} {/* Localized 'View Full Profile' link */}
-                      </a>
-                    </div>
+                  <div className="flex justify-center space-x-4 mt-2">
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition-colors">
+                      <Linkedin className="w-6 h-6" />
+                    </a>
+                    <a href={member.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-900 transition-colors">
+                      <Github className="w-6 h-6" />
+                    </a>
                   </div>
                 </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+              ))}
+            </motion.div>
+          </>
+        )}
+
+        {/* --- PARTNERS SECTION --- */}
+        {partners.length > 0 && (
+          <>
+            <motion.div
+              className="text-center mb-16 mt-24"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {t('team.partners_title')}
+              </h2>
+              <div className="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
+            </motion.div>
+
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+              variants={container}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
+              {partners.map((member, index) => (
+                <motion.div
+                  key={index}
+                  className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 text-center"
+                  variants={item}
+                >
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="rounded-full h-32 w-32 object-contain p-4 border-4 border-blue-50 mb-4 bg-white"
+                    loading="lazy"
+                  />
+                  <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
+                  <p className="text-blue-600 font-medium mb-4">{member.title}</p>
+
+                  <div className="flex justify-center space-x-4 mt-2">
+                    {member.website && (
+                      <a href={member.website} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition-colors">
+                        <Globe className="w-6 h-6" />
+                      </a>
+                    )}
+                    {member.linkedin !== "#" && (
+                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition-colors">
+                        <Linkedin className="w-6 h-6" />
+                      </a>
+                    )}
+                    {member.github !== "#" && (
+                      <a href={member.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-900 transition-colors">
+                        <Github className="w-6 h-6" />
+                      </a>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </>
+        )}
+
+      </div>
+    </section>
   );
 };
 

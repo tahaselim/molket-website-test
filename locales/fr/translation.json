@@ -4,6 +4,7 @@
     "home": "Accueil",
     "about": "À Propos",
     "services": "Services",
+    "news": "Actualités",
     "how_it_works": "Comment Ça Marche",
     "team": "Équipe",
     "contact": "Contact",
@@ -50,6 +51,22 @@
       "description": "Conseils d'experts et formation pour aider votre équipe à maîtriser les technologies et applications de l'informatique quantique."
     },
     "explore_button": "Découvrir nos Services"
+  },
+  "news": {
+    "title": "Dernières actualités",
+    "description": "Mises à jour récentes de MolKet",
+    "item_1": {
+      "title": "Nouveaux workflows de simulation quantique",
+      "description": "Nous étendons nos modèles de workflow assistés par IA pour accélérer et fiabiliser la préparation des simulations moléculaires."
+    },
+    "item_2": {
+      "title": "Réseau de collaboration élargi",
+      "description": "MolKet développe ses partenariats dans la recherche et l'industrie pour accélérer les cas d'usage quantiques concrets."
+    },
+    "item_3": {
+      "title": "Améliorations de performance de la plateforme",
+      "description": "Des mises à jour récentes ont amélioré l'orchestration des tâches et réduit les délais d'exécution des charges de calcul complexes."
+    }
   },
   "how_it_works": {
     "title": "Comment Ça Marche ?",
@@ -144,6 +161,51 @@
       },
       "linkedin": "Profil LinkedIn",
       "view_profile": "Voir le Profil Complet"
+    },
+    "businessdeveloper_1": {
+      "name": "Abdelrahman Elsayed Ahmed",
+      "role": "Business Developer",
+      "linkedin": "Profil LinkedIn",
+      "view_profile": "Voir le Profil Complet"
+    },
+    "businessdeveloper_2": {
+      "name": "Moataz Fayek",
+      "role": "Business Developer",
+      "linkedin": "Profil LinkedIn",
+      "view_profile": "Voir le Profil Complet"
+    },
+    "businessdeveloper_3": {
+      "name": "Ahmed Saad El Fiky",
+      "role": "Business Developer",
+      "linkedin": "Profil LinkedIn",
+      "view_profile": "Voir le Profil Complet"
+    },
+    "businessdeveloper_4": {
+      "name": "Ziad Tarek",
+      "role": "Business Developer",
+      "linkedin": "Profil LinkedIn",
+      "view_profile": "Voir le Profil Complet"
+    },
+    "businessdeveloper_5": {
+      "name": "Asmaa Safaan",
+      "role": "Business Developer",
+      "linkedin": "Profil LinkedIn",
+      "view_profile": "Voir le Profil Complet"
+    },
+    "businessdeveloper_6": {
+      "name": "Muhammad Fergany",
+      "role": "Business Developer",
+      "linkedin": "Profil LinkedIn",
+      "view_profile": "Voir le Profil Complet"
+    },
+    "partners_title": "Partenaires",
+    "partner_1": {
+      "name": "Quandela",
+      "role": "Ordinateurs Quantiques Photoniques"
+    },
+    "partner_2": {
+      "name": "ArgentumAI",
+      "role": "Marché de Calcul Alimenté par IA"
     }
   },
   "contact": {

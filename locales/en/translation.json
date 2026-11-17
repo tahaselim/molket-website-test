@@ -4,6 +4,7 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "news": "News",
     "how_it_works": "How It Works",
     "team": "Team",
     "contact": "Contact",
@@ -51,6 +52,22 @@
     },
     "explore_button": "Explore Our Services"
   },
+  "news": {
+    "title": "Latest News",
+    "description": "Recent updates from MolKet",
+    "item_1": {
+      "title": "New Quantum Simulation Workflows",
+      "description": "We are expanding our AI-assisted workflow templates for faster and more accurate molecular simulation setups."
+    },
+    "item_2": {
+      "title": "Expanded Collaboration Network",
+      "description": "MolKet is growing partnerships across research and industry to accelerate real-world quantum use cases."
+    },
+    "item_3": {
+      "title": "Platform Performance Improvements",
+      "description": "Recent updates improved job orchestration and reduced turnaround times for complex computational workloads."
+    }
+  },
   "how_it_works": {
     "title": "How Does It Work?",
     "step_1": {
@@ -88,8 +105,8 @@
     }
   },
   "Our_Development_Model": {
-      "title": "Our Development Model",
-      "subtitle": "We can help you by providing what you need from built-in libraries that help you in your execution."
+    "title": "Our Development Model",
+    "subtitle": "We can help you by providing what you need from built-in libraries that help you in your execution."
   },
   "team": {
     "title": "MolKet Founders",
@@ -144,6 +161,51 @@
       },
       "linkedin": "LinkedIn Profile",
       "view_profile": "View Full Profile"
+    },
+    "businessdeveloper_1": {
+      "name": "Abdelrahman Elsayed Ahmed",
+      "role": "Business Developer",
+      "linkedin": "LinkedIn Profile",
+      "view_profile": "View Full Profile"
+    },
+    "businessdeveloper_2": {
+      "name": "Moataz Fayek",
+      "role": "Business Developer",
+      "linkedin": "LinkedIn Profile",
+      "view_profile": "View Full Profile"
+    },
+    "businessdeveloper_3": {
+      "name": "Ahmed Saad El Fiky",
+      "role": "Business Developer",
+      "linkedin": "LinkedIn Profile",
+      "view_profile": "View Full Profile"
+    },
+    "businessdeveloper_4": {
+      "name": "Ziad Tarek",
+      "role": "Business Developer",
+      "linkedin": "LinkedIn Profile",
+      "view_profile": "View Full Profile"
+    },
+    "businessdeveloper_5": {
+      "name": "Asmaa Safaan",
+      "role": "Business Developer",
+      "linkedin": "LinkedIn Profile",
+      "view_profile": "View Full Profile"
+    },
+    "businessdeveloper_6": {
+      "name": "Muhammad Fergany",
+      "role": "Business Developer",
+      "linkedin": "LinkedIn Profile",
+      "view_profile": "View Full Profile"
+    },
+    "partners_title": "Partners",
+    "partner_1": {
+      "name": "Quandela",
+      "role": "Photonic Quantum Computers"
+    },
+    "partner_2": {
+      "name": "ArgentumAI",
+      "role": "AI-Powered Compute Marketplace"
     }
   },
   "contact": {
