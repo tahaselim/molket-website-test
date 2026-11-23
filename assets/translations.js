@@ -197,6 +197,10 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "Découvrir nos Services",
   "nl": "Ontdek Diensten"
  },
+ "Extending Sample-based Quantum Diagonalization for Solving Systems of Linear Equations — Quantum AI Conference 2026, Indiana University, Indianapolis, USA, August 2026": {
+  "fr": "Extending Sample-based Quantum Diagonalization for Solving Systems of Linear Equations — Quantum AI Conference 2026, Indiana University, Indianapolis, États-Unis, août 2026",
+  "nl": "Extending Sample-based Quantum Diagonalization for Solving Systems of Linear Equations — Quantum AI Conference 2026, Indiana University, Indianapolis, VS, augustus 2026"
+ },
  "Extends sample-based quantum diagonalization from chemistry to linear systems A x = b. The state |b⟩ is evolved under A on a quantum computer, and the sampled bit strings select a small subspace where the system is solved classically, with no phase estimation, ancilla qubits or post-selection (unlike HHL). A 4×4 system was solved exactly on IBM's ibm_fez, and a 1024-unknown problem reached 10⁻⁵ relative error with 33 configurations in simulation.": {
   "fr": "Étend la diagonalisation quantique par échantillonnage de la chimie aux systèmes linéaires A x = b. L'état |b⟩ évolue sous A sur un ordinateur quantique, et les chaînes de bits échantillonnées sélectionnent un petit sous-espace où le système est résolu classiquement, sans estimation de phase, qubits auxiliaires ni post-sélection (contrairement à HHL). Un système 4×4 a été résolu exactement sur le processeur ibm_fez d'IBM, et un problème à 1024 inconnues a atteint une erreur relative de 10⁻⁵ avec 33 configurations en simulation.",
   "nl": "Breidt sample-based quantum diagonalization uit van chemie naar lineaire stelsels A x = b. De toestand |b⟩ evolueert onder A op een kwantumcomputer, en de bemonsterde bitstrings selecteren een kleine deelruimte waarin het stelsel klassiek wordt opgelost, zonder fase-estimatie, hulpqubits of post-selectie (anders dan HHL). Een 4×4-stelsel werd exact opgelost op IBM's ibm_fez, en een probleem met 1024 onbekenden bereikte in simulatie een relatieve fout van 10⁻⁵ met 33 configuraties."
@@ -589,9 +593,21 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "Affilié à l'American Chemical Society (ACS)",
   "nl": "Sociëteitsaffiliatie American Chemical Society (ACS)"
  },
+ "Speaker & Instructor, European Summer School on Quantum Technologies — Amsterdam University of Applied Sciences, July 2026": {
+  "fr": "Intervenant et formateur, European Summer School on Quantum Technologies — Amsterdam University of Applied Sciences, juillet 2026",
+  "nl": "Spreker en docent, European Summer School on Quantum Technologies — Hogeschool van Amsterdam, juli 2026"
+ },
  "Speaker, Carbon dioxide (CO2) as a quantum molecular sensor in protoplanetary disks, at APS March Meeting 2024": {
   "fr": "Conférencier, Carbon dioxide (CO2) as a quantum molecular sensor in protoplanetary disks, à APS March Meeting 2024",
   "nl": "Spreker, Koolstofdioxide (CO2) als kwantum moleculaire sensor in protoplanetaire schijven, op APS March Meeting 2024"
+ },
+ "Speaker, QuBIT-EDU 2026 conference on quantum physics education — RWTH Aachen University, Germany, September 2026": {
+  "fr": "Intervenant, conférence QuBIT-EDU 2026 sur l'enseignement de la physique quantique — RWTH Aachen University, Allemagne, septembre 2026",
+  "nl": "Spreker, QuBIT-EDU 2026-conferentie over onderwijs in kwantumfysica — RWTH Aachen University, Duitsland, september 2026"
+ },
+ "Speaker, Quantum side event of World Summit AI (World AI Week) — Amsterdam, the Netherlands, October 2026": {
+  "fr": "Intervenant, événement quantique en marge du World Summit AI (World AI Week) — Amsterdam, Pays-Bas, octobre 2026",
+  "nl": "Spreker, quantum-side-event van World Summit AI (World AI Week) — Amsterdam, Nederland, oktober 2026"
  },
  "Start Simulation": {
   "fr": "Démarrer la Simulation",
