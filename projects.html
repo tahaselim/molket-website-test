@@ -1,31 +1,804 @@
 <!doctype html>
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon-16x16.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <meta charset="utf-8" />
+    <link href="favicon-16x16.png" rel="icon" type="image/svg+xml" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Projects | MolKet</title>
-    <meta name="description" content="MolKet offers cutting-edge quantum molecular dynamics, cryptography, and neuromorphic computing services, powered by hybrid HPC and AI platforms.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.molket.io/projects.html">
-    <meta property="og:title" content="Projects | MolKet">
-    <meta property="og:description" content="Discover next-generation quantum consulting, molecular simulations, and AI-driven solutions with MolKet.">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.molket.io/projects.html">
-    <meta property="twitter:title" content="Projects | MolKet">
-    <meta property="twitter:description" content="Quantum molecular dynamics, cryptography & neuromorphic computing — all under one roof.">
-    <meta name="theme-color" content="#1e3a8a">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="msapplication-navbutton-color" content="#1e3a8a">
-    <link rel="preload" as="image" href="/logo.png" fetchpriority="high">
-    <script type="module" crossorigin src="/assets/projects-DfG8d2k1.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/i18n-fiMSn2me.js">
-    <link rel="modulepreload" crossorigin href="/assets/PageHeader-DE_bWN7o.js">
-    <link rel="modulepreload" crossorigin href="/assets/map-pin-D6FQbgd2.js">
-    <link rel="stylesheet" crossorigin href="/assets/i18n-DMiUNS2x.css">
+    <meta
+      content="MolKet offers cutting-edge quantum molecular dynamics, cryptography, and neuromorphic computing services, powered by hybrid HPC and AI platforms."
+      name="description"
+    />
+    <meta content="website" property="og:type" />
+    <meta content="https://www.molket.io/projects.html" property="og:url" />
+    <meta content="Projects | MolKet" property="og:title" />
+    <meta
+      content="Discover next-generation quantum consulting, molecular simulations, and AI-driven solutions with MolKet."
+      property="og:description"
+    />
+    <meta content="summary_large_image" property="twitter:card" />
+    <meta content="https://www.molket.io/projects.html" property="twitter:url" />
+    <meta content="Projects | MolKet" property="twitter:title" />
+    <meta
+      content="Quantum molecular dynamics, cryptography &amp; neuromorphic computing — all under one roof."
+      property="twitter:description"
+    />
+    <meta content="#1e3a8a" name="theme-color" />
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="#1e3a8a" name="msapplication-navbutton-color" />
+    <link as="image" fetchpriority="high" href="images/logo.png" rel="preload" />
+
+    <link href="assets/site.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="min-h-screen bg-white overflow-x-hidden">
+        <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent" id="site-nav">
+          <div class="max-w-7xl mx-auto px-0 sm:px-4 lg:px-4">
+            <div class="flex items-center justify-between h-16 xlm:h-20 pl-4 sm:pl-6 lg:pl-8">
+              <div class="flex items-center xlm:mt-0">
+                <a class="flex items-center" href="index.html#home"
+                  ><img alt="MolKet Logo" class="h-7 w-auto" loading="lazy" src="images/logo.png"
+                /></a>
+              </div>
+              <div class="hidden xlm:flex items-center space-x-1 pr-4 sm:pr-6 lg:pr-8">
+                <a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#home"
+                  >Home</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#about"
+                  >About</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#services"
+                  >Services</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="projects.html"
+                  >Projects</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#how-it-works"
+                  >How It Works</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#team"
+                  >Team</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="news.html"
+                  >News</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#contact"
+                  >Contact</a
+                >
+                <div class="relative group">
+                  <button
+                    class="px-3 py-2 rounded-md text-sm font-semibold transition-colors duration-200 text-white flex items-center hover:text-blue-400"
+                  >
+                    Resources<svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                      <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+                  >
+                    <div class="py-1">
+                      <a
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        href="usecases.html"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Use Cases</a
+                      ><a
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        href="https://github.com/molket-io/molket.jl"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Lab</a
+                      ><a
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        href="https://github.com/molket-io/molket.jl/tree/main/examples"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >MolKet.jl</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <select
+                  aria-label="Language"
+                  class="ml-4 px-3 py-1 rounded-md text-sm border bg-transparent text-white border-white hover:border-blue-400 focus:outline-none focus:ring-2 transition duration-200 lang-select"
+                >
+                  <option value="en">EN</option>
+                  <option value="fr">FR</option>
+                  <option value="nl">NL</option>
+                </select>
+              </div>
+              <div class="xlm:hidden flex items-center space-x-2">
+                <select
+                  aria-label="Language"
+                  class="ml-4 px-2 py-1 rounded-md text-sm border bg-transparent text-white border-white hover:border-blue-400 focus:outline-none focus:ring-2 transition duration-200 lang-select"
+                >
+                  <option value="en">EN</option>
+                  <option value="fr">FR</option>
+                  <option value="nl">NL</option></select
+                ><button
+                  aria-expanded="false"
+                  aria-label="Menu"
+                  class="p-2 rounded-md text-white hover:bg-blue-700 hover:text-white focus:outline-none"
+                  id="mobile-menu-button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-menu h-6 w-6"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewbox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M4 5h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 19h16"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="xlm:hidden transition-all duration-300 ease-in-out max-h-0 opacity-0 invisible"
+              id="mobile-menu"
+            >
+              <div
+                class="px-4 sm:px-6 lg:px-8 pt-2 pb-3 space-y-1 bg-gray-900/95 backdrop-blur-sm shadow-lg rounded-b-lg"
+              >
+                <a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#home"
+                  >Home</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#about"
+                  >About</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#services"
+                  >Services</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="projects.html"
+                  >Projects</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#how-it-works"
+                  >How It Works</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#team"
+                  >Team</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="news.html"
+                  >News</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#contact"
+                  >Contact</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="usecases.html"
+                  >Use Cases</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="https://github.com/molket-io/molket.jl"
+                  >Lab</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="https://github.com/molket-io/molket.jl/tree/main/examples"
+                  >MolKet.jl</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+        <header
+          class="relative bg-gradient-to-b from-blue-900 via-indigo-900 to-purple-900 pt-36 pb-20 text-center text-white"
+        >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 reveal">Projects</h1>
+            <p class="text-lg text-blue-100 max-w-3xl mx-auto reveal">
+              Client engagements we have delivered, and the research and open-source tools behind MolKet's work in
+              quantum computing and AI
+            </p>
+            <div class="h-1 w-20 bg-blue-400 mx-auto mt-6"></div>
+          </div>
+        </header>
+        <main>
+          <section class="py-20 bg-white" id="reference-projects">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Reference Projects</h2>
+                <p class="text-lg text-gray-600">
+                  Publicly announced engagements delivered with our clients and partners
+                </p>
+                <div class="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
+              </div>
+              <div class="max-w-5xl mx-auto space-y-10">
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-5 reveal">
+                  <div
+                    class="md:col-span-2 relative min-h-[220px] bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white flex flex-col items-center justify-center p-8 text-center"
+                  >
+                    <div class="w-24 h-24 rounded-full bg-white/10 flex items-center justify-center mb-4">
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-graduation-cap w-12 h-12"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewbox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                        ></path>
+                        <path d="M22 10v6"></path>
+                        <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                      </svg>
+                    </div>
+                    <span class="text-sm uppercase tracking-wider text-blue-200 font-semibold"
+                      >Education &amp; Training</span
+                    >
+                  </div>
+                  <div class="md:col-span-3 p-8">
+                    <div class="flex flex-wrap gap-3 mb-4 text-sm text-gray-500">
+                      <span class="inline-flex items-center gap-1"
+                        ><svg
+                          aria-hidden="true"
+                          class="lucide lucide-calendar w-4 h-4"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M8 2v4"></path>
+                          <path d="M16 2v4"></path>
+                          <rect height="18" rx="2" width="18" x="3" y="4"></rect>
+                          <path d="M3 10h18"></path></svg
+                        >2026</span
+                      ><span class="inline-flex items-center gap-1"
+                        ><svg
+                          aria-hidden="true"
+                          class="lucide lucide-map-pin w-4 h-4"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                          ></path>
+                          <circle cx="12" cy="10" r="3"></circle></svg
+                        >Abu Dhabi &amp; Dubai, UAE</span
+                      >
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI Curriculum for TDRA Summer Camp 2026</h3>
+                    <div class="space-y-4 mb-6">
+                      <p class="text-gray-600">
+                        MolKet SAS is proud to have assisted OTIMI Systems Company LLC in delivering the Artificial
+                        Intelligence curriculum for TDRA Summer Camp 2026, organised by the UAE's Telecommunications and
+                        Digital Government Regulatory Authority (TDRA). OTIMI provided these services to Global
+                        Innovation &amp; Entrepreneurship (GIE) and MENA Robotics, the programme's implementation
+                        partners.
+                      </p>
+                      <p class="text-gray-600">
+                        Through management consulting services, MolKet supported OTIMI with specialist expertise in AI
+                        curriculum design, content development and trainer preparation for the AI Innovators track — a
+                        hands-on programme introducing students aged 9 to 15 to applied artificial intelligence, data
+                        quality and responsible technology use in Abu Dhabi and Dubai.
+                      </p>
+                      <p class="text-gray-600">
+                        Congratulations to TDRA for its commitment to youth empowerment, and our thanks to OTIMI
+                        Systems, GIE and MENA Robotics for a valued collaboration. This engagement is part of MolKet's
+                        growing education and training practice, alongside our work in quantum computing.
+                      </p>
+                    </div>
+                    <p class="text-xs text-gray-400 mb-6">Photo credits: GIE and TDRA</p>
+                    <dl
+                      class="grid grid-cols-1 sm:grid-cols-[auto,1fr] gap-x-4 gap-y-2 text-sm border-t border-gray-100 pt-4"
+                    >
+                      <dt class="inline-flex items-center gap-1 font-semibold text-gray-900">
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-building2 lucide-building-2 w-4 h-4"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                          <path d="M10 6h4"></path>
+                          <path d="M10 10h4"></path>
+                          <path d="M10 14h4"></path>
+                          <path d="M10 18h4"></path></svg
+                        >Client
+                      </dt>
+                      <dd class="text-gray-600">OTIMI Systems Company LLC</dd>
+                      <dt class="inline-flex items-center gap-1 font-semibold text-gray-900">
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-building2 lucide-building-2 w-4 h-4"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                          <path d="M10 6h4"></path>
+                          <path d="M10 10h4"></path>
+                          <path d="M10 14h4"></path>
+                          <path d="M10 18h4"></path></svg
+                        >Organised by
+                      </dt>
+                      <dd class="text-gray-600">
+                        UAE Telecommunications and Digital Government Regulatory Authority (TDRA)
+                      </dd>
+                      <dt class="inline-flex items-center gap-1 font-semibold text-gray-900">
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-users w-4 h-4"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                          <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                          <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                          <circle cx="9" cy="7" r="4"></circle></svg
+                        >Implementation partners
+                      </dt>
+                      <dd class="text-gray-600">Global Innovation &amp; Entrepreneurship (GIE) and MENA Robotics</dd>
+                    </dl>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          <section class="py-20 bg-gray-50" id="research">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Research &amp; Open Source</h2>
+                <p class="text-lg text-gray-600">
+                  Open-source tools, platforms and research driving MolKet's quantum molecular solutions
+                </p>
+                <div class="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                <div
+                  class="bg-white rounded-lg shadow-lg flex flex-col transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl reveal"
+                >
+                  <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex items-start justify-between mb-6">
+                      <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-atom w-8 h-8"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="12" cy="12" r="1"></circle>
+                          <path
+                            d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"
+                          ></path>
+                          <path
+                            d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <span class="text-xs font-semibold px-3 py-1 rounded-full bg-green-100 text-green-800"
+                        >Open source</span
+                      >
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">MolKet.jl</h3>
+                    <p class="text-gray-600 mb-6 flex-1">
+                      Our open-source Julia package for simulating quantum molecular dynamics, with ready-to-run
+                      examples for researchers and developers.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      <span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">Julia</span
+                      ><span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">Quantum dynamics</span>
+                    </div>
+                    <div class="flex flex-wrap gap-x-6 gap-y-2">
+                      <a
+                        class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors"
+                        href="https://github.com/molket-io/molket.jl"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Learn more<svg
+                          aria-hidden="true"
+                          class="lucide lucide-external-link w-4 h-4 ml-1"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M15 3h6v6"></path>
+                          <path d="M10 14 21 3"></path>
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 w-full rounded-b-lg"></div>
+                </div>
+                <div
+                  class="bg-white rounded-lg shadow-lg flex flex-col transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl reveal"
+                >
+                  <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex items-start justify-between mb-6">
+                      <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-workflow w-8 h-8"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect height="8" rx="2" width="8" x="3" y="3"></rect>
+                          <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
+                          <rect height="8" rx="2" width="8" x="13" y="13"></rect>
+                        </svg>
+                      </div>
+                      <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-100 text-blue-800"
+                        >Platform</span
+                      >
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">MolKet Studio</h3>
+                    <p class="text-gray-600 mb-6 flex-1">
+                      An AI-assisted environment to design simulations in natural language or as a flow chart, with the
+                      engine choosing suitable HPC or quantum hardware for each step.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      <span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">AI assistant</span
+                      ><span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">HPC/QC</span>
+                    </div>
+                  </div>
+                  <div class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 w-full rounded-b-lg"></div>
+                </div>
+                <div
+                  class="bg-white rounded-lg shadow-lg flex flex-col transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl reveal"
+                >
+                  <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex items-start justify-between mb-6">
+                      <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-bot w-8 h-8"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M12 8V4H8"></path>
+                          <rect height="12" rx="2" width="16" x="4" y="8"></rect>
+                          <path d="M2 14h2"></path>
+                          <path d="M20 14h2"></path>
+                          <path d="M15 13v2"></path>
+                          <path d="M9 13v2"></path>
+                        </svg>
+                      </div>
+                      <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-100 text-indigo-800"
+                        >Research</span
+                      >
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">AI Agents for Chemical Design</h3>
+                    <p class="text-gray-600 mb-6 flex-1">
+                      AI agents trained on the inputs and outputs of quantum chemistry and dynamics algorithms,
+                      replacing computationally expensive steps to speed up chemical design.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      <span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">AI agents</span
+                      ><span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">Chemistry</span>
+                    </div>
+                    <div class="flex flex-wrap gap-x-6 gap-y-2">
+                      <a
+                        class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors"
+                        href="https://www.youtube.com/watch?v=45OccvEjzIU"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Learn more<svg
+                          aria-hidden="true"
+                          class="lucide lucide-external-link w-4 h-4 ml-1"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M15 3h6v6"></path>
+                          <path d="M10 14 21 3"></path>
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 w-full rounded-b-lg"></div>
+                </div>
+                <div
+                  class="bg-white rounded-lg shadow-lg flex flex-col transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl reveal"
+                >
+                  <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex items-start justify-between mb-6">
+                      <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-sigma w-8 h-8"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"
+                          ></path>
+                        </svg>
+                      </div>
+                      <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-100 text-indigo-800"
+                        >Research</span
+                      >
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">SQD-PLS: Quantum Linear Solver</h3>
+                    <p class="text-gray-600 mb-6 flex-1">
+                      Extends sample-based quantum diagonalization from chemistry to linear systems A x = b. The state
+                      |b⟩ is evolved under A on a quantum computer, and the sampled bit strings select a small subspace
+                      where the system is solved classically, with no phase estimation, ancilla qubits or post-selection
+                      (unlike HHL). A 4×4 system was solved exactly on IBM's ibm_fez, and a 1024-unknown problem reached
+                      10⁻⁵ relative error with 33 configurations in simulation.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      <span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">Linear systems</span
+                      ><span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">SQD</span
+                      ><span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">IBM Quantum</span>
+                    </div>
+                    <div class="flex flex-wrap gap-x-6 gap-y-2">
+                      <a
+                        class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors"
+                        href="https://github.com/tahaselim/sqd-linsolver"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Learn more<svg
+                          aria-hidden="true"
+                          class="lucide lucide-external-link w-4 h-4 ml-1"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M15 3h6v6"></path>
+                          <path d="M10 14 21 3"></path>
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a
+                      ><a
+                        class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors"
+                        href="https://arxiv.org/abs/2610.41708"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Read the paper<svg
+                          aria-hidden="true"
+                          class="lucide lucide-external-link w-4 h-4 ml-1"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M15 3h6v6"></path>
+                          <path d="M10 14 21 3"></path>
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 w-full rounded-b-lg"></div>
+                </div>
+                <div
+                  class="bg-white rounded-lg shadow-lg flex flex-col transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl reveal"
+                >
+                  <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex items-start justify-between mb-6">
+                      <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <svg
+                          aria-hidden="true"
+                          class="lucide lucide-key-round w-8 h-8"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewbox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+                          ></path>
+                          <circle cx="16.5" cy="7.5" fill="currentColor" r=".5"></circle>
+                        </svg>
+                      </div>
+                      <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-100 text-indigo-800"
+                        >Research</span
+                      >
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Quantum Permutation Pad</h3>
+                    <p class="text-gray-600 mb-6 flex-1">
+                      Research into quantum-safe cryptography, implementing the Quantum Permutation Pad with Qiskit
+                      Runtime.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      <span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">Cryptography</span
+                      ><span class="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">Qiskit</span>
+                    </div>
+                  </div>
+                  <div class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 w-full rounded-b-lg"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="bg-gray-900 text-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div class="md:col-span-2 reveal">
+                <div class="flex items-center mb-6">
+                  <img alt="MolKet" class="h-12 w-auto mr-3" loading="lazy" src="images/logo.png" />
+                </div>
+                <p class="text-gray-400 mb-6 max-w-md">
+                  MolKet offers consulting and AI services for modeling quantum molecular solutions with cloud-based
+                  software on hybrid HPC and quantum computing platforms.
+                </p>
+              </div>
+              <div class="reveal">
+                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                  <li><a class="text-gray-400 hover:text-white" href="index.html#about">About Us</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="index.html#services">Services</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="projects.html">Projects</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="index.html#how-it-works">How It Works</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="index.html#team">Our Team</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="news.html">News</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="index.html#contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="reveal">
+                <h3 class="text-lg font-bold mb-4">Resources</h3>
+                <ul class="space-y-2">
+                  <li><a class="text-gray-400 hover:text-white" href="usecases.html">Use Cases</a></li>
+                  <li>
+                    <a
+                      class="text-gray-400 hover:text-white"
+                      href="http://jupyterhub.molket.io"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >Lab</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-400 hover:text-white"
+                      href="https://github.com/molket-io/molket.jl/tree/main/examples"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >MolKet.jl</a
+                    >
+                  </li>
+                  <li><a class="text-gray-400 hover:text-white" href="pp.html">Mentions légales</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-10">
+              <div class="w-full h-60 rounded-xl overflow-hidden shadow-lg border border-gray-700">
+                <iframe
+                  class="h-full w-full"
+                  loading="lazy"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=2.3180%2C48.8683%2C2.3380%2C48.8783&amp;layer=mapnik&amp;marker=48.8733285%2C2.3280217"
+                  style="border: 0"
+                  title="Map: MOLKET SAS, 38 rue des Mathurins, 75008 Paris"
+                ></iframe>
+              </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm reveal">
+              <p>© 2025 MolKet SAS. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
 
+    <script src="assets/translations.js"></script>
+    <script src="assets/site.js"></script>
+    <script src="assets/chatbot.js"></script>
   </body>
 </html>

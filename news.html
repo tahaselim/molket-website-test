@@ -1,30 +1,763 @@
 <!doctype html>
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon-16x16.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News & Events | MolKet</title>
-    <meta name="description" content="MolKet offers cutting-edge quantum molecular dynamics, cryptography, and neuromorphic computing services, powered by hybrid HPC and AI platforms.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.molket.io/news.html">
-    <meta property="og:title" content="News & Events | MolKet">
-    <meta property="og:description" content="Discover next-generation quantum consulting, molecular simulations, and AI-driven solutions with MolKet.">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.molket.io/news.html">
-    <meta property="twitter:title" content="News & Events | MolKet">
-    <meta property="twitter:description" content="Quantum molecular dynamics, cryptography & neuromorphic computing — all under one roof.">
-    <meta name="theme-color" content="#1e3a8a">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="msapplication-navbutton-color" content="#1e3a8a">
-    <link rel="preload" as="image" href="/logo.png" fetchpriority="high">
-    <script type="module" crossorigin src="/assets/news-DycfOTB6.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/i18n-fiMSn2me.js">
-    <link rel="modulepreload" crossorigin href="/assets/PageHeader-DE_bWN7o.js">
-    <link rel="stylesheet" crossorigin href="/assets/i18n-DMiUNS2x.css">
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <meta charset="utf-8" />
+    <link href="favicon-16x16.png" rel="icon" type="image/svg+xml" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>News &amp; Events | MolKet</title>
+    <meta
+      content="MolKet offers cutting-edge quantum molecular dynamics, cryptography, and neuromorphic computing services, powered by hybrid HPC and AI platforms."
+      name="description"
+    />
+    <meta content="website" property="og:type" />
+    <meta content="https://www.molket.io/news.html" property="og:url" />
+    <meta content="News &amp; Events | MolKet" property="og:title" />
+    <meta
+      content="Discover next-generation quantum consulting, molecular simulations, and AI-driven solutions with MolKet."
+      property="og:description"
+    />
+    <meta content="summary_large_image" property="twitter:card" />
+    <meta content="https://www.molket.io/news.html" property="twitter:url" />
+    <meta content="News &amp; Events | MolKet" property="twitter:title" />
+    <meta
+      content="Quantum molecular dynamics, cryptography &amp; neuromorphic computing — all under one roof."
+      property="twitter:description"
+    />
+    <meta content="#1e3a8a" name="theme-color" />
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="#1e3a8a" name="msapplication-navbutton-color" />
+    <link as="image" fetchpriority="high" href="images/logo.png" rel="preload" />
+
+    <link href="assets/site.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="min-h-screen bg-white overflow-x-hidden">
+        <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent" id="site-nav">
+          <div class="max-w-7xl mx-auto px-0 sm:px-4 lg:px-4">
+            <div class="flex items-center justify-between h-16 xlm:h-20 pl-4 sm:pl-6 lg:pl-8">
+              <div class="flex items-center xlm:mt-0">
+                <a class="flex items-center" href="index.html#home"
+                  ><img alt="MolKet Logo" class="h-7 w-auto" loading="lazy" src="images/logo.png"
+                /></a>
+              </div>
+              <div class="hidden xlm:flex items-center space-x-1 pr-4 sm:pr-6 lg:pr-8">
+                <a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#home"
+                  >Home</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#about"
+                  >About</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#services"
+                  >Services</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="projects.html"
+                  >Projects</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#how-it-works"
+                  >How It Works</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#team"
+                  >Team</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="news.html"
+                  >News</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="index.html#contact"
+                  >Contact</a
+                >
+                <div class="relative group">
+                  <button
+                    class="px-3 py-2 rounded-md text-sm font-semibold transition-colors duration-200 text-white flex items-center hover:text-blue-400"
+                  >
+                    Resources<svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                      <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+                  >
+                    <div class="py-1">
+                      <a
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        href="usecases.html"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Use Cases</a
+                      ><a
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        href="https://github.com/molket-io/molket.jl"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Lab</a
+                      ><a
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        href="https://github.com/molket-io/molket.jl/tree/main/examples"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >MolKet.jl</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <select
+                  aria-label="Language"
+                  class="ml-4 px-3 py-1 rounded-md text-sm border bg-transparent text-white border-white hover:border-blue-400 focus:outline-none focus:ring-2 transition duration-200 lang-select"
+                >
+                  <option value="en">EN</option>
+                  <option value="fr">FR</option>
+                  <option value="nl">NL</option>
+                </select>
+              </div>
+              <div class="xlm:hidden flex items-center space-x-2">
+                <select
+                  aria-label="Language"
+                  class="ml-4 px-2 py-1 rounded-md text-sm border bg-transparent text-white border-white hover:border-blue-400 focus:outline-none focus:ring-2 transition duration-200 lang-select"
+                >
+                  <option value="en">EN</option>
+                  <option value="fr">FR</option>
+                  <option value="nl">NL</option></select
+                ><button
+                  aria-expanded="false"
+                  aria-label="Menu"
+                  class="p-2 rounded-md text-white hover:bg-blue-700 hover:text-white focus:outline-none"
+                  id="mobile-menu-button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-menu h-6 w-6"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewbox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M4 5h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 19h16"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="xlm:hidden transition-all duration-300 ease-in-out max-h-0 opacity-0 invisible"
+              id="mobile-menu"
+            >
+              <div
+                class="px-4 sm:px-6 lg:px-8 pt-2 pb-3 space-y-1 bg-gray-900/95 backdrop-blur-sm shadow-lg rounded-b-lg"
+              >
+                <a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#home"
+                  >Home</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#about"
+                  >About</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#services"
+                  >Services</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="projects.html"
+                  >Projects</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#how-it-works"
+                  >How It Works</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#team"
+                  >Team</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="news.html"
+                  >News</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="index.html#contact"
+                  >Contact</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="usecases.html"
+                  >Use Cases</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="https://github.com/molket-io/molket.jl"
+                  >Lab</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="https://github.com/molket-io/molket.jl/tree/main/examples"
+                  >MolKet.jl</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+        <header
+          class="relative bg-gradient-to-b from-blue-900 via-indigo-900 to-purple-900 pt-36 pb-20 text-center text-white"
+        >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 reveal">News &amp; Events</h1>
+            <p class="text-lg text-blue-100 max-w-3xl mx-auto reveal">
+              Talks, panels and publications from the MolKet team
+            </p>
+            <div class="h-1 w-20 bg-blue-400 mx-auto mt-6"></div>
+          </div>
+        </header>
+        <main>
+          <section class="py-20 bg-white" id="news">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="max-w-4xl mx-auto relative">
+                <div aria-hidden="true" class="absolute left-4 md:left-6 top-0 bottom-0 w-0.5 bg-blue-100"></div>
+                <div class="space-y-8">
+                  <article class="relative pl-12 md:pl-16 reveal">
+                    <div
+                      aria-hidden="true"
+                      class="absolute left-2 md:left-4 top-6 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow"
+                    ></div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                      <div class="flex flex-wrap items-center gap-3 mb-3 text-sm">
+                        <span class="inline-flex items-center gap-1 text-gray-500"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-calendar w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <rect height="18" rx="2" width="18" x="3" y="4"></rect>
+                            <path d="M3 10h18"></path></svg
+                          >June 2026</span
+                        ><span
+                          class="inline-flex items-center gap-1 bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-award w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                            ></path>
+                            <circle cx="12" cy="8" r="6"></circle></svg
+                          >Recognition</span
+                        >
+                      </div>
+                      <h3 class="text-xl font-bold text-gray-900 mb-2">Vice-Chair of IEEE P1947</h3>
+                      <p class="text-gray-600">
+                        Congratulations to Alain Chancé on his appointment as Vice-Chair of the IEEE P1947 working
+                        group, and thank you for his ongoing contributions to the project. This is a significant
+                        recognition of Alain's expertise and dedication to advancing quantum computing standards.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="relative pl-12 md:pl-16 reveal">
+                    <div
+                      aria-hidden="true"
+                      class="absolute left-2 md:left-4 top-6 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow"
+                    ></div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                      <div class="flex flex-wrap items-center gap-3 mb-3 text-sm">
+                        <span class="inline-flex items-center gap-1 text-gray-500"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-calendar w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <rect height="18" rx="2" width="18" x="3" y="4"></rect>
+                            <path d="M3 10h18"></path></svg
+                          >May 2026</span
+                        ><span
+                          class="inline-flex items-center gap-1 bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-book-open w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M12 7v14"></path>
+                            <path
+                              d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"
+                            ></path></svg
+                          >Course</span
+                        >
+                      </div>
+                      <h3 class="text-xl font-bold text-gray-900 mb-2">New Quantum Computing Course</h3>
+                      <p class="text-gray-600">
+                        Dr. Taha Selim published a new course on quantum computing from scratch.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="relative pl-12 md:pl-16 reveal">
+                    <div
+                      aria-hidden="true"
+                      class="absolute left-2 md:left-4 top-6 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow"
+                    ></div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                      <div class="flex flex-wrap items-center gap-3 mb-3 text-sm">
+                        <span class="inline-flex items-center gap-1 text-gray-500"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-calendar w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <rect height="18" rx="2" width="18" x="3" y="4"></rect>
+                            <path d="M3 10h18"></path></svg
+                          >April 2026</span
+                        ><span
+                          class="inline-flex items-center gap-1 bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-school w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
+                            <path d="M18 5v16"></path>
+                            <path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6"></path>
+                            <path
+                              d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11"
+                            ></path>
+                            <path d="M6 5v16"></path>
+                            <circle cx="12" cy="9" r="2"></circle></svg
+                          >Event</span
+                        >
+                      </div>
+                      <h3 class="text-xl font-bold text-gray-900 mb-2">
+                        Cairo University Spring School in Quantum Technologies
+                      </h3>
+                      <p class="text-gray-600">
+                        Cairo University hosted a spring school in quantum technologies, with Dr. Taha Selim as a
+                        co-organizer and speaker. The event attracted students and researchers from across the region
+                        and featured a panel discussion on advanced quantum algorithms by Dr. Keeper L. Sharkey and
+                        Alain Chancé.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="relative pl-12 md:pl-16 reveal">
+                    <div
+                      aria-hidden="true"
+                      class="absolute left-2 md:left-4 top-6 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow"
+                    ></div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                      <div class="flex flex-wrap items-center gap-3 mb-3 text-sm">
+                        <span class="inline-flex items-center gap-1 text-gray-500"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-calendar w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <rect height="18" rx="2" width="18" x="3" y="4"></rect>
+                            <path d="M3 10h18"></path></svg
+                          >2025</span
+                        ><span
+                          class="inline-flex items-center gap-1 bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-users w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <circle cx="9" cy="7" r="4"></circle></svg
+                          >Panel</span
+                        >
+                      </div>
+                      <h3 class="text-xl font-bold text-gray-900 mb-2">QED-C Quantum &amp; AI Use Cases Panel</h3>
+                      <p class="text-gray-600">
+                        Dr. Taha Selim and Alain Chancé joined the QED-C panel on use cases at the intersection of
+                        quantum computing and AI.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="relative pl-12 md:pl-16 reveal">
+                    <div
+                      aria-hidden="true"
+                      class="absolute left-2 md:left-4 top-6 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow"
+                    ></div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                      <div class="flex flex-wrap items-center gap-3 mb-3 text-sm">
+                        <span class="inline-flex items-center gap-1 text-gray-500"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-calendar w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <rect height="18" rx="2" width="18" x="3" y="4"></rect>
+                            <path d="M3 10h18"></path></svg
+                          >July 2024</span
+                        ><span
+                          class="inline-flex items-center gap-1 bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-mic w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M12 19v3"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <rect height="13" rx="3" width="6" x="9" y="2"></rect></svg
+                          >Talk</span
+                        >
+                      </div>
+                      <h3 class="text-xl font-bold text-gray-900 mb-2">
+                        Simulating quantum molecular dynamics with Julia at JuliaCon 2024
+                      </h3>
+                      <p class="text-gray-600">
+                        Our founders co-presented a lightning talk on simulating quantum molecular dynamics with Julia
+                        and MolKet.jl.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="relative pl-12 md:pl-16 reveal">
+                    <div
+                      aria-hidden="true"
+                      class="absolute left-2 md:left-4 top-6 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow"
+                    ></div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                      <div class="flex flex-wrap items-center gap-3 mb-3 text-sm">
+                        <span class="inline-flex items-center gap-1 text-gray-500"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-calendar w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <rect height="18" rx="2" width="18" x="3" y="4"></rect>
+                            <path d="M3 10h18"></path></svg
+                          >March 2024</span
+                        ><span
+                          class="inline-flex items-center gap-1 bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-mic w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M12 19v3"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <rect height="13" rx="3" width="6" x="9" y="2"></rect></svg
+                          >Talk</span
+                        >
+                      </div>
+                      <h3 class="text-xl font-bold text-gray-900 mb-2">
+                        CO₂ as a quantum molecular sensor at the APS March Meeting 2024
+                      </h3>
+                      <p class="text-gray-600">
+                        Dr. Taha Selim presented research on carbon dioxide as a quantum molecular sensor in
+                        protoplanetary disks.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="relative pl-12 md:pl-16 reveal">
+                    <div
+                      aria-hidden="true"
+                      class="absolute left-2 md:left-4 top-6 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow"
+                    ></div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                      <div class="flex flex-wrap items-center gap-3 mb-3 text-sm">
+                        <span class="inline-flex items-center gap-1 text-gray-500"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-calendar w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <rect height="18" rx="2" width="18" x="3" y="4"></rect>
+                            <path d="M3 10h18"></path></svg
+                          >February 2024</span
+                        ><span
+                          class="inline-flex items-center gap-1 bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-mic w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M12 19v3"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <rect height="13" rx="3" width="6" x="9" y="2"></rect></svg
+                          >Talk</span
+                        >
+                      </div>
+                      <h3 class="text-xl font-bold text-gray-900 mb-2">
+                        Keynote at the World AI Cannes Festival (WAICF)
+                      </h3>
+                      <p class="text-gray-600">
+                        Alain Chancé co-delivered the keynote "Combining the power of AI with Quantum" in Cannes,
+                        France.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="relative pl-12 md:pl-16 reveal">
+                    <div
+                      aria-hidden="true"
+                      class="absolute left-2 md:left-4 top-6 w-5 h-5 rounded-full bg-blue-600 border-4 border-white shadow"
+                    ></div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                      <div class="flex flex-wrap items-center gap-3 mb-3 text-sm">
+                        <span class="inline-flex items-center gap-1 text-gray-500"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-calendar w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M8 2v4"></path>
+                            <path d="M16 2v4"></path>
+                            <rect height="18" rx="2" width="18" x="3" y="4"></rect>
+                            <path d="M3 10h18"></path></svg
+                          >2023</span
+                        ><span
+                          class="inline-flex items-center gap-1 bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full"
+                          ><svg
+                            aria-hidden="true"
+                            class="lucide lucide-file-text w-4 h-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewbox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                            <path d="M10 9H8"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path></svg
+                          >Publication</span
+                        >
+                      </div>
+                      <h3 class="text-xl font-bold text-gray-900 mb-2">New paper in The Journal of Chemical Physics</h3>
+                      <p class="text-gray-600">
+                        State-to-state rovibrational transition rates for CO₂ in the bend mode in collisions with He
+                        atoms, J. Chem. Phys. 159, 164310 (2023).
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="bg-gray-900 text-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div class="md:col-span-2 reveal">
+                <div class="flex items-center mb-6">
+                  <img alt="MolKet" class="h-12 w-auto mr-3" loading="lazy" src="images/logo.png" />
+                </div>
+                <p class="text-gray-400 mb-6 max-w-md">
+                  MolKet offers consulting and AI services for modeling quantum molecular solutions with cloud-based
+                  software on hybrid HPC and quantum computing platforms.
+                </p>
+              </div>
+              <div class="reveal">
+                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                  <li><a class="text-gray-400 hover:text-white" href="index.html#about">About Us</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="index.html#services">Services</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="projects.html">Projects</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="index.html#how-it-works">How It Works</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="index.html#team">Our Team</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="news.html">News</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="index.html#contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="reveal">
+                <h3 class="text-lg font-bold mb-4">Resources</h3>
+                <ul class="space-y-2">
+                  <li><a class="text-gray-400 hover:text-white" href="usecases.html">Use Cases</a></li>
+                  <li>
+                    <a
+                      class="text-gray-400 hover:text-white"
+                      href="http://jupyterhub.molket.io"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >Lab</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-400 hover:text-white"
+                      href="https://github.com/molket-io/molket.jl/tree/main/examples"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >MolKet.jl</a
+                    >
+                  </li>
+                  <li><a class="text-gray-400 hover:text-white" href="pp.html">Mentions légales</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-10">
+              <div class="w-full h-60 rounded-xl overflow-hidden shadow-lg border border-gray-700">
+                <iframe
+                  class="h-full w-full"
+                  loading="lazy"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=2.3180%2C48.8683%2C2.3380%2C48.8783&amp;layer=mapnik&amp;marker=48.8733285%2C2.3280217"
+                  style="border: 0"
+                  title="Map: MOLKET SAS, 38 rue des Mathurins, 75008 Paris"
+                ></iframe>
+              </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm reveal">
+              <p>© 2025 MolKet SAS. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
 
+    <script src="assets/translations.js"></script>
+    <script src="assets/site.js"></script>
+    <script src="assets/chatbot.js"></script>
   </body>
 </html>

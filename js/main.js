@@ -15,9 +15,9 @@
 
     // === logo change
     if (ud_header.classList.contains("sticky")) {
-      logo.src = "logo_circle-removebg-preview.png";
+      logo.src = "images/logo_circle-removebg-preview.png";
     } else {
-      logo.src = "logo_circle-removebg-preview.png";
+      logo.src = "images/logo_circle-removebg-preview.png";
     }
 
     // show or hide the back-top-top button

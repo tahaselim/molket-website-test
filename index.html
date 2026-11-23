@@ -1,30 +1,2179 @@
 <!doctype html>
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon-16x16.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MolKet Quantum Field Services Website</title>
-    <meta name="description" content="MolKet offers cutting-edge quantum molecular dynamics, cryptography, and neuromorphic computing services, powered by hybrid HPC and AI platforms.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.molket.io/">
-    <meta property="og:title" content="MolKet | Quantum Molecular Solutions">
-    <meta property="og:description" content="Discover next-generation quantum consulting, molecular simulations, and AI-driven solutions with MolKet.">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.molket.io/">
-    <meta property="twitter:title" content="MolKet | Quantum Molecular Solutions">
-    <meta property="twitter:description" content="Quantum molecular dynamics, cryptography & neuromorphic computing — all under one roof.">
-    <meta name="theme-color" content="#1e3a8a">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="msapplication-navbutton-color" content="#1e3a8a">
-    <link rel="preload" as="image" href="/logo.png" fetchpriority="high">
-    <script type="module" crossorigin src="/assets/main-SoqQZn_A.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/i18n-fiMSn2me.js">
-    <link rel="modulepreload" crossorigin href="/assets/map-pin-D6FQbgd2.js">
-    <link rel="stylesheet" crossorigin href="/assets/i18n-DMiUNS2x.css">
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <meta charset="utf-8" />
+    <link href="favicon-16x16.png" rel="icon" type="image/svg+xml" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MolKet | Quantum Molecular Solutions</title>
+    <meta
+      content="MolKet offers cutting-edge quantum molecular dynamics, cryptography, and neuromorphic computing services, powered by hybrid HPC and AI platforms."
+      name="description"
+    />
+    <meta content="website" property="og:type" />
+    <meta content="https://www.molket.io/" property="og:url" />
+    <meta content="MolKet | Quantum Molecular Solutions" property="og:title" />
+    <meta
+      content="Discover next-generation quantum consulting, molecular simulations, and AI-driven solutions with MolKet."
+      property="og:description"
+    />
+    <meta content="summary_large_image" property="twitter:card" />
+    <meta content="https://www.molket.io/" property="twitter:url" />
+    <meta content="MolKet | Quantum Molecular Solutions" property="twitter:title" />
+    <meta
+      content="Quantum molecular dynamics, cryptography &amp; neuromorphic computing — all under one roof."
+      property="twitter:description"
+    />
+    <meta content="#1e3a8a" name="theme-color" />
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="#1e3a8a" name="msapplication-navbutton-color" />
+    <link as="image" fetchpriority="high" href="images/logo.png" rel="preload" />
+
+    <link href="assets/site.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="min-h-screen bg-white overflow-x-hidden">
+        <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent" id="site-nav">
+          <div class="max-w-7xl mx-auto px-0 sm:px-4 lg:px-4">
+            <div class="flex items-center justify-between h-16 xlm:h-20 pl-4 sm:pl-6 lg:pl-8">
+              <div class="flex items-center xlm:mt-0">
+                <a class="flex items-center" href="#home"
+                  ><img alt="MolKet Logo" class="h-7 w-auto" loading="lazy" src="images/logo.png"
+                /></a>
+              </div>
+              <div class="hidden xlm:flex items-center space-x-1 pr-4 sm:pr-6 lg:pr-8">
+                <a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="#home"
+                  >Home</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="#about"
+                  >About</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="#services"
+                  >Services</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="projects.html"
+                  >Projects</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="#how-it-works"
+                  >How It Works</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="#team"
+                  >Team</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="news.html"
+                  >News</a
+                ><a
+                  class="px-2.5 py-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors duration-200 hover:text-blue-400 text-white"
+                  href="#contact"
+                  >Contact</a
+                >
+                <div class="relative group">
+                  <button
+                    class="px-3 py-2 rounded-md text-sm font-semibold transition-colors duration-200 text-white flex items-center hover:text-blue-400"
+                  >
+                    Resources<svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                      <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+                  >
+                    <div class="py-1">
+                      <a
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        href="usecases.html"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Use Cases</a
+                      ><a
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        href="https://github.com/molket-io/molket.jl"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Lab</a
+                      ><a
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        href="https://github.com/molket-io/molket.jl/tree/main/examples"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >MolKet.jl</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <select
+                  aria-label="Language"
+                  class="ml-4 px-3 py-1 rounded-md text-sm border bg-transparent text-white border-white hover:border-blue-400 focus:outline-none focus:ring-2 transition duration-200 lang-select"
+                >
+                  <option value="en">EN</option>
+                  <option value="fr">FR</option>
+                  <option value="nl">NL</option>
+                </select>
+              </div>
+              <div class="xlm:hidden flex items-center space-x-2">
+                <select
+                  aria-label="Language"
+                  class="ml-4 px-2 py-1 rounded-md text-sm border bg-transparent text-white border-white hover:border-blue-400 focus:outline-none focus:ring-2 transition duration-200 lang-select"
+                >
+                  <option value="en">EN</option>
+                  <option value="fr">FR</option>
+                  <option value="nl">NL</option></select
+                ><button
+                  aria-expanded="false"
+                  aria-label="Menu"
+                  class="p-2 rounded-md text-white hover:bg-blue-700 hover:text-white focus:outline-none"
+                  id="mobile-menu-button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-menu h-6 w-6"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewbox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M4 5h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 19h16"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="xlm:hidden transition-all duration-300 ease-in-out max-h-0 opacity-0 invisible"
+              id="mobile-menu"
+            >
+              <div
+                class="px-4 sm:px-6 lg:px-8 pt-2 pb-3 space-y-1 bg-gray-900/95 backdrop-blur-sm shadow-lg rounded-b-lg"
+              >
+                <a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="#home"
+                  >Home</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="#about"
+                  >About</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="#services"
+                  >Services</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="projects.html"
+                  >Projects</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="#how-it-works"
+                  >How It Works</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="#team"
+                  >Team</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="news.html"
+                  >News</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="#contact"
+                  >Contact</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="usecases.html"
+                  >Use Cases</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="https://github.com/molket-io/molket.jl"
+                  >Lab</a
+                ><a
+                  class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-blue-700 hover:text-white"
+                  href="https://github.com/molket-io/molket.jl/tree/main/examples"
+                  >MolKet.jl</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+        <section
+          class="relative min-h-screen flex items-center justify-center px-4 py-12 sm:py-20 overflow-hidden"
+          id="home"
+        >
+          <canvas
+            class="absolute inset-0 w-full h-full bg-gradient-to-b from-blue-900 via-indigo-900 to-purple-900"
+            id="hero-canvas"
+          ></canvas>
+          <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
+            <img
+              alt="MolKet Logo"
+              class="mx-auto mt-6 sm:mt-0 h-20 sm:h-24 md:h-32 lg:h-40 mb-6 reveal"
+              loading="lazy"
+              src="images/logo.png"
+            />
+            <h1
+              class="font-bold text-white mb-6 transition-all duration-300 text-2xl sm:text-3xl md:text-4xl lg:text-5xl reveal"
+              id="hero-title"
+            >
+              Next-Generation Quantum Solutions
+            </h1>
+            <div class="max-w-3xl mx-auto px-2 reveal">
+              <p class="text-lg sm:text-xl text-white/90 mb-8">
+                MolKet offers management consulting and AI services for:
+              </p>
+              <ul class="space-y-3 text-base sm:text-lg text-white/90 mb-8 mx-auto max-w-md">
+                <li class="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 reveal">Quantum molecular dynamics</li>
+                <li class="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 reveal">Cryptography</li>
+                <li class="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 reveal">Neuromorphic-based computing</li>
+              </ul>
+              <p class="text-base sm:text-lg text-white/90 mb-10">
+                Supported by cloud-based hybrid HPC &amp; quantum computing platforms, enabling the development of
+                advanced machine learning algorithms with significant predictive power.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 reveal"
+              >
+                <a
+                  class="w-full sm:w-auto px-8 py-3 rounded-full bg-white text-blue-900 font-medium hover:bg-blue-100 transition-colors duration-300 shadow-lg hover:shadow-xl text-center"
+                  href="https://1u0ya8k0gol.typeform.com/to/RyIvarq4"
+                  rel="nofollow noopener"
+                  target="_blank"
+                  >Request a Demo</a
+                ><a
+                  class="w-full sm:w-auto px-8 py-3 rounded-full border border-white/40 text-white font-medium hover:bg-white/10 transition-colors duration-300 text-center"
+                  href="#services"
+                  >Explore Services</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-gray-50" id="about">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+              <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About MolKet</h2>
+                <div class="h-1 w-20 bg-blue-600 mx-auto mb-8"></div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                    Fast and accurate molecular design simulations assisted by AI
+                  </h3>
+                  <div class="h-1 w-16 bg-blue-600 mb-6"></div>
+                  <p class="text-gray-700 mb-6">
+                    Chemistry simulations are time consuming and complicated to prepare. Our goal is to make the design
+                    process easier and fast. We use AI to train general Hamiltonians for chemistry simulations that can
+                    be executed efficiently on HPC, quantum computers, and on simulations of quantum computers.
+                  </p>
+                  <p class="text-gray-700">
+                    The company also offers consulting services for training AI on datasets from fields such as
+                    chemistry, biology, materials science, and cosmology. These services are supported by physics-based
+                    kernels (e.g., quantum-mechanical kernels), enabling the development of advanced machine learning
+                    algorithms with significant predictive power.
+                  </p>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-xl w-full max-w-2xl mx-auto reveal">
+                  <img
+                    alt="MolKet Services"
+                    class="w-full h-auto object-contain"
+                    loading="lazy"
+                    src="images/deck_general_compact_new.004.jpeg"
+                  />
+                </div>
+              </div>
+              <div class="mt-20 reveal">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                  Highly engineered, standard process for quantum chemistry simulations
+                </h3>
+                <div class="h-1 w-16 bg-blue-600 mx-auto mb-8"></div>
+                <div class="rounded-lg overflow-hidden shadow-xl">
+                  <div style="width: 100%; overflow-x: auto">
+                    <style>
+                      :root {
+                        --bg: #0a0d18;
+                        --panel-line: #23284a;
+                        --ink: #e8eaf5;
+                        --ink-dim: #8a8fb0;
+                        --navy: #1d2a63;
+                        --navy-light: #3b56b8;
+                        --teal: #1fb6ad;
+                        --coral: #e85c6b;
+                        --coral-dim: #e08a93;
+                        --lav: #9c95e8;
+                        --line: #3a4170;
+                        --line-dim: #262b4d;
+                        --gold: #e8c34a;
+                      }
+                      .mw-container {
+                        background:
+                          radial-gradient(circle at 12% 8%, #141a33 0%, transparent 45%),
+                          radial-gradient(circle at 88% 92%, #14182c 0%, transparent 50%), var(--bg);
+                        color: var(--ink);
+                        font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+                        padding: 0;
+                      }
+                      .mw-canvas {
+                        position: relative;
+                        width: 100%;
+                        height: 560px;
+                        overflow: visible;
+                      }
+                      @media (max-width: 1300px) {
+                        .mw-canvas {
+                          height: 700px;
+                        }
+                      }
+                      .box {
+                        position: absolute;
+                        opacity: 0;
+                        transform: translateX(-26px);
+                        transition:
+                          opacity 0.55s ease,
+                          transform 0.55s ease;
+                      }
+                      .box.in {
+                        opacity: 1;
+                        transform: translateX(0);
+                      }
+                      .lbl {
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: #fff;
+                        text-align: center;
+                        padding: 10px 12px;
+                        border-radius: 6px;
+                        line-height: 1.3;
+                      }
+                      .small {
+                        font-size: 10.5px;
+                        font-weight: 600;
+                        padding: 8px 9px;
+                      }
+                      .stagehead {
+                        background: var(--navy);
+                        border: 1px solid #2a3578;
+                        box-shadow: 0 4px 14px -6px rgba(0, 0, 0, 0.6);
+                      }
+                      .blue {
+                        background: linear-gradient(180deg, #4d7ad6, #3a64bd);
+                        border: 1px solid #5e8be8;
+                      }
+                      .teal {
+                        background: linear-gradient(180deg, #1fc2b8, #149b93);
+                        border: 1px solid #3fd9cf;
+                        color: #08221f;
+                      }
+                      .coral {
+                        background: linear-gradient(180deg, #ef6e7b, #dd4e5e);
+                        border: 1px solid #f08c97;
+                      }
+                      .lav {
+                        background: linear-gradient(180deg, #a9a2ee, #8d84e2);
+                        border: 1px solid #beb8f3;
+                        border-radius: 20px;
+                      }
+                      .pink {
+                        background: linear-gradient(180deg, #ef9aa6, #e07b89);
+                        border: 1px solid #f4b6bf;
+                      }
+                      .navydeep {
+                        background: linear-gradient(180deg, #2a3676, #1c265a);
+                        border: 1px solid #3b4791;
+                      }
+                      .dark {
+                        background: linear-gradient(180deg, #232a52, #181d3e);
+                        border: 1px solid #323a6e;
+                      }
+                      .hexshape {
+                        clip-path: polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0 50%);
+                      }
+                      .docshape {
+                        clip-path: polygon(0 0, 100% 0, 100% 84%, 90% 100%, 0 100%);
+                      }
+                      .dispshape {
+                        clip-path: polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%);
+                      }
+                      .group-outline {
+                        position: absolute;
+                        border: 1.5px dashed var(--line-dim);
+                        border-radius: 10px;
+                        opacity: 0;
+                        transition: opacity 0.6s ease;
+                      }
+                      .group-outline.in {
+                        opacity: 1;
+                      }
+                      .callout {
+                        position: absolute;
+                        border: 1px solid var(--coral-dim);
+                        border-radius: 6px;
+                        padding: 7px 11px;
+                        font-size: 10px;
+                        color: var(--coral-dim);
+                        font-weight: 700;
+                        line-height: 1.35;
+                        opacity: 0;
+                        transition: opacity 0.5s ease;
+                      }
+                      .callout.in {
+                        opacity: 1;
+                      }
+                      .callout-line {
+                        position: absolute;
+                        background: var(--coral-dim);
+                        opacity: 0;
+                        transition: opacity 0.5s ease;
+                      }
+                      .callout-line.in {
+                        opacity: 1;
+                      }
+                      svg.connectors {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        overflow: visible;
+                        pointer-events: none;
+                      }
+                      .conn-path {
+                        fill: none;
+                        stroke: var(--line);
+                        stroke-width: 2.5;
+                        stroke-dasharray: 1000;
+                        stroke-dashoffset: 1000;
+                        transition: stroke-dashoffset 0.7s ease;
+                      }
+                      .conn-path.in {
+                        stroke-dashoffset: 0;
+                      }
+                      .arrowhead {
+                        fill: var(--line);
+                        opacity: 0;
+                        transition: opacity 0.3s ease 0.5s;
+                      }
+                      .arrowhead.in {
+                        opacity: 1;
+                      }
+                      .red {
+                        color: var(--coral);
+                        font-weight: 800;
+                        letter-spacing: 0.04em;
+                      }
+                      @media (prefers-reduced-motion: reduce) {
+                        .box,
+                        .conn-path,
+                        .arrowhead,
+                        .group-outline,
+                        .callout,
+                        .callout-line {
+                          transition: none !important;
+                        }
+                      }
+                    </style>
+                    <div class="mw-container">
+                      <div class="mw-canvas" style="position: relative">
+                        <svg class="connectors">
+                          <path class="conn-path in" d="M110,55 L130,55" id="p-init-md"></path>
+                          <path class="conn-path in" d="M180,80 L180,110 L65,110 L65,130" id="p-md-manual"></path>
+                          <path class="conn-path in" d="M205,80 L205,110 L215,110 L215,130" id="p-md-database"></path>
+                          <path class="conn-path in" d="M65,174 L65,200" id="p-manual-geom"></path>
+                          <path class="conn-path in" d="M65,250 L65,280" id="p-geom-confirm"></path>
+                          <path
+                            class="conn-path in"
+                            d="M65,330 L65,350 L115,350 L115,365"
+                            id="p-confirm-prepare"
+                          ></path>
+                          <path class="conn-path in" d="M215,174 L215,205" id="p-database-retrieve"></path>
+                          <path
+                            class="conn-path in"
+                            d="M215,320 L215,350 L145,350 L145,365"
+                            id="p-retrieve-prepare"
+                          ></path>
+                          <path
+                            class="conn-path in"
+                            d="M200,390 L470,390 L470,300 L470,43 L300,43"
+                            id="p-prepare-hamiltonian"
+                          ></path>
+                          <polygon
+                            class="arrowhead in"
+                            id="ah-prepare-hamiltonian"
+                            points="0,-6 0,6 10,0"
+                            transform="translate(300,43) rotate(180)"
+                          ></polygon>
+                          <path class="conn-path in" d="M415,66 L415,115" id="p-bhdr-spec"></path>
+                          <path class="conn-path in" d="M415,175 L415,220" id="p-spec-type"></path>
+                          <path class="conn-path in" d="M415,175 L415,250 L415,250" id="p-spec-basis"></path>
+                          <path class="conn-path in" d="M415,175 L415,300 L415,325" id="p-spec-required"></path>
+                          <path class="conn-path in" d="M415,365 L415,420" id="p-required-display"></path>
+                          <polygon
+                            class="arrowhead in"
+                            id="ah-required-display"
+                            points="0,-6 0,6 10,0"
+                            transform="translate(415,420) rotate(90)"
+                          ></polygon>
+                          <path class="conn-path in" d="M530,43 L705,43" id="p-ham-hybrid"></path>
+                          <polygon
+                            class="arrowhead in"
+                            id="ah-ham-hybrid"
+                            points="0,-6 0,6 10,0"
+                            transform="translate(705,43) rotate(0)"
+                          ></polygon>
+                          <path class="conn-path in" d="M735,-26 L735,90" id="p-callout-estimate"></path>
+                          <path class="conn-path in" d="M705,66 L705,90" id="p-chdr-estimate"></path>
+                          <path class="conn-path in" d="M705,140 L705,180" id="p-estimate-prepdata"></path>
+                          <path class="conn-path in" d="M705,224 L705,235" id="p-prepdata-send"></path>
+                          <path class="conn-path in" d="M705,275 L632,340" id="p-send-cpu"></path>
+                          <path class="conn-path in" d="M705,275 L705,340" id="p-send-qpu"></path>
+                          <path class="conn-path in" d="M705,275 L777,340" id="p-send-gpu"></path>
+                          <path class="conn-path in" d="M632,384 L705,420" id="p-cpu-collect"></path>
+                          <path class="conn-path in" d="M705,384 L705,420" id="p-qpu-collect"></path>
+                          <path class="conn-path in" d="M777,384 L705,420" id="p-gpu-collect"></path>
+                          <path class="conn-path in" d="M830,43 L1045,43" id="p-hybrid-sync"></path>
+                          <polygon
+                            class="arrowhead in"
+                            id="ah-hybrid-sync"
+                            points="0,-6 0,6 10,0"
+                            transform="translate(1045,43) rotate(0)"
+                          ></polygon>
+                          <path class="conn-path in" d="M1045,66 L1045,115" id="p-shdr-group"></path>
+                          <path class="conn-path in" d="M1045,161 L1045,175" id="p-group-format"></path>
+                          <path class="conn-path in" d="M1045,219 L1045,235" id="p-format-analysis"></path>
+                          <path class="conn-path in" d="M1045,279 L1045,295" id="p-analysis-final"></path>
+                          <path class="conn-path in" d="M1170,43 L1360,43 L1240,43" id="p-sync-output"></path>
+                          <polygon
+                            class="arrowhead in"
+                            id="ah-sync-output"
+                            points="0,-6 0,6 10,0"
+                            transform="translate(1360,43) rotate(0)"
+                          ></polygon>
+                          <path class="conn-path in" d="M1360,66 L1360,100" id="p-outhdr-display"></path>
+                          <polygon
+                            class="arrowhead in"
+                            id="ah-outhdr-display"
+                            points="0,-6 0,6 10,0"
+                            transform="translate(1360,100) rotate(90)"
+                          ></polygon>
+                        </svg>
+                        <div
+                          class="box in"
+                          id="a-initiate"
+                          style="
+                            left: 0px;
+                            top: 40px;
+                            width: 110px;
+                            min-height: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: transparent;
+                            border-width: medium;
+                            border-style: none;
+                            border-color: currentcolor;
+                            border-image: none;
+                            box-shadow: none;
+                          "
+                        >
+                          <span class="lbl" style="background: transparent; padding: 6px; width: 100%"
+                            ><span class="red">● INITIATE</span></span
+                          >
+                        </div>
+                        <div
+                          class="box blue dispshape in"
+                          id="a-moldesign"
+                          style="
+                            left: 130px;
+                            top: 30px;
+                            width: 150px;
+                            min-height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl" style="background: transparent; padding: 6px; width: 100%"
+                            >Molecular<br />design</span
+                          >
+                        </div>
+                        <div
+                          class="box dark small in"
+                          id="a-manual"
+                          style="
+                            left: 0px;
+                            top: 130px;
+                            width: 130px;
+                            min-height: 44px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Manual</span
+                          >
+                        </div>
+                        <div
+                          class="box navydeep small in"
+                          id="a-geom"
+                          style="
+                            left: 0px;
+                            top: 200px;
+                            width: 130px;
+                            min-height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Geometry<br />optimization</span
+                          >
+                        </div>
+                        <div
+                          class="box navydeep small in"
+                          id="a-confirm"
+                          style="
+                            left: 0px;
+                            top: 280px;
+                            width: 130px;
+                            min-height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Confirm the<br />structure</span
+                          >
+                        </div>
+                        <div
+                          class="box dark small in"
+                          id="a-database"
+                          style="
+                            left: 150px;
+                            top: 130px;
+                            width: 130px;
+                            min-height: 44px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Database</span
+                          >
+                        </div>
+                        <div
+                          class="group-outline in"
+                          id="a-retrieve-outline"
+                          style="left: 145px; top: 195px; width: 140px; height: 130px"
+                        ></div>
+                        <div
+                          class="box navydeep small in"
+                          id="a-retrieve"
+                          style="
+                            left: 155px;
+                            top: 205px;
+                            width: 120px;
+                            min-height: 36px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >⛁ Retrieve</span
+                          >
+                        </div>
+                        <div
+                          class="box in"
+                          id="a-db-icon"
+                          style="
+                            left: 165px;
+                            top: 255px;
+                            width: 100px;
+                            min-height: 60px;
+                            background: transparent;
+                            border-width: medium;
+                            border-style: none;
+                            border-color: currentcolor;
+                            border-image: none;
+                            box-shadow: none;
+                            font-size: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl" style="background: transparent; padding: 6px; width: 100%">🗄</span>
+                        </div>
+                        <div
+                          class="box coral hexshape small in"
+                          id="a-prepare"
+                          style="
+                            left: 30px;
+                            top: 365px;
+                            width: 170px;
+                            min-height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Prepare the<br />structure</span
+                          >
+                        </div>
+                        <div
+                          class="box stagehead in"
+                          id="b-header"
+                          style="
+                            left: 300px;
+                            top: 20px;
+                            width: 230px;
+                            min-height: 46px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl" style="background: transparent; padding: 6px; width: 100%"
+                            >Hamiltonian</span
+                          >
+                        </div>
+                        <div
+                          class="group-outline in"
+                          id="b-outline"
+                          style="left: 300px; top: 100px; width: 230px; height: 290px"
+                        ></div>
+                        <div
+                          class="box teal docshape small in"
+                          id="b-spec"
+                          style="
+                            left: 320px;
+                            top: 115px;
+                            width: 190px;
+                            min-height: 60px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >type, basis, and<br />specify output</span
+                          >
+                        </div>
+                        <div
+                          class="box blue small in"
+                          id="b-type"
+                          style="
+                            left: 330px;
+                            top: 200px;
+                            width: 170px;
+                            min-height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Type of computations</span
+                          >
+                        </div>
+                        <div
+                          class="box blue small in"
+                          id="b-basis"
+                          style="
+                            left: 330px;
+                            top: 250px;
+                            width: 170px;
+                            min-height: 60px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Basis set: electronic,<br />vibrational, and rotational</span
+                          >
+                        </div>
+                        <div
+                          class="box blue small in"
+                          id="b-required"
+                          style="
+                            left: 330px;
+                            top: 325px;
+                            width: 170px;
+                            min-height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Required output</span
+                          >
+                        </div>
+                        <div
+                          class="box navydeep dispshape in"
+                          id="b-display"
+                          style="
+                            left: 300px;
+                            top: 420px;
+                            width: 230px;
+                            min-height: 48px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl" style="background: transparent; padding: 6px; width: 100%"
+                            >Display the<br />Hamiltonian</span
+                          >
+                        </div>
+                        <div
+                          class="box stagehead in"
+                          id="c-header"
+                          style="
+                            left: 580px;
+                            top: 20px;
+                            width: 250px;
+                            min-height: 46px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl" style="background: transparent; padding: 6px; width: 100%"
+                            >Hybrid optimizer</span
+                          >
+                        </div>
+                        <div class="callout in" id="c-callout" style="left: 720px; top: -90px; width: 210px">
+                          Trial calculation to estimate the computational cost
+                        </div>
+                        <div
+                          class="callout-line in"
+                          id="c-callout-line"
+                          style="left: 735px; top: -44px; width: 1px; height: 64px"
+                        ></div>
+                        <div
+                          class="box lav small in"
+                          id="c-estimate"
+                          style="
+                            left: 600px;
+                            top: 90px;
+                            width: 210px;
+                            min-height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Estimate the<br />computational cost</span
+                          >
+                        </div>
+                        <div
+                          class="group-outline in"
+                          id="c-outline"
+                          style="left: 580px; top: 165px; width: 250px; height: 320px"
+                        ></div>
+                        <div
+                          class="box coral hexshape small in"
+                          id="c-prepdata"
+                          style="
+                            left: 600px;
+                            top: 180px;
+                            width: 210px;
+                            min-height: 44px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Prepare data for the<br />computing backends</span
+                          >
+                        </div>
+                        <div
+                          class="box coral hexshape small in"
+                          id="c-sendapi"
+                          style="
+                            left: 600px;
+                            top: 235px;
+                            width: 210px;
+                            min-height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >send data via APIs</span
+                          >
+                        </div>
+                        <div
+                          class="box pink small in"
+                          id="c-cpu"
+                          style="
+                            left: 600px;
+                            top: 340px;
+                            width: 65px;
+                            min-height: 44px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%">CPU</span>
+                        </div>
+                        <div
+                          class="box pink small in"
+                          id="c-qpu"
+                          style="
+                            left: 672px;
+                            top: 340px;
+                            width: 65px;
+                            min-height: 44px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%">QPU</span>
+                        </div>
+                        <div
+                          class="box pink small in"
+                          id="c-gpu"
+                          style="
+                            left: 744px;
+                            top: 340px;
+                            width: 65px;
+                            min-height: 44px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%">GPU</span>
+                        </div>
+                        <div
+                          class="box lav small in"
+                          id="c-collect"
+                          style="
+                            left: 600px;
+                            top: 420px;
+                            width: 210px;
+                            min-height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Collect data/results</span
+                          >
+                        </div>
+                        <div
+                          class="box stagehead in"
+                          id="d-header"
+                          style="
+                            left: 920px;
+                            top: 20px;
+                            width: 250px;
+                            min-height: 46px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl" style="background: transparent; padding: 6px; width: 100%"
+                            >Sync output data</span
+                          >
+                        </div>
+                        <div
+                          class="group-outline in"
+                          id="d-outline"
+                          style="left: 920px; top: 100px; width: 250px; height: 360px"
+                        ></div>
+                        <div
+                          class="box lav small in"
+                          id="d-group"
+                          style="
+                            left: 940px;
+                            top: 115px;
+                            width: 210px;
+                            min-height: 46px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Group results/ data</span
+                          >
+                        </div>
+                        <div
+                          class="box coral hexshape small in"
+                          id="d-format"
+                          style="
+                            left: 940px;
+                            top: 175px;
+                            width: 210px;
+                            min-height: 44px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Prepare presentation<br />format</span
+                          >
+                        </div>
+                        <div
+                          class="box dark small in"
+                          id="d-analysis"
+                          style="
+                            left: 940px;
+                            top: 235px;
+                            width: 210px;
+                            min-height: 44px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Perform quick analysis</span
+                          >
+                        </div>
+                        <div
+                          class="box dark small in"
+                          id="d-final"
+                          style="
+                            left: 940px;
+                            top: 295px;
+                            width: 210px;
+                            min-height: 60px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl small" style="background: transparent; padding: 6px; width: 100%"
+                            >Prepare final<br />presentation layers</span
+                          >
+                        </div>
+                        <div
+                          class="box stagehead in"
+                          id="e-header"
+                          style="
+                            left: 1240px;
+                            top: 20px;
+                            width: 240px;
+                            min-height: 46px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl" style="background: transparent; padding: 6px; width: 100%"
+                            >Molecular design output</span
+                          >
+                        </div>
+                        <div
+                          class="box navydeep dispshape in"
+                          id="e-display"
+                          style="
+                            left: 1240px;
+                            top: 100px;
+                            width: 240px;
+                            min-height: 48px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <span class="lbl" style="background: transparent; padding: 6px; width: 100%"
+                            >Display the full results</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-white" id="services">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Complementary Services</h2>
+              <p class="text-lg text-gray-600">Alongside the cloud services, we can help you in the following areas</p>
+              <div class="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+              <div
+                class="bg-white rounded-lg shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col reveal"
+              >
+                <div class="p-8 flex-1">
+                  <div
+                    class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="lucide lucide-cpu w-10 h-10"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewbox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M12 20v2"></path>
+                      <path d="M12 2v2"></path>
+                      <path d="M17 20v2"></path>
+                      <path d="M17 2v2"></path>
+                      <path d="M2 12h2"></path>
+                      <path d="M2 17h2"></path>
+                      <path d="M2 7h2"></path>
+                      <path d="M20 12h2"></path>
+                      <path d="M20 17h2"></path>
+                      <path d="M20 7h2"></path>
+                      <path d="M7 20v2"></path>
+                      <path d="M7 2v2"></path>
+                      <rect height="16" rx="2" width="16" x="4" y="4"></rect>
+                      <rect height="8" rx="1" width="8" x="8" y="8"></rect>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-center text-gray-900 mb-4">
+                    Designing algorithms for quantum molecular dynamics
+                  </h3>
+                  <p class="text-gray-600 text-center">
+                    Custom algorithm development optimized for your specific molecular simulation needs.
+                  </p>
+                </div>
+                <div class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 w-full rounded-b-lg"></div>
+              </div>
+              <div
+                class="bg-white rounded-lg shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col reveal"
+              >
+                <div class="p-8 flex-1">
+                  <div
+                    class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="lucide lucide-code w-10 h-10"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewbox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="m16 18 6-6-6-6"></path>
+                      <path d="m8 6-6 6 6 6"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-center text-gray-900 mb-4">Adapt your application using HPC/QC</h3>
+                  <p class="text-gray-600 text-center">
+                    Integration services to enhance your existing applications with high-performance and quantum
+                    computing capabilities.
+                  </p>
+                </div>
+                <div class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 w-full rounded-b-lg"></div>
+              </div>
+              <div
+                class="bg-white rounded-lg shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col reveal"
+              >
+                <div class="p-8 flex-1">
+                  <div
+                    class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="lucide lucide-chart-column-increasing w-10 h-10"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewbox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M13 17V9"></path>
+                      <path d="M18 17V5"></path>
+                      <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                      <path d="M8 17v-3"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-center text-gray-900 mb-4">
+                    Training, consultancy, and knowledge transfer
+                  </h3>
+                  <p class="text-gray-600 text-center">
+                    Expert guidance and education to help your team master quantum computing technologies and
+                    applications.
+                  </p>
+                </div>
+                <div class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 w-full rounded-b-lg"></div>
+              </div>
+            </div>
+            <div class="mt-16 text-center reveal">
+              <a
+                class="px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
+                href="https://1u0ya8k0gol.typeform.com/to/RyIvarq4"
+                rel="nofollow noopener"
+                target="_blank"
+                >Explore Our Services</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Videos</h2>
+              <p class="text-lg text-gray-600">Discover how MolKet is revolutionizing quantum computing</p>
+              <div class="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="bg-white rounded-xl shadow-lg overflow-hidden reveal">
+                <div class="aspect-w-16 aspect-h-9 relative">
+                  <iframe
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen=""
+                    class="absolute w-full h-full"
+                    src="https://www.youtube.com/embed/0_K8UGEGKmg"
+                    title="Quantum Intelligence for Chemistry Simulations"
+                  ></iframe>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-2">Quantum Intelligence for Chemistry Simulations</h3>
+                  <p class="text-gray-600">
+                    MolKet harnesses the power of quantum intelligence to revolutionize simulations in chemistry and
+                    physics. Our AI agents, trained on intricate Hamiltonian derivations, predict the behavior of
+                    complex systems, significantly accelerating research and discovery.
+                  </p>
+                </div>
+              </div>
+              <div class="bg-white rounded-xl shadow-lg overflow-hidden reveal">
+                <div class="aspect-w-16 aspect-h-9 relative">
+                  <iframe
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen=""
+                    class="absolute w-full h-full"
+                    src="https://www.youtube.com/embed/45OccvEjzIU"
+                    title="Accelerating Chemical Design with AI Agents"
+                  ></iframe>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-2">Accelerating Chemical Design with AI Agents</h3>
+                  <p class="text-gray-600">
+                    Alain Chancé and Dr. Taha Selim propose leveraging AI agents to accelerate chemical design and
+                    quantum dynamical simulations. These AI agents can be trained on the inputs and outputs of quantum
+                    chemistry and dynamics algorithms, effectively replacing computationally expensive components.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-gray-900 text-white" id="how-it-works">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">How Does It Work?</h2>
+              <div class="h-1 w-20 bg-blue-500 mx-auto mt-6"></div>
+            </div>
+            <div class="relative">
+              <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-500 hidden lg:block"></div>
+              <div class="mb-16 last:mb-0">
+                <div class="flex flex-col lg:flex-row items-stretch lg:items-center">
+                  <div class="w-full lg:w-1/2 lg:pr-12 mb-8 lg:mb-0 min-w-0 reveal">
+                    <div class="p-6 rounded-lg bg-gray-800 h-full">
+                      <h3 class="text-xl font-bold mb-4">Choose your AI-assisted Environment</h3>
+                      <p class="text-gray-300 mb-6">
+                        You can choose a JupyterHub-like environment or MolKet studio. Use MolKet's engine on your
+                        computer in Visual Studio or program it online on the web.
+                      </p>
+                      <div class="overflow-x-auto rounded-md">
+                        <pre
+                          style="
+                            color: rgb(212, 212, 212);
+                            font-size: 0.85rem;
+                            text-shadow: none;
+                            font-family:
+                              Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;,
+                              &quot;Courier New&quot;, monospace;
+                            direction: ltr;
+                            text-align: left;
+                            white-space: pre;
+                            word-spacing: normal;
+                            word-break: normal;
+                            line-height: 1.5;
+                            tab-size: 4;
+                            hyphens: none;
+                            padding: 1rem;
+                            margin: 0.5em 0px;
+                            overflow: auto;
+                            background: rgb(17 24 39 / var(--tw-bg-opacity));
+                          "
+                        ><code class="language-python" style='white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;'><span class="token" style="color: rgb(86, 156, 214);">import</span><span> molket_engine </span><span class="token" style="color: rgb(86, 156, 214);">as</span><span> me 
+</span><span></span><span class="token" style="color: rgb(86, 156, 214);">import</span><span> molket_visual </span><span class="token" style="color: rgb(86, 156, 214);">as</span><span> mv 
+</span><span></span><span class="token" style="color: rgb(86, 156, 214);">import</span><span> molket_data </span><span class="token" style="color: rgb(86, 156, 214);">as</span><span> md 
+</span>
+<span></span><span class="token" style="color: rgb(106, 153, 85);"># define the molecular structure </span><span>
+</span>
+<span></span><span class="token" style="color: rgb(106, 153, 85);"># insert H2 molecule</span><span>
+</span><span>molecule </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> me</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>Molecule</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(206, 145, 120);">'H_2'</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);"># define the geometry of the molecule: example H2</span><span>
+</span><span>molecule</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>geometry </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">[</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(206, 145, 120);">'H'</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(206, 145, 120);">'H'</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span> </span><span class="token" style="color: rgb(181, 206, 168);">0.74</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span class="token" style="color: rgb(212, 212, 212);">]</span></code></pre>
+                      </div>
+                      <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                        <button
+                          class="px-6 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300 w-full sm:w-auto"
+                        >
+                          MolKet SDK
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full bg-blue-600 border-4 border-gray-900 z-10 mx-auto my-4 lg:my-0 flex items-center justify-center text-white font-bold"
+                  >
+                    1
+                  </div>
+                  <div class="hidden lg:block lg:w-1/2"></div>
+                </div>
+              </div>
+              <div class="mb-16 last:mb-0">
+                <div class="flex flex-col lg:flex-row lg:flex-row-reverse items-stretch lg:items-center">
+                  <div class="w-full lg:w-1/2 lg:pl-12 mb-8 lg:mb-0 min-w-0 reveal">
+                    <div class="p-6 rounded-lg bg-gray-800 h-full">
+                      <h3 class="text-xl font-bold mb-4">Type your code or drag and design your simulation</h3>
+                      <p class="text-gray-300 mb-6">
+                        Type your code in natural language, or choose from our library. Our AI-assistant will help you
+                        filling the code writing and suggest modules that you can use. Alternatively, you can design the
+                        simulation in a flow chart format.
+                      </p>
+                      <div class="overflow-x-auto rounded-md">
+                        <pre
+                          style="
+                            color: rgb(212, 212, 212);
+                            font-size: 0.85rem;
+                            text-shadow: none;
+                            font-family:
+                              Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;,
+                              &quot;Courier New&quot;, monospace;
+                            direction: ltr;
+                            text-align: left;
+                            white-space: pre;
+                            word-spacing: normal;
+                            word-break: normal;
+                            line-height: 1.5;
+                            tab-size: 4;
+                            hyphens: none;
+                            padding: 1rem;
+                            margin: 0.5em 0px;
+                            overflow: auto;
+                            background: rgb(17 24 39 / var(--tw-bg-opacity));
+                          "
+                        ><code class="language-python" style='white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;'><span class="token" style="color: rgb(106, 153, 85);"># create the Hamiltonian operator with the molecule and data structure </span><span>
+</span><span>H_op </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> me</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>Operator</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(206, 145, 120);">'H_2'</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span><span>H_op</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>molecule </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> molecule
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);"># define the electronic basis set</span><span>
+</span><span>H_op</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>elec_basis </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">'sto-3g'</span><span>
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);"># define the nuclear motion basis set, the vibrational basis set</span><span>
+</span><span>H_op</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>nuc_basis </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(206, 145, 120);">'harmonic'</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span class="token" style="color: rgb(206, 145, 120);">'Gaussian'</span><span class="token" style="color: rgb(212, 212, 212);">)</span></code></pre>
+                      </div>
+                      <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                        <button
+                          class="px-6 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300 w-full sm:w-auto"
+                        >
+                          Start Simulation</button
+                        ><button
+                          class="px-6 py-2 bg-indigo-600 rounded-lg text-white font-medium hover:bg-indigo-700 transition-colors duration-300 w-full sm:w-auto"
+                        >
+                          MolKet Studio
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full bg-blue-600 border-4 border-gray-900 z-10 mx-auto my-4 lg:my-0 flex items-center justify-center text-white font-bold"
+                  >
+                    2
+                  </div>
+                  <div class="hidden lg:block lg:w-1/2"></div>
+                </div>
+              </div>
+              <div class="mb-16 last:mb-0">
+                <div class="flex flex-col lg:flex-row items-stretch lg:items-center">
+                  <div class="w-full lg:w-1/2 lg:pr-12 mb-8 lg:mb-0 min-w-0 reveal">
+                    <div class="p-6 rounded-lg bg-gray-800 h-full">
+                      <h3 class="text-xl font-bold mb-4">
+                        MolKet's AI engine will assist in selecting the algorithms and computing platforms
+                      </h3>
+                      <p class="text-gray-300 mb-6">
+                        Depending on the computational complexity and the type of each step in the simulation, MolKet's
+                        AI engine will choose the proper quantum/HPC architecture for you. It will also optimize the
+                        execution on each type of hardware by training the general Hamiltonians and map them onto
+                        quantum.
+                      </p>
+                      <div class="overflow-x-auto rounded-md">
+                        <pre
+                          style="
+                            color: rgb(212, 212, 212);
+                            font-size: 0.85rem;
+                            text-shadow: none;
+                            font-family:
+                              Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;,
+                              &quot;Courier New&quot;, monospace;
+                            direction: ltr;
+                            text-align: left;
+                            white-space: pre;
+                            word-spacing: normal;
+                            word-break: normal;
+                            line-height: 1.5;
+                            tab-size: 4;
+                            hyphens: none;
+                            padding: 1rem;
+                            margin: 0.5em 0px;
+                            overflow: auto;
+                            background: rgb(17 24 39 / var(--tw-bg-opacity));
+                          "
+                        ><code class="language-python" style='white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;'><span class="token" style="color: rgb(106, 153, 85);"># define the rotational basis set (wavefunctions), ...</span><span>
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);"># Default: spherical harmonics for linear molecules,</span><span>
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);"># and Wigner D-matrices for non-linear molecules.</span><span>
+</span><span>H_op</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>rot_basis </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(206, 145, 120);">'Ylm'</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);"># you can also define phase or choose real </span><span>
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);"># harmonics depending on the symmetry of the molecule</span><span>
+</span>
+<span></span><span class="token" style="color: rgb(106, 153, 85);"># Define the chips for the computing part: </span><span>
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);"># the choice of the hardware and the backend</span><span>
+</span><span>H_op</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>Qchip </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">'Qqx2'</span><span> 
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);"># variations of Qqx4: Qqx2, Qqx3, Qqx4, Qqx5,</span><span>
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);"># Qqx20, Qqx_qasm_simulator</span><span>
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);">## accelerated computing with GPU</span><span>
+</span><span>H_op</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>HPCchip </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">'GPU'</span></code></pre>
+                      </div>
+                      <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                        <button
+                          class="px-6 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300 w-full sm:w-auto"
+                        >
+                          MolKet SDK
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full bg-blue-600 border-4 border-gray-900 z-10 mx-auto my-4 lg:my-0 flex items-center justify-center text-white font-bold"
+                  >
+                    3
+                  </div>
+                  <div class="hidden lg:block lg:w-1/2"></div>
+                </div>
+              </div>
+              <div class="mb-16 last:mb-0">
+                <div class="flex flex-col lg:flex-row lg:flex-row-reverse items-stretch lg:items-center">
+                  <div class="w-full lg:w-1/2 lg:pl-12 mb-8 lg:mb-0 min-w-0 reveal">
+                    <div class="p-6 rounded-lg bg-gray-800 h-full">
+                      <h3 class="text-xl font-bold mb-4">
+                        Get the results and post-processing using builtin ML and AI libraries
+                      </h3>
+                      <p class="text-gray-300 mb-6">
+                        Depending on the computational complexity and the type of each step in the simulation, MolKet's
+                        AI engine will choose the proper quantum/HPC architecture for you.
+                      </p>
+                      <div class="overflow-x-auto rounded-md">
+                        <pre
+                          style="
+                            color: rgb(212, 212, 212);
+                            font-size: 0.85rem;
+                            text-shadow: none;
+                            font-family:
+                              Menlo, Monaco, Consolas, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;,
+                              &quot;Courier New&quot;, monospace;
+                            direction: ltr;
+                            text-align: left;
+                            white-space: pre;
+                            word-spacing: normal;
+                            word-break: normal;
+                            line-height: 1.5;
+                            tab-size: 4;
+                            hyphens: none;
+                            padding: 1rem;
+                            margin: 0.5em 0px;
+                            overflow: auto;
+                            background: rgb(17 24 39 / var(--tw-bg-opacity));
+                          "
+                        ><code class="language-python" style='white-space: pre; color: rgb(212, 212, 212); font-size: 13px; text-shadow: none; font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace; direction: ltr; text-align: left; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;'><span class="token" style="color: rgb(106, 153, 85);"># choose the simulators for the quantum and HPC backends,</span><span>
+</span><span></span><span class="token" style="color: rgb(106, 153, 85);"># to be used in analysis as well </span><span>
+</span><span>H_op</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>Qbackend </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">'statevector_simulator'</span><span>
+</span><span>H_op</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>HPCbackend </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> </span><span class="token" style="color: rgb(206, 145, 120);">'local_qasm_simulator'</span><span>
+</span><span>vib_groundstate_energy</span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> H_op</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>vib_eigE</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(206, 145, 120);">'0'</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span class="token" style="color: rgb(206, 145, 120);">'groundstate'</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span><span>vib_WF0 </span><span class="token" style="color: rgb(212, 212, 212);">=</span><span> H_op</span><span class="token" style="color: rgb(212, 212, 212);">.</span><span>vib_eigW</span><span class="token" style="color: rgb(212, 212, 212);">(</span><span class="token" style="color: rgb(206, 145, 120);">'0'</span><span class="token" style="color: rgb(212, 212, 212);">,</span><span class="token" style="color: rgb(206, 145, 120);">'groundstate'</span><span class="token" style="color: rgb(212, 212, 212);">)</span><span>
+</span>
+<span></span><span class="token" style="color: rgb(106, 153, 85);">#H = H_vib + H_rot + H_elec + H_nuc</span></code></pre>
+                      </div>
+                      <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                        <button
+                          class="px-6 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300 w-full sm:w-auto"
+                        >
+                          Start Simulation
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full bg-blue-600 border-4 border-gray-900 z-10 mx-auto my-4 lg:my-0 flex items-center justify-center text-white font-bold"
+                  >
+                    4
+                  </div>
+                  <div class="hidden lg:block lg:w-1/2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Development Model</h2>
+              <p class="text-lg text-gray-600">
+                We can help you by providing what you need from built-in libraries that help you in your execution.
+              </p>
+              <div class="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-xl reveal">
+              <img
+                alt="MolKet Services"
+                class="w-full h-auto"
+                loading="lazy"
+                src="images/deck_general_compact_new_s1.001.jpeg"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-gray-50" id="team">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">MolKet Founders</h2>
+              <div class="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 reveal">
+              <div class="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row reveal">
+                <div
+                  class="md:w-1/3 bg-gradient-to-br from-blue-600 to-indigo-800 flex items-center justify-center p-6"
+                >
+                  <img
+                    alt="Dr. Taha Selim"
+                    class="rounded-full h-40 w-40 object-cover border-4 border-white shadow-lg"
+                    loading="lazy"
+                    src="images/taha_profile_bw_enhance_circle_wbackn.png"
+                  />
+                </div>
+                <div class="md:w-2/3 p-6 flex flex-col">
+                  <h3 class="text-2xl font-bold text-gray-900">Dr. Taha Selim</h3>
+                  <p class="text-blue-600 font-medium mb-4">Directeur Général - General Manager</p>
+                  <div class="mb-4">
+                    <h4 class="text-sm font-semibold text-gray-600 uppercase mb-2">Credentials</h4>
+                    <ul class="space-y-1">
+                      <li class="text-sm text-gray-600 flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>Lecturer/Researcher (QC Education Officer), Amsterdam
+                        University of Applied Sciences
+                      </li>
+                      <li class="text-sm text-gray-600 flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>MVP Founder Member QSECDEF
+                      </li>
+                      <li class="text-sm text-gray-600 flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>PhD Quantum Theoretical &amp; Computational Chemistry
+                      </li>
+                      <li class="text-sm text-gray-600 flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>M.Sc. of Quantum physics, Lasers, &amp; Materials
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-4">
+                    <h4 class="text-sm font-semibold text-gray-600 uppercase mb-2">Recent Publications</h4>
+                    <ul class="space-y-1">
+                      <li class="text-sm text-gray-600">
+                        <a
+                          class="text-blue-600 hover:underline flex items-start"
+                          href="https://meetings.aps.org/Meeting/MAR24/Session/LL03.3"
+                          ><span class="text-blue-500 mr-2">•</span>Carbon dioxide (CO2) as a quantum molecular sensor
+                          in protoplanetary disks, at APS March Meeting 2024</a
+                        >
+                      </li>
+                      <li class="text-sm text-gray-600">
+                        <a
+                          class="text-blue-600 hover:underline flex items-start"
+                          href="https://doi.org/10.1063/5.0174787"
+                          ><span class="text-blue-500 mr-2">•</span>State-to-state rovibrational transition rates for
+                          CO2 in the bend mode in collisions with He atoms, J. Chem. Phys., 159, 164310 (2023)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-4">
+                    <h4 class="text-sm font-semibold text-gray-600 uppercase mb-2">Recent Talks</h4>
+                    <ul class="space-y-1">
+                      <li class="text-sm text-gray-600">
+                        <a
+                          class="text-blue-600 hover:underline flex items-start"
+                          href="https://pretalx.com/juliacon2024/talk/U9NF3A/"
+                          ><span class="text-blue-500 mr-2">•</span>Co-speaker lightning talk Simulating quantum
+                          molecular dynamics with Julia at JuliaCon 2024</a
+                        >
+                      </li>
+                      <li class="text-sm text-gray-600">
+                        <a
+                          class="text-blue-600 hover:underline flex items-start"
+                          href="https://meetings.aps.org/Meeting/MAR24/Session/LL03.3"
+                          ><span class="text-blue-500 mr-2">•</span>Speaker, Carbon dioxide (CO2) as a quantum molecular
+                          sensor in protoplanetary disks, at APS March Meeting 2024</a
+                        >
+                      </li>
+                      <li class="text-sm text-gray-600">
+                        <a
+                          class="text-blue-600 hover:underline flex items-start"
+                          href="https://www.youtube.com/watch?v=5yBo3Jb71so"
+                          ><span class="text-blue-500 mr-2">•</span>Panelist at the QED-C Quantum &amp; AI Use Cases
+                          Panel (2025)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mt-auto flex space-x-3">
+                    <a
+                      class="p-2 bg-gray-100 hover:bg-blue-100 rounded-full text-blue-600 transition-colors duration-300"
+                      href="https://www.linkedin.com/in/tiselim/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin w-5 h-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewbox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect height="12" width="4" x="2" y="9"></rect>
+                        <circle cx="4" cy="4" r="2"></circle></svg></a
+                    ><a
+                      class="p-2 bg-gray-100 hover:bg-red-100 rounded-full text-red-600 transition-colors duration-300"
+                      href="https://www.youtube.com/channel"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><svg
+                        aria-hidden="true"
+                        class="lucide lucide-youtube w-5 h-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewbox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                        ></path>
+                        <path d="m10 15 5-3-5-3z"></path></svg></a
+                    ><a
+                      class="text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-300 cursor-pointer mt-2"
+                      href="https://github.com/tahaselim"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >View Full Profile</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row reveal">
+                <div
+                  class="md:w-1/3 bg-gradient-to-br from-blue-600 to-indigo-800 flex items-center justify-center p-6"
+                >
+                  <img
+                    alt="Alain Chancé"
+                    class="rounded-full h-40 w-40 object-cover border-4 border-white shadow-lg"
+                    loading="lazy"
+                    src="images/Alain_Chance-modified.png"
+                  />
+                </div>
+                <div class="md:w-2/3 p-6 flex flex-col">
+                  <h3 class="text-2xl font-bold text-gray-900">Alain Chancé</h3>
+                  <p class="text-blue-600 font-medium mb-4">Président - President</p>
+                  <div class="mb-4">
+                    <h4 class="text-sm font-semibold text-gray-600 uppercase mb-2">Credentials</h4>
+                    <ul class="space-y-1">
+                      <li class="text-sm text-gray-600 flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>Principal consultant with 30+ years experience in major
+                        management consulting firms
+                      </li>
+                      <li class="text-sm text-gray-600 flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>MVP Founder Member QSECDEF
+                      </li>
+                      <li class="text-sm text-gray-600 flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>IEEE Senior Member
+                      </li>
+                      <li class="text-sm text-gray-600 flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>Society affiliate American Chemical Society (ACS)
+                      </li>
+                      <li class="text-sm text-gray-600 flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>Member American Physical Society (APS)
+                      </li>
+                      <li class="text-sm text-gray-600 flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>Qiskit Advocate &amp; IBM Certified Associate Developer
+                      </li>
+                      <li class="text-sm text-gray-600 flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>Master’s Degree in Science and Executive Engineering
+                        MINES Saint-Etienne, France (1981)
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-4">
+                    <h4 class="text-sm font-semibold text-gray-600 uppercase mb-2">Recent Publications</h4>
+                    <ul class="space-y-1">
+                      <li class="text-sm text-gray-600">
+                        <a
+                          class="text-blue-600 hover:underline flex items-start"
+                          href="https://github.com/AlainChance/QPP-Alain"
+                          ><span class="text-blue-500 mr-2">•</span>QPP-Alain, repository of the conference paper
+                          Quantum Permutation Pad with Qiskit Runtime</a
+                        >
+                      </li>
+                      <li class="text-sm text-gray-600">
+                        <a
+                          class="text-blue-600 hover:underline flex items-start"
+                          href="https://doi.org/10.1007/978-3-031-59619-3_12"
+                          ><span class="text-blue-500 mr-2">•</span>Quantum Permutation Pad Corinthians, In: Femmam, S.,
+                          Lorenz, P. (eds) Recent Advances in Communication Networks and Embedded Systems</a
+                        >
+                      </li>
+                      <li class="text-sm text-gray-600">
+                        <a
+                          class="text-blue-600 hover:underline flex items-start"
+                          href="https://www.amazon.com/Quantum-Chemistry-Computing-Curious-Illustrated/dp/1803243902"
+                          ><span class="text-blue-500 mr-2">•</span>Quantum Chemistry and Computing for the Curious:
+                          Illustrated with Python and Qiskit® code, Keeper L. Sharkey, Alain Chancé, Packt (2022)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-4">
+                    <h4 class="text-sm font-semibold text-gray-600 uppercase mb-2">Recent Talks</h4>
+                    <ul class="space-y-1">
+                      <li class="text-sm text-gray-600">
+                        <a
+                          class="text-blue-600 hover:underline flex items-start"
+                          href="https://pretalx.com/juliacon2024/talk/U9NF3A/"
+                          ><span class="text-blue-500 mr-2">•</span>Co-speaker lightning talk Simulating quantum
+                          molecular dynamics with Julia at JuliaCon 2024</a
+                        >
+                      </li>
+                      <li class="text-sm text-gray-600">
+                        <a class="text-blue-600 hover:underline flex items-start" href="#"
+                          ><span class="text-blue-500 mr-2">•</span>Keynote co-speaker "Combining the power of AI with
+                          Quantum" at the World Artificial Intelligence Cannes Festival (WAICF), Cannes, France, Feb. 9,
+                          2024</a
+                        >
+                      </li>
+                      <li class="text-sm text-gray-600">
+                        <a
+                          class="text-blue-600 hover:underline flex items-start"
+                          href="https://www.youtube.com/watch?v=5yBo3Jb71so"
+                          ><span class="text-blue-500 mr-2">•</span>Panelist at the QED-C Quantum &amp; AI Use Cases
+                          Panel (2025)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mt-auto flex space-x-3">
+                    <a
+                      class="p-2 bg-gray-100 hover:bg-blue-100 rounded-full text-blue-600 transition-colors duration-300"
+                      href="https://www.linkedin.com/in/alainchance/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin w-5 h-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewbox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect height="12" width="4" x="2" y="9"></rect>
+                        <circle cx="4" cy="4" r="2"></circle></svg></a
+                    ><a
+                      class="p-2 bg-gray-100 hover:bg-red-100 rounded-full text-red-600 transition-colors duration-300"
+                      href="https://www.youtube.com/channel"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><svg
+                        aria-hidden="true"
+                        class="lucide lucide-youtube w-5 h-5"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewbox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                        ></path>
+                        <path d="m10 15 5-3-5-3z"></path></svg></a
+                    ><a
+                      class="text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-300 cursor-pointer mt-2"
+                      href="https://github.com/AlainChance"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >View Full Profile</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mb-12 mt-20 reveal">
+              <h3 class="text-2xl font-bold text-gray-800">Business Developers</h3>
+            </div>
+            <div class="grid grid-cols-1 gap-8 max-w-md mx-auto reveal">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 text-center reveal"
+              >
+                <img
+                  alt="Ahmed Saad El Fiky"
+                  class="rounded-full h-32 w-32 object-cover border-4 border-blue-50 mb-4"
+                  loading="lazy"
+                  src="images/asaad_elfiky.jpg"
+                />
+                <h3 class="text-xl font-bold text-gray-900">Ahmed Saad El Fiky</h3>
+                <p class="text-blue-600 font-medium mb-4">Business Developer</p>
+                <div class="flex justify-center space-x-4 mt-2">
+                  <a
+                    class="text-gray-400 hover:text-blue-600 transition-colors"
+                    href="https://www.linkedin.com/in/saadfiky/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    ><svg
+                      aria-hidden="true"
+                      class="lucide lucide-linkedin w-6 h-6"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewbox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect height="12" width="4" x="2" y="9"></rect>
+                      <circle cx="4" cy="4" r="2"></circle></svg></a
+                  ><a
+                    class="text-gray-400 hover:text-gray-900 transition-colors"
+                    href="https://github.com/SaadFiky"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    ><svg
+                      aria-hidden="true"
+                      class="lucide lucide-github w-6 h-6"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewbox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                      ></path>
+                      <path d="M9 18c-4.51 2-5-2-7-2"></path></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mb-16 mt-24 reveal">
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Partners</h2>
+              <div class="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 text-center reveal"
+              >
+                <img
+                  alt="Quandela"
+                  class="rounded-full h-32 w-32 object-contain p-4 border-4 border-blue-50 mb-4 bg-white"
+                  loading="lazy"
+                  src="images/quandela-logotype-black-RGB.png"
+                />
+                <h3 class="text-xl font-bold text-gray-900">Quandela</h3>
+                <p class="text-blue-600 font-medium mb-4">Photonic Quantum Computers</p>
+                <div class="flex justify-center space-x-4 mt-2">
+                  <a
+                    class="text-gray-400 hover:text-blue-600 transition-colors"
+                    href="https://www.quandela.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    ><svg
+                      aria-hidden="true"
+                      class="lucide lucide-globe w-6 h-6"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewbox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                      <path d="M2 12h20"></path></svg
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 text-center reveal"
+              >
+                <img
+                  alt="ArgentumAI"
+                  class="rounded-full h-32 w-32 object-contain p-4 border-4 border-blue-50 mb-4 bg-white"
+                  loading="lazy"
+                  src="images/argentumAI.jpeg"
+                />
+                <h3 class="text-xl font-bold text-gray-900">ArgentumAI</h3>
+                <p class="text-blue-600 font-medium mb-4">AI-Powered Compute Marketplace</p>
+                <div class="flex justify-center space-x-4 mt-2">
+                  <a
+                    class="text-gray-400 hover:text-blue-600 transition-colors"
+                    href="https://argentum-ai.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    ><svg
+                      aria-hidden="true"
+                      class="lucide lucide-globe w-6 h-6"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewbox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                      <path d="M2 12h20"></path></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-gray-900 text-white" id="contact">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+              <p class="text-lg text-gray-300">Get in touch with our team</p>
+              <div class="h-1 w-20 bg-blue-500 mx-auto mt-6"></div>
+            </div>
+            <div class="max-w-5xl mx-auto">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 rounded-lg p-8 text-center reveal">
+                  <div
+                    class="w-16 h-16 mx-auto bg-blue-600/20 rounded-full flex items-center justify-center text-blue-500 mb-6"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="lucide lucide-map-pin w-8 h-8"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewbox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-4">Our Location</h3>
+                  <p class="text-gray-300 mb-6">MOLKET SAS, 38, rue des Mathurins, 75008, Paris, France</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-8 text-center reveal">
+                  <div
+                    class="w-16 h-16 mx-auto bg-blue-600/20 rounded-full flex items-center justify-center text-blue-500 mb-6"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="lucide lucide-mail w-8 h-8"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewbox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                      <rect height="16" rx="2" width="20" x="2" y="4"></rect>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-4">Email Us</h3>
+                  <p class="text-gray-300 mb-2">
+                    <a class="hover:text-blue-400 transition-colors duration-300" href="mailto:contact@molket.io"
+                      >contact@molket.io</a
+                    >
+                  </p>
+                  <p class="text-gray-300">
+                    <a class="hover:text-blue-400 transition-colors duration-300" href="mailto:business@molket.io"
+                      >business@molket.io</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="mt-16 text-center reveal">
+                <a
+                  class="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full text-white font-medium hover:from-blue-700 hover:to-indigo-700 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
+                  href="https://1u0ya8k0gol.typeform.com/to/RyIvarq4"
+                  rel="nofollow noopener"
+                  target="_blank"
+                  >Request a Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="bg-gray-900 text-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div class="md:col-span-2 reveal">
+                <div class="flex items-center mb-6">
+                  <img alt="MolKet" class="h-12 w-auto mr-3" loading="lazy" src="images/logo.png" />
+                </div>
+                <p class="text-gray-400 mb-6 max-w-md">
+                  MolKet offers consulting and AI services for modeling quantum molecular solutions with cloud-based
+                  software on hybrid HPC and quantum computing platforms.
+                </p>
+              </div>
+              <div class="reveal">
+                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                  <li><a class="text-gray-400 hover:text-white" href="#about">About Us</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="#services">Services</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="projects.html">Projects</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="#how-it-works">How It Works</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="#team">Our Team</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="news.html">News</a></li>
+                  <li><a class="text-gray-400 hover:text-white" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="reveal">
+                <h3 class="text-lg font-bold mb-4">Resources</h3>
+                <ul class="space-y-2">
+                  <li><a class="text-gray-400 hover:text-white" href="usecases.html">Use Cases</a></li>
+                  <li>
+                    <a
+                      class="text-gray-400 hover:text-white"
+                      href="http://jupyterhub.molket.io"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >Lab</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-400 hover:text-white"
+                      href="https://github.com/molket-io/molket.jl/tree/main/examples"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >MolKet.jl</a
+                    >
+                  </li>
+                  <li><a class="text-gray-400 hover:text-white" href="pp.html">Mentions légales</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-10">
+              <div class="w-full h-60 rounded-xl overflow-hidden shadow-lg border border-gray-700">
+                <iframe
+                  class="h-full w-full"
+                  loading="lazy"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=2.3180%2C48.8683%2C2.3380%2C48.8783&amp;layer=mapnik&amp;marker=48.8733285%2C2.3280217"
+                  style="border: 0"
+                  title="Map: MOLKET SAS, 38 rue des Mathurins, 75008 Paris"
+                ></iframe>
+              </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm reveal">
+              <p>© 2025 MolKet SAS. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
 
+    <script src="assets/translations.js"></script>
+    <script src="assets/site.js"></script>
+    <script src="assets/chatbot.js"></script>
   </body>
 </html>
