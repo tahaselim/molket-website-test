@@ -1,6 +1,10 @@
 /* French and Dutch translations, keyed by the English text as it appears on the pages.
    Add or edit entries here when you change English text. */
 window.MOLKET_TRANSLATIONS = {
+ "30+ years in enterprise transformation and management consulting": {
+  "fr": "Plus de 30 ans d'expérience en transformation d'entreprise et en conseil en management",
+  "nl": "Meer dan 30 jaar ervaring in bedrijfstransformatie en managementadvies"
+ },
  "AI Agents for Chemical Design": {
   "fr": "Agents IA pour la conception chimique",
   "nl": "AI-agents voor chemisch ontwerp"
@@ -41,6 +45,10 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "Adaptation de votre application via HPC/QC",
   "nl": "Uw applicatie aanpassen met behulp van HPC/QC"
  },
+ "Advisory Board Member, North America Technical Institute (NATI), USA": {
+  "fr": "Membre du conseil consultatif, North America Technical Institute (NATI), États-Unis",
+  "nl": "Lid van de adviesraad, North America Technical Institute (NATI), VS"
+ },
  "Alain Chancé and Dr. Taha Selim propose leveraging AI agents to accelerate chemical design and quantum dynamical simulations. These AI agents can be trained on the inputs and outputs of quantum chemistry and dynamics algorithms, effectively replacing computationally expensive components.": {
   "fr": "Alain Chancé et le Dr Taha Selim proposent de tirer parti des agents IA pour accélérer la conception chimique et les simulations de dynamique quantique. Ces agents IA peuvent être entraînés sur les entrées et sorties d'algorithmes de chimie et de dynamique quantique, remplaçant ainsi efficacement les composants coûteux en calcul.",
   "nl": "Alain Chancé en Dr. Taha Selim stellen voor om AI-agenten in te zetten om chemisch ontwerp en kwantumdynamische simulaties te versnellen. Deze AI-agenten kunnen worden getraind op de inputs en outputs van kwantumchemie- en dynamica-algoritmen, waardoor computationeel dure componenten effectief worden vervangen."
@@ -60,6 +68,10 @@ window.MOLKET_TRANSLATIONS = {
  "April 2026": {
   "fr": "avril 2026",
   "nl": "april 2026"
+ },
+ "BSc in Physics/Mathematics, The American University in Cairo": {
+  "fr": "Licence en physique/mathématiques, Université américaine du Caire",
+  "nl": "BSc in natuurkunde/wiskunde, American University in Cairo"
  },
  "CO₂ as a quantum molecular sensor at the APS March Meeting 2024": {
   "fr": "Le CO₂ comme capteur moléculaire quantique à l'APS March Meeting 2024",
@@ -92,6 +104,10 @@ window.MOLKET_TRANSLATIONS = {
  "Client engagements we have delivered, and the research and open-source tools behind MolKet's work in quantum computing and AI": {
   "fr": "Les missions réalisées pour nos clients, ainsi que la recherche et les outils open source qui sous-tendent le travail de MolKet en informatique quantique et en IA",
   "nl": "Opdrachten die we voor klanten hebben uitgevoerd, en het onderzoek en de open-source tools achter het werk van MolKet in quantum computing en AI"
+ },
+ "Co-organizer, Alexandria Quantum Hackathon (2025, 2026) and Cairo University Spring School in Quantum Technologies (2026)": {
+  "fr": "Co-organisateur de l'Alexandria Quantum Hackathon (2025, 2026) et de l'école de printemps en technologies quantiques de l'Université du Caire (2026)",
+  "nl": "Mede-organisator van de Alexandria Quantum Hackathon (2025, 2026) en de Spring School in Quantum Technologies van de Universiteit van Caïro (2026)"
  },
  "Co-speaker lightning talk Simulating quantum molecular dynamics with Julia at JuliaCon 2024": {
   "fr": "Co-conférencier lightning talk Simulating quantum molecular dynamics with Julia à JuliaCon 2024",
@@ -197,6 +213,10 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "février 2024",
   "nl": "februari 2024"
  },
+ "Founder of iQafé — quantum AI education and adoption": {
+  "fr": "Fondateur d'iQafé — éducation et adoption de l'IA quantique",
+  "nl": "Oprichter van iQafé — onderwijs in en adoptie van quantum-AI"
+ },
  "Get in touch with our team": {
   "fr": "Prenez contact avec notre équipe",
   "nl": "Neem contact op met ons team"
@@ -265,6 +285,10 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "Chargé de cours/Chercheur (Responsable de l'Éducation QC), Amsterdam University of Applied Sciences",
   "nl": "Docent/Onderzoeker (QC Education Officer), Hogeschool van Amsterdam"
  },
+ "Lecturer/Researcher in quantum information & computing and quantum chemistry, Amsterdam University of Applied Sciences": {
+  "fr": "Enseignant-chercheur en information et calcul quantiques et en chimie quantique, Amsterdam University of Applied Sciences",
+  "nl": "Docent/onderzoeker in kwantuminformatie en -computing en kwantumchemie, Hogeschool van Amsterdam"
+ },
  "M.Sc. of Quantum physics, Lasers, & Materials": {
   "fr": "M.Sc. en Physique Quantique, Lasers et Matériaux",
   "nl": "M.Sc. Kwantumfysica, Lasers & Materialen"
@@ -273,9 +297,17 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "MOLKET SAS, 38, rue des Mathurins, 75008, Paris, France",
   "nl": "MOLKET SAS, 38, rue des Mathurins, 75008, Parijs, Frankrijk"
  },
+ "MSc in Physics, Lasers & Materials, Université de Bourgogne": {
+  "fr": "Master en physique, lasers et matériaux, Université de Bourgogne",
+  "nl": "MSc in natuurkunde, lasers en materialen, Université de Bourgogne"
+ },
  "MVP Founder Member QSECDEF": {
   "fr": "Membre Fondateur MVP QSECDEF",
   "nl": "MVP Oprichter Lid QSECDEF"
+ },
+ "MVP Founder Member,": {
+  "fr": "Membre fondateur MVP,",
+  "nl": "MVP-oprichtend lid,"
  },
  "March 2024": {
   "fr": "mars 2024",
@@ -292,6 +324,10 @@ window.MOLKET_TRANSLATIONS = {
  "Member American Physical Society (APS)": {
   "fr": "Membre de l'American Physical Society (APS)",
   "nl": "Lid American Physical Society (APS)"
+ },
+ "Member, American Physical Society (APS) · Society Affiliate, American Chemical Society (ACS) · Member, Quantum Security and Defence Working Group": {
+  "fr": "Membre de l'American Physical Society (APS) · Society Affiliate de l'American Chemical Society (ACS) · Membre du Quantum Security and Defence Working Group",
+  "nl": "Lid van de American Physical Society (APS) · Society Affiliate van de American Chemical Society (ACS) · Lid van de Quantum Security and Defence Working Group"
  },
  "Mentions légales": {
   "fr": "Mentions légales",
@@ -397,6 +433,10 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "Doctorat en Chimie Quantique Théorique & Computationnelle",
   "nl": "PhD Kwantum Theoretische & Computationele Chemie"
  },
+ "PhD in Quantum Theoretical & Computational Chemistry, Radboud University (2024)": {
+  "fr": "Doctorat en chimie quantique théorique et computationnelle, Université Radboud (2024)",
+  "nl": "PhD in kwantumtheoretische en computationele chemie, Radboud Universiteit (2024)"
+ },
  "Photo credits: GIE and TDRA": {
   "fr": "Crédits photo: GIE and TDRA",
   "nl": "Fotocredits: GIE and TDRA"
@@ -412,6 +452,10 @@ window.MOLKET_TRANSLATIONS = {
  "Principal consultant with 30+ years experience in major management consulting firms": {
   "fr": "Consultant principal avec plus de 30 ans d'expérience dans de grandes firmes de conseil en management",
   "nl": "Hoofdconsultant met meer dan 30 jaar ervaring bij grote managementadviesbureaus"
+ },
+ "Program Committee Member, Quantum AI 2026 conference, Indianapolis, USA": {
+  "fr": "Membre du comité de programme, conférence Quantum AI 2026, Indianapolis, États-Unis",
+  "nl": "Lid van het programmacomité, Quantum AI 2026-conferentie, Indianapolis, VS"
  },
  "Projects": {
   "fr": "Projets",
@@ -444,6 +488,18 @@ window.MOLKET_TRANSLATIONS = {
  "Qiskit Advocate & IBM Certified Associate Developer": {
   "fr": "Qiskit Advocate & IBM Certified Associate Developer",
   "nl": "Qiskit Advocate & IBM Gecertificeerd Associate Developer"
+ },
+ "Quantum Chemistry and Computing for the Curious, 2nd ed. (with K. L. Sharkey), Packt, 2026": {
+  "fr": "Quantum Chemistry and Computing for the Curious, 2e éd. (avec K. L. Sharkey), Packt, 2026",
+  "nl": "Quantum Chemistry and Computing for the Curious, 2e ed. (met K. L. Sharkey), Packt, 2026"
+ },
+ "Quantum Computing for X-ray Astronomy — SRON Space Research Organisation Netherlands colloquium, Leiden, November 2025": {
+  "fr": "Quantum Computing for X-ray Astronomy — colloque du SRON (Institut néerlandais de recherche spatiale), Leyde, novembre 2025",
+  "nl": "Quantum Computing for X-ray Astronomy — SRON-colloquium (Ruimteonderzoek Nederland), Leiden, november 2025"
+ },
+ "Quantum Dynamics of Molecules in Space: How Can Quantum AI Help Reduce Complexity? — KAUST, Saudi Arabia, February 2026": {
+  "fr": "Quantum Dynamics of Molecules in Space: How Can Quantum AI Help Reduce Complexity? — KAUST, Arabie saoudite, février 2026",
+  "nl": "Quantum Dynamics of Molecules in Space: How Can Quantum AI Help Reduce Complexity? — KAUST, Saoedi-Arabië, februari 2026"
  },
  "Quantum Intelligence for Chemistry Simulations": {
   "fr": "Intelligence Quantique pour les Simulations Chimiques",
@@ -501,13 +557,29 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "Ressources",
   "nl": "Bronnen"
  },
+ "SQD use cases and quantum computing energy consumption — plenary lecture, Cairo University Spring School in Quantum Technologies, May 2026": {
+  "fr": "SQD use cases and quantum computing energy consumption — conférence plénière, école de printemps en technologies quantiques de l'Université du Caire, mai 2026",
+  "nl": "SQD use cases and quantum computing energy consumption — plenaire lezing, Spring School in Quantum Technologies van de Universiteit van Caïro, mei 2026"
+ },
  "SQD-PLS: Quantum Linear Solver": {
   "fr": "SQD-PLS : solveur linéaire quantique",
   "nl": "SQD-PLS: kwantum lineaire oplosser"
  },
+ "Sample-Based Quantum Diagonalization — Qiskit Fall Fest Argentina, November 2025": {
+  "fr": "Sample-Based Quantum Diagonalization — Qiskit Fall Fest Argentine, novembre 2025",
+  "nl": "Sample-Based Quantum Diagonalization — Qiskit Fall Fest Argentinië, november 2025"
+ },
+ "Sample-based quantum diagonalization in practice — 4th CIT–IBM Qiskit Fall Fest 2026, November 2026": {
+  "fr": "Sample-based quantum diagonalization in practice — 4e CIT–IBM Qiskit Fall Fest 2026, novembre 2026",
+  "nl": "Sample-based quantum diagonalization in practice — 4e CIT–IBM Qiskit Fall Fest 2026, november 2026"
+ },
  "Services": {
   "fr": "Services",
   "nl": "Diensten"
+ },
+ "Shareholder, Quantonation SAS": {
+  "fr": "Actionnaire de Quantonation SAS",
+  "nl": "Aandeelhouder van Quantonation SAS"
  },
  "Simulating quantum molecular dynamics with Julia at JuliaCon 2024": {
   "fr": "Simuler la dynamique moléculaire quantique avec Julia à JuliaCon 2024",
@@ -528,6 +600,10 @@ window.MOLKET_TRANSLATIONS = {
  "State-to-state rovibrational transition rates for CO2 in the bend mode in collisions with He atoms, J. Chem. Phys., 159, 164310 (2023)": {
   "fr": "State-to-state rovibrational transition rates for CO2 in the bend mode in collisions with He atoms, J. Chem. Phys., 159, 164310 (2023)",
   "nl": "State-to-state rovibrationele overgangssnelheden voor CO2 in de buigmodus bij botsingen met He-atomen, J. Chem. Phys., 159, 164310 (2023)"
+ },
+ "Step into Quantum Technologies Workshop — QCity, Zewail City for Science, Technology and Innovation (online), March 2026": {
+  "fr": "Step into Quantum Technologies Workshop — QCity, Zewail City for Science, Technology and Innovation (en ligne), mars 2026",
+  "nl": "Step into Quantum Technologies Workshop — QCity, Zewail City for Science, Technology and Innovation (online), maart 2026"
  },
  "Supported by cloud-based hybrid HPC & quantum computing platforms, enabling the development of advanced machine learning algorithms with significant predictive power.": {
   "fr": "Ces services sont supportés par des plateformes de calcul hybrides HPC et quantiques basées sur le cloud, permettant le développement d'algorithmes avancés d'apprentissage automatique avec un pouvoir prédictif significatif.",
@@ -577,6 +653,10 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "Vice-président du groupe IEEE P1947",
   "nl": "Vicevoorzitter van IEEE P1947"
  },
+ "Vice-Chair, IEEE SA P1947 Quantum Cybersecurity Framework Working Group": {
+  "fr": "Vice-président du groupe de travail IEEE SA P1947 Quantum Cybersecurity Framework",
+  "nl": "Vicevoorzitter van de IEEE SA P1947-werkgroep Quantum Cybersecurity Framework"
+ },
  "View Full Profile": {
   "fr": "Voir le Profil Complet",
   "nl": "Bekijk Volledig Profiel"
@@ -584,6 +664,10 @@ window.MOLKET_TRANSLATIONS = {
  "We can help you by providing what you need from built-in libraries that help you in your execution.": {
   "fr": "Nous pouvons vous aider en vous fournissant les bibliothèques intégrées nécessaires à votre exécution.",
   "nl": "Wij kunnen u helpen door u te voorzien van wat u nodig heeft uit ingebouwde bibliotheken die u ondersteunen bij uw uitvoering."
+ },
+ "Winner of the IBM Quantum Developer Conference (QDC) 2025 Market Split Problem Coding Challenge; track challenge team winner at QDC 2026 (third consecutive QDC)": {
+  "fr": "Lauréat du Market Split Problem Coding Challenge de l'IBM Quantum Developer Conference (QDC) 2025 ; équipe lauréate d'un challenge à la QDC 2026 (troisième QDC consécutive)",
+  "nl": "Winnaar van de Market Split Problem Coding Challenge op de IBM Quantum Developer Conference (QDC) 2025; winnend team van een track challenge op QDC 2026 (derde QDC op rij)"
  },
  "You can choose a JupyterHub-like environment or MolKet studio. Use MolKet's engine on your computer in Visual Studio or program it online on the web.": {
   "fr": "Vous pouvez choisir un environnement de type JupyterHub ou MolKet Studio. Utilisez le moteur de MolKet sur votre ordinateur avec Visual Studio ou programmez en ligne via le web.",
