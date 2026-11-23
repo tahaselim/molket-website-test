@@ -65,6 +65,10 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "Un environnement assisté par l'IA pour concevoir des simulations en langage naturel ou sous forme d'organigramme, le moteur choisissant le matériel HPC ou quantique adapté à chaque étape.",
   "nl": "Een AI-ondersteunde omgeving om simulaties te ontwerpen in natuurlijke taal of als stroomdiagram, waarbij de engine per stap geschikte HPC- of kwantumhardware kiest."
  },
+ "Applications of Quantum Algorithms for Molecular Simulations — invited colloquium, SRON Space Research Organisation Netherlands, Leiden, December 2026 (upcoming)": {
+  "fr": "Applications of Quantum Algorithms for Molecular Simulations — colloque invité, SRON (Institut néerlandais de recherche spatiale), Leyde, décembre 2026 (à venir)",
+  "nl": "Applications of Quantum Algorithms for Molecular Simulations — uitgenodigd colloquium, SRON (Ruimteonderzoek Nederland), Leiden, december 2026 (binnenkort)"
+ },
  "April 2026": {
   "fr": "avril 2026",
   "nl": "april 2026"
@@ -196,6 +200,10 @@ window.MOLKET_TRANSLATIONS = {
  "Explore Services": {
   "fr": "Découvrir nos Services",
   "nl": "Ontdek Diensten"
+ },
+ "Extending Sample-based Quantum Diagonalization for Solving Systems of Linear Equations — IBM Quantum Developer Conference (QDC) 2026, Chicago, USA, November 2026": {
+  "fr": "Extending Sample-based Quantum Diagonalization for Solving Systems of Linear Equations — IBM Quantum Developer Conference (QDC) 2026, Chicago, États-Unis, novembre 2026",
+  "nl": "Extending Sample-based Quantum Diagonalization for Solving Systems of Linear Equations — IBM Quantum Developer Conference (QDC) 2026, Chicago, VS, november 2026"
  },
  "Extending Sample-based Quantum Diagonalization for Solving Systems of Linear Equations — Quantum AI Conference 2026, Indiana University, Indianapolis, USA, August 2026": {
   "fr": "Extending Sample-based Quantum Diagonalization for Solving Systems of Linear Equations — Quantum AI Conference 2026, Indiana University, Indianapolis, États-Unis, août 2026",
@@ -645,6 +653,10 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "Par des services de conseil en management, MolKet a apporté à OTIMI une expertise spécialisée en conception de programme d'IA, développement de contenus et préparation des formateurs pour le parcours AI Innovators — un programme pratique initiant les élèves de 9 à 15 ans à l'intelligence artificielle appliquée, à la qualité des données et à un usage responsable des technologies, à Abou Dhabi et Dubaï.",
   "nl": "Via managementadvies ondersteunde MolKet OTIMI met specialistische expertise in het ontwerp van AI-curricula, de ontwikkeling van lesmateriaal en de voorbereiding van trainers voor het AI Innovators-traject — een praktijkgericht programma dat leerlingen van 9 tot 15 jaar in Abu Dhabi en Dubai kennis laat maken met toegepaste kunstmatige intelligentie, datakwaliteit en verantwoord technologiegebruik."
  },
+ "Track challenge team winner at QDC 2026 - (third consecutive QDC)": {
+  "fr": "Équipe lauréate d'un track challenge à la QDC 2026 - (troisième QDC consécutive)",
+  "nl": "Winnend team van een track challenge op QDC 2026 - (derde QDC op rij)"
+ },
  "Training, consultancy, and knowledge transfer": {
   "fr": "Formation, conseil et transfert de connaissances",
   "nl": "Training, consultancy en kennisoverdracht"
@@ -681,9 +693,9 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "Nous pouvons vous aider en vous fournissant les bibliothèques intégrées nécessaires à votre exécution.",
   "nl": "Wij kunnen u helpen door u te voorzien van wat u nodig heeft uit ingebouwde bibliotheken die u ondersteunen bij uw uitvoering."
  },
- "Winner of the IBM Quantum Developer Conference (QDC) 2025 Market Split Problem Coding Challenge; track challenge team winner at QDC 2026 (third consecutive QDC)": {
-  "fr": "Lauréat du Market Split Problem Coding Challenge de l'IBM Quantum Developer Conference (QDC) 2025 ; équipe lauréate d'un challenge à la QDC 2026 (troisième QDC consécutive)",
-  "nl": "Winnaar van de Market Split Problem Coding Challenge op de IBM Quantum Developer Conference (QDC) 2025; winnend team van een track challenge op QDC 2026 (derde QDC op rij)"
+ "Winner of the IBM QDC 2025 Market Split Challenge Problem": {
+  "fr": "Lauréat du Market Split Challenge Problem de l'IBM QDC 2025",
+  "nl": "Winnaar van de Market Split Challenge Problem op IBM QDC 2025"
  },
  "You can choose a JupyterHub-like environment or MolKet studio. Use MolKet's engine on your computer in Visual Studio or program it online on the web.": {
   "fr": "Vous pouvez choisir un environnement de type JupyterHub ou MolKet Studio. Utilisez le moteur de MolKet sur votre ordinateur avec Visual Studio ou programmez en ligne via le web.",
