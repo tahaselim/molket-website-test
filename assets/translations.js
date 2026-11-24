@@ -73,6 +73,10 @@ window.MOLKET_TRANSLATIONS = {
   "fr": "avril 2026",
   "nl": "april 2026"
  },
+ "Asks whether sample-based quantum diagonalization (SQD) results can be judged by more than the energy. Using archived IBM hardware data for N₂ and the 2025 77-qubit iron–sulfur cluster calculation, Alain Chancé tracks density properties and spin against converged references: properties stop improving while the energy still falls, and random or coupled-cluster-seeded baselines can match hardware results at equal subspace size. The paper recommends reporting a density property and spin alongside the energy.": {
+  "fr": "Examine si les résultats de la diagonalisation quantique par échantillonnage (SQD) peuvent être jugés sur autre chose que l'énergie. À partir de données archivées de matériel IBM pour N₂ et du calcul de 2025 sur un cluster fer–soufre à 77 qubits, Alain Chancé suit les propriétés de densité et le spin par rapport à des références convergées : les propriétés cessent de s'améliorer alors que l'énergie continue de baisser, et des références aléatoires ou initialisées par coupled-cluster peuvent égaler les résultats matériels à taille de sous-espace égale. L'article recommande de publier une propriété de densité et le spin en plus de l'énergie.",
+  "nl": "Onderzoekt of resultaten van sample-based quantum diagonalization (SQD) op meer dan alleen de energie beoordeeld kunnen worden. Met gearchiveerde IBM-hardwaredata voor N₂ en de berekening uit 2025 aan een ijzer-zwavelcluster met 77 qubits volgt Alain Chancé dichtheidseigenschappen en spin ten opzichte van geconvergeerde referenties: de eigenschappen verbeteren niet meer terwijl de energie nog daalt, en willekeurige of door coupled-cluster geïnitialiseerde baselines kunnen bij gelijke deelruimtegrootte de hardwareresultaten evenaren. Het artikel raadt aan naast de energie ook een dichtheidseigenschap en de spin te rapporteren."
+ },
  "BSc in Physics/Mathematics, The American University in Cairo": {
   "fr": "Licence en physique/mathématiques, Université américaine du Caire",
   "nl": "BSc in natuurkunde/wiskunde, American University in Cairo"
@@ -268,6 +272,10 @@ window.MOLKET_TRANSLATIONS = {
  "Integration services to enhance your existing applications with high-performance and quantum computing capabilities.": {
   "fr": "Services d'intégration pour améliorer vos applications existantes avec des capacités de calcul haute performance et quantique.",
   "nl": "Integratiediensten om uw bestaande applicaties te verbeteren met high-performance en kwantum computing mogelijkheden."
+ },
+ "Iron–sulfur clusters": {
+  "fr": "Clusters fer–soufre",
+  "nl": "IJzer-zwavelclusters"
  },
  "July 2024": {
   "fr": "juillet 2024",
@@ -676,6 +684,10 @@ window.MOLKET_TRANSLATIONS = {
  "Use Cases": {
   "fr": "Cas d'Utilisation",
   "nl": "Gebruiksscenario's"
+ },
+ "Validating SQD: Properties, Spin and Controls": {
+  "fr": "Valider la SQD : propriétés, spin et contrôles",
+  "nl": "SQD valideren: eigenschappen, spin en controles"
  },
  "Vice-Chair of IEEE P1947": {
   "fr": "Vice-président du groupe IEEE P1947",
